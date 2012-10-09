@@ -1,10 +1,11 @@
-@import "compass/css3/"
+@import 'compass/css3/'
 
-$red: #cd0800
-$l-red: #e64b35
+$red: #e64b35
+
++font-face('bemio', font-files('bemio.ttf', 'bemio.eot', 'bemio.svg', 'bemio.woff'))
 
 body
-  font-family: bemio
+  font-family: 'bemio'
   background: url(bg.png) no-repeat center center fixed
     -webkit-background-size: cover
     -moz-background-size: cover
@@ -14,11 +15,11 @@ body
 
 img
   width: 400px
-  margin: 2em auto 0
+  margin: 1.5em auto 0
   display: block
   padding-top: 3em
 .square
-  background-color: $l-red
+  background-color: $red
   width: 500px
   height: 550px
   position: relative
