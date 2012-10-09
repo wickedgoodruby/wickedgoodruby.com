@@ -2,8 +2,13 @@
 
 $red: #e64b35
 
-+font-face('bemio', font-files('bemio.ttf', 'bemio.eot', 'bemio.svg', 'bemio.woff'))
-
+@font-face
+  font-family: 'bemio'
+  src: url('bemio.eot')
+  src: url('bemio.eot?#iefix') format("embedded-opentype"), url('bemio.woff') format("woff"), url('bemio.ttf') format("truetype"), url('bemio.svg#bemio') format("svg")
+  font-weight: normal
+  font-style: normal
+  
 body
   font-family: 'bemio'
   background: url(bg.png) no-repeat center center fixed
