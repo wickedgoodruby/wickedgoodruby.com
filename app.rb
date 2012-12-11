@@ -5,7 +5,7 @@ require 'haml'
 require 'sass'
 require 'compass'
 
-set :public_folder, File.dirname(__FILE__) + '/static'
+set :public_folder, File.dirname(__FILE__) + '/public'
 
 configure do
   Compass.configuration do |config|
