@@ -1,16 +1,92 @@
 !!!5
-
 %html
   %head
-    %link{:href => '/application.css', :rel => 'stylesheet'}
-    %title Wicked Good Ruby Conf - Boston, MA Oct 5 - 6, 2013
+    %title Wicked Good Ruby Conf | Boston, MA Oct 5 - 6, 2013
+    %link{:href => '/assets/application.css', :rel => 'stylesheet'}
+    %link{:href => "http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic", :rel => "stylesheet", :type => "text/css"}
+    %script{ :src => '/assets/application.js', :type => 'text/javascript' }
 
-  %body
-    %div
-      .square
-        %img{:src => 'logo.png'}
-      %h2
-        Oct 5 - 6, 2013 Boston, MA
-      %h2 Want to help or sponsor?
-      %h2
-        %a{:href => 'mailto:conf@bostonrb.org'} Contact conf&#64;bostonrb.org
+  .header-wrap
+    %header
+      .logo
+      .hub
+      %p
+        Oct 5-6, 2013
+      %nav
+        %a{:href => '#'} Speakers
+        %a{:href => '#'} Sponsors
+        %a{:href => '#'} Venue
+        %a{:href => '#'} Location
+        %a{:href => '#'} Register
+
+  .content-wrap
+    .content
+      .date
+        %h1 Oct 5-6, 2013
+      .intro
+        %p Join us for Wicked Good Ruby Conf, Boston's first Ruby conference, a two-day single-track conference full of passion and diversity. Prior to the conference there will be educational workshops and afterwards, a code retreat.
+      .speakers
+        %h1 The Speakers
+        %ul
+          %li
+            .speaker#speaker1
+              .overlay
+                .links
+                  %a{:href => '#'} Twitter
+                  %a{:href => '#'} Github
+                  %a{:href => '#'} Website
+            %p Brian Cardarella
+            %p DockYard, LLC.
+          %li
+            .speaker#speaker2
+              .overlay
+                .links
+                  %a{:href => '#'} Twitter
+                  %a{:href => '#'} Github
+                  %a{:href => '#'} Website
+            %p Dan McClain
+            %p DockYard, LLC.
+          %li
+            .speaker#speaker3
+              .overlay
+                .links
+                  %a{:href => '#'} Twitter
+                  %a{:href => '#'} Github
+                  %a{:href => '#'} Website
+            %p Amanda Cheung
+            %p DockYard, LLC.
+          %li
+            .speaker#speaker4
+              .overlay
+                .links
+                  %a{:href => '#'} Twitter
+                  %a{:href => '#'} Github
+                  %a{:href => '#'} Website
+            %p Doug Yun
+            %p DockYard, LLC.
+          %li
+            .speaker#speaker5
+              .overlay
+                .links
+                  %a{:href => '#'} Twitter
+                  %a{:href => '#'} Github
+                  %a{:href => '#'} Website
+            %p Dan Crowther
+            %p DockYard, LLC.
+        %h2 We are accepting calls for proposals in the form of pull requests until July 1, 2013.
+        .button
+          %p Submit Your Proposal
+      .sponsors
+        %h1 The Sponsors
+        %ul
+          %li
+            %img{:alt => 'Heroku', :src => '/assets/sponsors/heroku.jpg'}
+          %li
+            %img{:alt => 'EngineYard', :src => '/assets/sponsors/engineyard.jpg'}
+          %li
+            %img{:alt => 'Pivotal Labs', :src => '/assets/sponsors/pivotal.jpg'}
+          %li
+            %img{:alt => 'Terrible Labs', :src => '/assets/sponsors/terrible.jpg'}
+        %h2 Would you like to sponsor lorem ipsum? Aliquam tristique, orci imperdiet euismod tincidunt, ligula elit congue tellus, sit amet sagittis urna urna vel felis. Mauris iaculis sodales est non imperdiet.
+        .button
+          %p Become a Sponsor    

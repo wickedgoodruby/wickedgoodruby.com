@@ -1,0 +1,62 @@
+@import compass/css3
+
+$black: #07011C
+$red: #F13F2D
+
+.content-wrap
+  float: right
+  margin: 0 2.5em 0 345px
+  .content
+    .intro p
+      font-family: georgia
+      font-style: italic
+      letter-spacing: 1px
+      font-size: 1.25em
+      margin-bottom: 32px
+    .speakers
+      ul
+        li
+          width: 30%
+          float: left
+          margin: 1em 3% 1em 0
+          .speaker
+            width: 100%
+            height: 240px
+            display: block
+            background-size: 240px 240px
+            +border-radius(20px)
+            margin-bottom: 1em
+            .overlay
+              display: inline-block
+              opacity: 0
+              background-color: rgba($red,.75)
+              width: 240px
+              height: 240px
+              position: absolute
+              +border-radius(20px)
+              &:hover
+                opacity: 1
+              .links
+                position: relative
+                top: 3em
+                a
+                  text-align: center
+                  font-family: georgia
+                  font-style: italic
+                  color: white
+                  display: block
+                  text-decoration: none
+          #speaker1
+            background-image: url(/brian.png)
+          #speaker2
+            background-image: url(/dan_m.png)
+          #speaker3
+            background-image: url(/amanda.png)
+          #speaker4
+            background-image: url(/doug.png)
+          #speaker5
+            background-image: url(/dan_c.png)
+          p
+            text-align: center
+      h2
+        clear: both

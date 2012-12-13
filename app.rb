@@ -17,11 +17,6 @@ configure do
   set :sass, Compass.sass_engine_options
 end
 
-get '/application.css' do
-  content_type 'text/css', :charset => 'utf-8'
-  sass :application
-end
-
 get '/' do
   haml :index
 end
