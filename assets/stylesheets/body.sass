@@ -8,15 +8,15 @@ $red: #F13F2D
   margin: 0 2.5em 0 345px
   .content
     .intro p
-      font-family: georgia
-      font-style: italic
-      letter-spacing: 1px
-      font-size: 1.25em
+      font:
+        family: georgia
+        style: italic
+        size: 1.75em
       margin-bottom: 32px
-    .speakers
+    #speakers
       ul
         li
-          width: 30%
+          width: 240px
           float: left
           margin: 1em 3% 1em 0
           .speaker
@@ -24,28 +24,33 @@ $red: #F13F2D
             height: 240px
             display: block
             background-size: 240px 240px
-            +border-radius(20px)
+            +border-radius(50%)
             margin-bottom: 1em
             .overlay
               display: inline-block
               opacity: 0
+              +transition-duration(1s)
+              +transition-property(opacity)
               background-color: rgba($red,.75)
               width: 240px
               height: 240px
               position: absolute
-              +border-radius(20px)
+              +border-radius(50%)
               &:hover
                 opacity: 1
               .links
                 position: relative
                 top: 3em
                 a
-                  text-align: center
-                  font-family: georgia
-                  font-style: italic
-                  color: white
                   display: block
+                  font-family: georgia
+                  font-weight: normal
+                  font-size: 1.25em
+                  text-align: center
                   text-decoration: none
+                  color: white
+                  &:hover
+                    text-decoration: underline
           #speaker1
             background-image: url(/brian.png)
           #speaker2
@@ -58,5 +63,11 @@ $red: #F13F2D
             background-image: url(/dan_c.png)
           p
             text-align: center
+            font:
+              family: melbourne
+              size: 1.5em
       h2
         clear: both
+    #venue
+      img
+        width: 100%
