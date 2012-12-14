@@ -19,9 +19,10 @@
         %a{:href => '#venue'} Venue
         %a{:href => '#location'} Location
         %a{:href => 'http://www.eventbrite.com/', :target => '_blank'} Register
-      .twitter
-        #tweet
-        %p t
+    .twitter
+      #tweet
+      .triangle
+      %a{:href => 'https://twitter.com/wickedgoodruby', :target => '_blank'} t
 
   .content-wrap
     .content
@@ -30,6 +31,7 @@
       .intro
         %p Join us for Wicked Good Ruby Conf, Boston's first Ruby conference, a two-day single-track conference full of passion and diversity. Prior to the conference there will be educational workshops and afterwards, a code retreat.
       %p Currently we are looking for speakers and sponsors. Early bird tickets are available for purchase until July 1, 2013. If you would like to help out for the conference, please email test@example.com.
+      %a.button{:href => 'http://www.eventbrite.com/', :target => '_blank'} Save Your Seat
       #speakers
         %h1 The Speakers
         %ul
@@ -79,8 +81,7 @@
             %p Dan Crowther
             %p DockYard, LLC.
         %h2 We are accepting calls for proposals in the form of pull requests until July 1, 2013.
-        .button
-          %p Submit Your Proposal
+        %a.button{:href => '#'} Submit Your Proposal
       #sponsors
         %h1 The Sponsors
         %ul
@@ -93,8 +94,7 @@
           %li
             %img{:alt => 'Terrible Labs', :src => '/terrible.jpg'}
         %h2 Would you like to sponsor lorem ipsum? Aliquam tristique, orci imperdiet euismod tincidunt, ligula elit congue tellus, sit amet sagittis urna urna vel felis. Mauris iaculis sodales est non imperdiet.
-        .button
-          %p Become a Sponsor
+        %a.button{:href => '#'} Become a Sponsor
       #venue
         %h1 The Venue
         %img{:alt => 'The Wilbur Theater', :src => '/wilbur.jpg'}
@@ -103,8 +103,13 @@
         %p The downstairs hallway will have an area for people to step outside and listen to lightning talks. Ut vel tellus vitae turpis elementum molestie. Aenean posuere consequat quam in pulvinar. Suspendisse suscipit interdum augue, blandit justo.
       #location
         %h1 The Location
-        
+    %footer
 
+
+:javascript
+  $.getJSON("https://api.twitter.com/1/statuses/user_timeline/wickedgoodruby.json?count=1&include_rts=1&callback=?", function(data) {
+       $("#tweet").html(data[0].text);
+  });
 
 
 

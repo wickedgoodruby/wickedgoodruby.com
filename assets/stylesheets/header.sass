@@ -5,11 +5,10 @@ $red: #F13F2D
 
 .header-wrap
   position: fixed
-  background-color: white
+  background-color: $black
   height: 100%
   border:
-    right: 4px double rgba($black,.2)
-    left: 4px double rgba($black,.2)
+    right: 4px double rgba(white,.2)
   padding-left: 4em
   header
     position: relative
@@ -50,7 +49,7 @@ $red: #F13F2D
       margin-top: 1em
       a
         display: block
-        color: $black
+        color: white
         text-decoration: none
         margin-bottom: .5em
         &:last-child
@@ -64,6 +63,38 @@ $red: #F13F2D
           +transition-duration(.5s)
           &:hover
             background-color: rgba($red, .5)
-    .twitter
-      p
-        font-family: justvector
+  .twitter
+    display: block
+    position: absolute
+    width: 120px
+    bottom: 1em
+    #tweet
+      +border-radius(5px)
+      position: relative
+      font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
+      font-size: 1.05em
+      right: 32px
+      text-align: center
+      background-color: rgba(white, .25)
+      width: 200px
+      color: white
+      padding: 10px
+      box-sizing: border-box
+    .triangle
+      width: 0
+      height: 0
+      border:
+        left: 10px solid transparent
+        right: 10px solid transparent
+        top: 10px solid rgba(white, .25)
+      margin: 0 auto
+    a
+      text-decoration: none
+      text-align: center
+      font-family: justvector
+      font-size: 3em
+      color: $red
+      display: block
+      width: 100px
+      &:hover
+        color: rgba($red, .5)
