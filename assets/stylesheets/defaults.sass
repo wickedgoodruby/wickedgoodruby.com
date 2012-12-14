@@ -2,7 +2,14 @@
 @import compass/css3
 
 $black: #07011C
-$red: #F13F2D
+$red: #f13f2d
+
+@font-face
+  font-family: 'fontello'
+  src: url('/fontello.eot')
+  src: url('/fontello.eot?#iefix') format('embedded-opentype'), url('/fontello.woff') format('woff'), url('/fontello.ttf') format('truetype'), url('/fontello.svg#fontello') format('svg')
+  font-weight: normal
+  font-style: normal
 
 html, body
   min-width: 1200px
@@ -11,29 +18,32 @@ html, body
   height: 100%
   color: white
   background-color: $black
-  font-family: georgia
+  font:
+    family: lato
+    size: 18px
   line-height: 1.5
 
+
 h1
-  font-family: melbourne
-  text-transform: uppercase
-  font-size: 3em
-  font-weight: bold
+  font:
+    family: lato
+    style: italic
+    size: 2.5em
+    weight: 900
   color: $red
-  margin-top: 70px
+  margin-top: 60px
 
 .button
-  width: 30%
-  text-decoration: none
-  background-color: $red
+  margin-top: 24px
+  width: 25%
+  text:
+    decoration: none
+    align: center
+  font-weight: 900
+  background-color: rgba($red,.8)
   display: block
-  text-align: center
-  font-family: melbourne
-  text-transform: uppercase
   color: white
-  font-size: 1.5em
-  margin-top: 1em
-  padding: 10px 20px 5px
+  padding: 10px 20px
   border: 1px solid $red
   +border-radius(5px)
   +transition-property(background-color)

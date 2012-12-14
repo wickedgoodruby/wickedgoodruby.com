@@ -9,20 +9,17 @@
 
   .header-wrap
     %header
-      .logo
+      %a.logo{:href => '#'}
       .hub
-      %p
-        Oct 5-6, 2013
       %nav
         %a{:href => '#speakers'} Speakers
         %a{:href => '#sponsors'} Sponsors
         %a{:href => '#venue'} Venue
         %a{:href => '#location'} Location
         %a{:href => 'http://www.eventbrite.com/', :target => '_blank'} Register
-    .twitter
-      #tweet
-      .triangle
-      %a{:href => 'https://twitter.com/wickedgoodruby', :target => '_blank'} t
+    .follow
+      %a.twitter{:href => 'https://twitter.com/wickedgoodruby', :target => '_blank'} #
+      %a.lanyrd{:href => 'http://lanyrd.com/2013/wickedgoodruby/', :target => '_blank'} L
 
   .content-wrap
     .content
@@ -39,45 +36,65 @@
             .speaker#speaker1
               .overlay
                 .links
-                  %a{:href => '#'} Twitter
-                  %a{:href => '#'} Github
-                  %a{:href => '#'} Website
+                  %a{:href => '#'}
+                    %span #
+                    @bcardarella
+                  %a{:href => '#'}
+                    %span ★
+                    bcardarella
+                  %a{:href => '#'} bcardarella.com
             %p Brian Cardarella
             %p DockYard, LLC.
           %li
             .speaker#speaker2
               .overlay
                 .links
-                  %a{:href => '#'} Twitter
-                  %a{:href => '#'} Github
-                  %a{:href => '#'} Website
+                  %a{:href => '#'}
+                    %span #
+                    @_danmcclain
+                  %a{:href => '#'}
+                    %span ★
+                    danmcclain
+                  %a{:href => '#'} danmcclain.net
             %p Dan McClain
             %p DockYard, LLC.
           %li
             .speaker#speaker3
               .overlay
                 .links
-                  %a{:href => '#'} Twitter
-                  %a{:href => '#'} Github
-                  %a{:href => '#'} Website
+                  %a{:href => '#'}
+                    %span #
+                    @acacheung
+                  %a{:href => '#'}
+                    %span ★
+                    acacheung
+                  %a{:href => '#'} acacheung.com
             %p Amanda Cheung
             %p DockYard, LLC.
           %li
             .speaker#speaker4
               .overlay
                 .links
-                  %a{:href => '#'} Twitter
-                  %a{:href => '#'} Github
-                  %a{:href => '#'} Website
+                  %a{:href => '#'}
+                    %span #
+                    @DougYun
+                  %a{:href => '#'}
+                    %span ★
+                    duggieawesome
+                  %a{:href => '#'} dougyun.com
             %p Doug Yun
             %p DockYard, LLC.
           %li
             .speaker#speaker5
               .overlay
                 .links
-                  %a{:href => '#'} Twitter
-                  %a{:href => '#'} Github
-                  %a{:href => '#'} Website
+                  %a{:href => '#'}
+                    %span #
+                    @dockyard
+                  %a{:href => '#'}
+                    %span ★
+                    dockyard
+                  %a{:href => '#'} dockyard.com
             %p Dan Crowther
             %p DockYard, LLC.
         %h2 We are accepting calls for proposals in the form of pull requests until July 1, 2013.
@@ -98,6 +115,8 @@
       #venue
         %h1 The Venue
         %img{:alt => 'The Wilbur Theater', :src => '/wilbur.jpg'}
+        %h2 The Wilbur Theatre
+        %h2 246 Tremont Street Boston, MA 02116
         %p The Wilbur Theater is located at 246 Tremont Street in downtown Boston, Massachusetts. For parking information, visit lorem ipsum aliquam tristique, orci imperdiet euismod tincidunt, ligula elit congue tellus, sit amet sagittis urna urna vel felis. Mauris iaculis sodales est non imperdiet.
         %p The area closest to the stage will be reserved for VIP ticket holders. Comfy sofas, augue ut tincidunt egestas, ante purus feugiat quam, sed euismod dolor ante in leo.
         %p The downstairs hallway will have an area for people to step outside and listen to lightning talks. Ut vel tellus vitae turpis elementum molestie. Aenean posuere consequat quam in pulvinar. Suspendisse suscipit interdum augue, blandit justo.
@@ -105,11 +124,6 @@
         %h1 The Location
     %footer
 
-
-:javascript
-  $.getJSON("https://api.twitter.com/1/statuses/user_timeline/wickedgoodruby.json?count=1&include_rts=1&callback=?", function(data) {
-       $("#tweet").html(data[0].text);
-  });
 
 
 
