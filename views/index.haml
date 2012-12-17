@@ -17,9 +17,10 @@
         %a{:href => '#venue'} Venue
         %a{:href => '#location'} Location
         %a{:href => 'http://www.eventbrite.com/', :target => '_blank'} Register
-    .follow
-      %a.twitter{:href => 'https://twitter.com/wickedgoodruby', :target => '_blank'} #
-      %a.lanyrd{:href => 'http://lanyrd.com/2013/wickedgoodruby/', :target => '_blank'} L
+      .follow
+        %a.twitter{:href => 'https://twitter.com/wickedgoodruby', :target => '_blank'} #
+        %a.lanyrd{:href => 'http://lanyrd.com/2013/wickedgoodruby/', :target => '_blank'} L  
+    
 
   .content-wrap
     .content
@@ -117,7 +118,11 @@
         .wilbur
           %h1 The Wilbur Theatre
           %h2 246 Tremont Street Boston, MA 02116
-        %p The Wilbur Theater is located at 246 Tremont Street in downtown Boston, Massachusetts. For parking information, visit lorem ipsum aliquam tristique, orci imperdiet euismod tincidunt, ligula elit congue tellus, sit amet sagittis urna urna vel felis. Mauris iaculis sodales est non imperdiet.
+        %p
+          The Wilbur Theater is located at
+          %span
+            %a{:href => 'https://maps.google.com/maps?q=Wilbur+Theatre,+Tremont+Street,+Boston,+MA&hl=en&sll=42.036922,-71.683501&sspn=4.887368,7.163086&oq=wilbur&hq=Wilbur+Theatre,+Tremont+Street,+Boston,+MA&t=m&z=15&iwloc=A', :target => '_blank'} 246 Tremont Street
+          in downtown Boston, Massachusetts. For parking information, visit lorem ipsum aliquam tristique, orci imperdiet euismod tincidunt, ligula elit congue tellus, sit amet sagittis urna urna vel felis. Mauris iaculis sodales est non imperdiet.
         %p The area closest to the stage will be reserved for VIP ticket holders. Comfy sofas, augue ut tincidunt egestas, ante purus feugiat quam, sed euismod dolor ante in leo.
         %p The downstairs hallway will have an area for people to step outside and listen to lightning talks. Ut vel tellus vitae turpis elementum molestie. Aenean posuere consequat quam in pulvinar. Suspendisse suscipit interdum augue, blandit justo.
       #location

@@ -30,13 +30,13 @@ $red: #f13f2d
     .hub
       background-image: url(/hub.svg)
       +transition-property(rotate)
-      +transition-duration(5s)
+      +transition-duration(2s)
     .logo:hover + .hub
-      -webkit-transform: rotate(180deg)
-      -moz-transform: rotate(180deg)
-      -o-transform: rotate(180deg)
-      -ms-transform: rotate(180deg)
-      transform: rotate(180deg)
+      -webkit-transform: rotate(45deg)
+      -moz-transform: rotate(45deg)
+      -o-transform: rotate(45deg)
+      -ms-transform: rotate(45deg)
+      transform: rotate(45deg)
     nav
       font-size: 18px
       margin-top: 1em
@@ -56,14 +56,9 @@ $red: #f13f2d
           &:hover
             background-color: rgba($red, .5)
   .follow
-    position: absolute
-    bottom: 36px
-    display: block
-    width: 130px
-    text-align: center
+    margin-top: 1em
     .twitter, .lanyrd
-      text:
-        decoration: none
+      text-decoration: none
       font:
         family: fontello
         size: 1.5em
