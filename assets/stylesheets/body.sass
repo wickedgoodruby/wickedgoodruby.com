@@ -31,45 +31,12 @@ $gray: #E7E7E7
 
 .content
   padding-top: 3.75em
-  .rubies-wrapper
-    width: 320px
-    margin: 0 auto
-    .rubies
-      position: fixed
-      width: 320px
-      .ruby1, .ruby2, .ruby3, .ruby4, .ruby5
-        background:
-          image: url(/ruby.svg)
-          repeat: no-repeat
-          position: center
-        height: 60px
-        width: 80px
-        margin: 0 auto
-        position: relative
-        z-index: 4
-      .ruby1
-        left: -7em
-        +rotate(10deg)
-        background-size: 70%
-      .ruby2
-        top: 0em
-        left: 9em
-        +rotate(20deg)
-        background-size: 80%
-      .ruby3
-        top: 6em
-        left: -9em
-        +rotate(-15deg)
-      .ruby4
-        top: 8em
-        left: 5em
-        +rotate(-10deg)
-        background-size: 80%
-      .ruby5
-        top: 7em
-        left: -5em
-        +rotate(10deg)
-        background-size: 50%
+  position: absolute
+  height: 500px
+  background:
+    image: url(/rubies.png)
+    repeat: repeat
+    size: cover
   .intro
     color: $black
     width: 80%
@@ -221,6 +188,7 @@ $gray: #E7E7E7
     position: relative
     top: -13.8em
     z-index: 3
+    clear: both
 
 
 
