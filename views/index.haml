@@ -5,136 +5,144 @@
     %link{:href => '/assets/application.css', :rel => 'stylesheet'}
     %link{:href => "http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic", :rel => "stylesheet", :type => "text/css"}
     %script{:src => '/assets/application.js', :type => 'text/javascript'}
-    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"}
 
-  .header-wrap
-    %header
-      %a.logo{:href => '#'}
+  %header
+    %div.menu-button
+      %p ☰
+    %nav
+      %ul#flexnav{:role => 'navigation'}
+        %li
+          %a{:href => '#speakers'} Speakers
+        %li
+          %a{:href => '#sponsors'} Sponsors
+        %li
+          %a{:href => '#location'} Location
+        %li
+          %a{:href => '#'} Register
+
+  .content
+    .rubies-wrapper
+      .rubies
+        .ruby1
+        .ruby2
+        .ruby3
+        .ruby4
+        .ruby5
+    .wicked
+      .logo
       .hub
-      %nav
-        %a{:href => '#speakers'} Speakers
-        %a{:href => '#sponsors'} Sponsors
-        %a{:href => '#venue'} Venue
-        %a{:href => '#location'} Location
-        %a{:href => 'http://www.eventbrite.com/', :target => '_blank'} Register
-      .follow
-        %a.twitter{:href => 'https://twitter.com/wickedgoodruby', :target => '_blank'} #
-        %a.lanyrd{:href => 'http://lanyrd.com/2013/wickedgoodruby/', :target => '_blank'} L  
-    
-
-  .content-wrap
-    .content
-      .date
-        %h1 Oct 5-6, 2013
-      .intro
-        %p Join us for Wicked Good Ruby Conf, Boston's first Ruby conference, a two-day single-track conference full of passion and diversity. Prior to the conference there will be educational workshops and afterwards, a code retreat.
-      %p Currently we are looking for speakers and sponsors. Early bird tickets are available for purchase until July 1, 2013. If you would like to help out for the conference, please email test@example.com.
-      %a.button{:href => 'http://www.eventbrite.com/', :target => '_blank'} Save Your Seat
-      #speakers
-        %h1 The Speakers
-        %ul
-          %li
-            .speaker#speaker1
-              .overlay
-                .links
-                  %a{:href => '#'}
-                    %span #
-                    @bcardarella
-                  %a{:href => '#'}
-                    %span ★
-                    bcardarella
-                  %a{:href => '#'} bcardarella.com
-            %p Brian Cardarella
-            %p DockYard, LLC.
-          %li
-            .speaker#speaker2
-              .overlay
-                .links
-                  %a{:href => '#'}
-                    %span #
-                    @_danmcclain
-                  %a{:href => '#'}
-                    %span ★
-                    danmcclain
-                  %a{:href => '#'} danmcclain.net
-            %p Dan McClain
-            %p DockYard, LLC.
-          %li
-            .speaker#speaker3
-              .overlay
-                .links
-                  %a{:href => '#'}
-                    %span #
-                    @acacheung
-                  %a{:href => '#'}
-                    %span ★
-                    acacheung
-                  %a{:href => '#'} acacheung.com
-            %p Amanda Cheung
-            %p DockYard, LLC.
-          %li
-            .speaker#speaker4
-              .overlay
-                .links
-                  %a{:href => '#'}
-                    %span #
-                    @DougYun
-                  %a{:href => '#'}
-                    %span ★
-                    duggieawesome
-                  %a{:href => '#'} dougyun.com
-            %p Doug Yun
-            %p DockYard, LLC.
-          %li
-            .speaker#speaker5
-              .overlay
-                .links
-                  %a{:href => '#'}
-                    %span #
-                    @dockyard
-                  %a{:href => '#'}
-                    %span ★
-                    dockyard
-                  %a{:href => '#'} dockyard.com
-            %p Dan Crowther
-            %p DockYard, LLC.
-        %h2 We are accepting calls for proposals in the form of pull requests until July 1, 2013.
-        %a.button{:href => '#'} Submit Your Proposal
-      #sponsors
-        %h1 The Sponsors
-        %ul
-          %li
-            %img{:alt => 'Heroku', :src => '/heroku.jpg'}
-          %li
-            %img{:alt => 'EngineYard', :src => '/engineyard.jpg'}
-          %li
-            %img{:alt => 'Pivotal Labs', :src => '/pivotal.jpg'}
-          %li
-            %img{:alt => 'Terrible Labs', :src => '/terrible.jpg'}
-        %h2 Would you like to sponsor lorem ipsum? Aliquam tristique, orci imperdiet euismod tincidunt, ligula elit congue tellus, sit amet sagittis urna urna vel felis. Mauris iaculis sodales est non imperdiet.
-        %a.button{:href => '#'} Become a Sponsor
-      #venue
-        %h1 The Venue
-        .wilbur
-          %h1 The Wilbur Theatre
-          %h2 246 Tremont Street Boston, MA 02116
+    %p.intro Join us for a two-day single-track Ruby conference full of passion and diversity. Prior to the conference there will be educational workshops and afterwards, a code retreat.
+    %h1.date Oct 5-6, 2013
+    %a.button.register{:href => 'http://www.eventbrite.com/', :target => '_blank'} Register
+    .triangle
+    #main-wrap
+      #main
         %p
-          The Wilbur Theater is located at
-          %span
-            %a{:href => 'https://maps.google.com/maps?q=Wilbur+Theatre,+Tremont+Street,+Boston,+MA&hl=en&sll=42.036922,-71.683501&sspn=4.887368,7.163086&oq=wilbur&hq=Wilbur+Theatre,+Tremont+Street,+Boston,+MA&t=m&z=15&iwloc=A', :target => '_blank'} 246 Tremont Street
-          in downtown Boston, Massachusetts. For parking information, visit lorem ipsum aliquam tristique, orci imperdiet euismod tincidunt, ligula elit congue tellus, sit amet sagittis urna urna vel felis. Mauris iaculis sodales est non imperdiet.
-        %p The area closest to the stage will be reserved for VIP ticket holders. Comfy sofas, augue ut tincidunt egestas, ante purus feugiat quam, sed euismod dolor ante in leo.
-        %p The downstairs hallway will have an area for people to step outside and listen to lightning talks. Ut vel tellus vitae turpis elementum molestie. Aenean posuere consequat quam in pulvinar. Suspendisse suscipit interdum augue, blandit justo.
-      #location
-        %h1 The Location
-    %footer
+          Currently we are looking for speakers and sponsors. If you would like to help out for the conference, please email
+          %a{:href => 'mailto:contact@wickedgoodruby.com'}
+            contact@wickedgoodruby.com
+        #speakers
+          %img.banner{:src => '/banners/speakers.svg'}
+          %p Do you want to present at Wicked Good Ruby? We are accepting calls for proposals in the form of pull requests through GitHub.
+          %ul
+            %li
+              .speaker#speaker1
+                .overlay
+                  .links
+                    %a{:href => '#'}
+                      %span #
+                      @_danmcclain
+                    %a{:href => '#'}
+                      %span ★
+                      danmcclain
+                    %a{:href => '#'} danmcclain.net
+              %h1 Dan McClain
+              %p DockYard, LLC.
+            %li
+              .speaker#speaker2
+                .overlay
+                  .links
+                    %a{:href => '#'}
+                      %span #
+                      @acacheung
+                    %a{:href => '#'}
+                      %span ★
+                      acacheung
+                    %a{:href => '#'} acacheung.com
+              %h1 Amanda Cheung
+              %p DockYard, LLC.
+            %li
+              .speaker#speaker3
+                .overlay
+                  .links
+                    %a{:href => '#'}
+                      %span #
+                      @DougYun
+                    %a{:href => '#'}
+                      %span ★
+                      duggie
+                    %a{:href => '#'} dougyun.com
+              %h1 Doug Yun
+              %p DockYard, LLC.
+            %li
+              .speaker#speaker4
+              %h1 This could be you!
+          %a.button{:href => '#'} Submit Your Proposal
+        #sponsors
+          %img.banner{:src => '/banners/sponsors.svg'}
+          %p
+            Would you like to be a Wicked Good Ruby Conf sponsor?
+            %a{:href => 'mailto:sponsor@wickedgoodruby.com'} Email us
+            if you would like more info about sponsorship.
+          %ul
+            %li
+              %a{:href => 'http://www.heroku.com/', :target => '_blank'}
+                %img{:alt => 'Heroku', :src => '/sponsors/heroku.png'}
+              //%p Gold Sponsor: Heroku
+              //%p A cloud application platform that lets app developers spend more time on their application code, not managing servers, deployment, ongoing operations, or scaling.
+            %li
+              %a{:href => 'http://www.engineyard.com/', :target => '_blank'}
+                %img{:alt => 'EngineYard', :src => '/sponsors/engineyard.png'}
+            %li
+              %a{:href => 'http://pivotallabs.com/', :target => '_blank'}
+                %img{:alt => 'Pivotal Labs', :src => '/sponsors/pivotal.png'}
+            %li
+              %a{:href => 'http://www.livingsocial.com/', :target => '_blank'}
+                %img{:alt => 'Living Social', :src => '/sponsors/livingsocial.png'}
+          %a.button{:href => '#'} Become a Sponsor
+        #location
+          %img.banner{:src => '/banners/location.svg'}
+          %h1 The Wilbur Theatre
+          %a.address{:href => 'https://maps.google.com/maps?q=Wilbur+Theatre,+Tremont+Street,+Boston,+MA&hl=en&sll=42.036922,-71.683501&sspn=4.887368,7.163086&oq=wilbur&hq=Wilbur+Theatre,+Tremont+Street,+Boston,+MA&t=m&z=15&iwloc=A', :target => '_blank'} 246 Tremont Street Boston, MA 02116
+          .wilbur
+          %p
+            Wicked Good Ruby Conf is going to be held at the Wilbur Theatre in downtown Boston. For info regarding the venue, please visit
+            %a{:href => 'http://www.thewilburtheatre.com/', :target => '_blank'}
+              www.thewilburtheatre.com
+          //%h1 Boston, MA
+          //%h2 Things to do
+          //%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique tincidunt nulla ut facilisis. Curabitur commodo suscipit odio. Donec luctus sem non tortor vestibulum mollis. Quisque dictum suscipit dui vitae pellentesque.
+          //%h2 Places to stay
+          //%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique tincidunt nulla ut facilisis. Curabitur commodo suscipit odio. Donec luctus sem non tortor vestibulum mollis. Quisque dictum suscipit dui vitae pellentesque.
+          //%h2 Where to eat
+          //%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique tincidunt nulla ut facilisis. Curabitur commodo suscipit odio. Donec luctus sem non tortor vestibulum mollis. Quisque dictum suscipit dui vitae pellentesque.
+    .triangle-end
+  %footer
+    %p &copy; Copyright 2013 All rights reserved.
 
 
 
 
 
-
-
-
-
-
+  :javascript
+    $("[id='flexnav']").flexNav();
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

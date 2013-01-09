@@ -1,74 +1,83 @@
 @import compass/css3
 
-$black: #07011C
-$red: #f13f2d
+$black: #363636
+$red: #ed4543
+$gray: #E7E7E7
+$white: #FFFFFF
 
-.header-wrap
+header
+  width: 100%
+  display: block
   position: fixed
-  background-color: $black
-  height: 100%
-  border:
-    right: 4px double rgba(white,.2)
-  padding-left: 4em
-  header
+  z-index: 15
+  div
+    background-color: $black
+    +transition-property(background-color)
+    +transition-duration(.25s)
+
+.menu-button
+  display: block
+  cursor: pointer
+  padding: .5em 2em
+  p
+    text-align: right
+    font-size: 1em
+
+.flexNav-touch #flexnav, .flexNav-no-touch #flexnav
+  display: none
+
+#flexnav
+  display: none
+  &:after
+    visibility: hidden
+    display: block
+    font-size: 0
+    content: " "
+    clear: both
+    height: 0
+  li
     position: relative
-    right: 2em
-    text-align: center
-    margin-top: 36px
-    .logo, .hub
+    list-style: none
+    display: block
+    background-color: rgba($black, .8)
+    width: 100%
+    padding: 10px 10px 0
+    box-sizing: border-box
+    &:last-child
+      padding-bottom: 10px
+    a
       display: block
-      background:
-        repeat: no-repeat
-        size: cover
-      width: 200px
-      height: 200px
-      margin-bottom: 1em
-    .logo
-      z-index: 2
-      position: absolute
-      background-image: url(/logo.svg)
-    .hub
-      background-image: url(/hub.svg)
-      +transition-property(rotate)
-      +transition-duration(2s)
-    .logo:hover + .hub
-      -webkit-transform: rotate(45deg)
-      -moz-transform: rotate(45deg)
-      -o-transform: rotate(45deg)
-      -ms-transform: rotate(45deg)
-      transform: rotate(45deg)
-    nav
-      font-size: 18px
-      margin-top: 1em
-      a
+      text:
+        decoration: none
+        align: center
+      padding: 5px
+      background-color: $gray
+      color: $black
+
+@media (min-width: 800px)
+  .flexNav-touch #flexnav, .flexNav-no-touch #flexnav
+    display: block
+  .menu-button
+    display: none
+  nav
+    display: block
+    background-color: $black
+    #flexnav
+      width: 600px
+      margin: 0 auto
+      display: block
+      li
         display: block
-        color: white
-        text-decoration: none
-        margin-bottom: .5em
+        float: left
+        width: 150px
+        background-color: transparent
+        padding: 0 10px
         &:last-child
-          display: inline-block
-          background-color: rgba($red,.8)
-          padding: 5px 20px
-          border: 1px solid $red
-          +border-radius(5px)
-          +transition-property(background-color)
-          +transition-duration(.5s)
-          &:hover
-            background-color: rgba($red, .5)
-  .follow
-    margin-top: 1em
-    .twitter, .lanyrd
-      text-decoration: none
-      font:
-        family: fontello
-        size: 1.5em
-      color: $red
-      margin: 0 5px
-      +transition-property(color)
-      +transition-duration(.5s)
-      &:hover
-        color: white
-    .lanyrd
-      font-size: 1.1em
-      position: relative
-      bottom: 4px
+          padding-bottom: 0
+        a
+          font:
+            size: 2em
+            family: blanch
+          color: $white
+          line-height: 1
+          background-color: transparent
