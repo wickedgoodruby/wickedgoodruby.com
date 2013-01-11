@@ -35,7 +35,8 @@ $gray: #E7E7E7
   background:
     image: url(/rubies.png)
     repeat: repeat
-    size: cover
+    size: 400px
+    position: center
   .intro
     color: $black
     width: 80%
@@ -97,6 +98,12 @@ $gray: #E7E7E7
             width: 100%
             float: left
             margin: 1em 0
+            @media (min-width: 800px)
+              width: 49%
+              float: left
+              margin-right: 2%
+              &:nth-child(2n+2)
+                margin-right: 0
             .speaker
               width: 100%
               height: 280px
@@ -104,6 +111,7 @@ $gray: #E7E7E7
               background:
                 size: cover
                 repeat: no-repeat
+                position: center
               +border-radius(5px)
               margin-bottom: 1em
               .overlay
@@ -113,6 +121,8 @@ $gray: #E7E7E7
                 +transition-property(opacity)
                 background-color: rgba($red,.65)
                 width: 80%
+                @media (min-width: 800px)
+                  width: 39.25%
                 height: 280px
                 position: absolute
                 +border-radius(5px)
@@ -138,13 +148,13 @@ $gray: #E7E7E7
                     span
                       font-family: fontello
             #speaker1
-              background-image: url(/speakers/dan_m.png)
+              background-image: url(/speakers/dan_m.jpg)
             #speaker2
-              background-image: url(/speakers/amanda.png)
+              background-image: url(/speakers/amanda.jpg)
             #speaker3
-              background-image: url(/speakers/doug.png)
+              background-image: url(/speakers/doug.jpg)
             #speaker4
-              background-image: url(/speakers/avatar.png)
+              background-image: url(/speakers/avatar.jpg)
             h1, p
               text-align: center
             h1
@@ -203,9 +213,8 @@ $gray: #E7E7E7
             background:
               image: url(/location/wilbur2.jpg)
   .triangle-end
-    +rotate(180deg)
     background:
-      image: url(/triangle.png)
+      image: url(/triangle-end.png)
       repeat: no-repeat
       size: 100% 80px
     height: 80px
@@ -213,10 +222,10 @@ $gray: #E7E7E7
     top: -13.8em
     z-index: 3
     clear: both
-    @media (min-width: 600px)
-      background-size: 100% 120px
-      height: 120px
-      top: -16.1em
+    //@media (min-width: 600px)
+    //  background-size: 100% 120px
+    //  height: 120px
+    //  top: -16.1em
   .terrier-wrapper
     position: relative
     height: 300px
