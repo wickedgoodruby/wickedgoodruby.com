@@ -3,20 +3,20 @@
   %head
     %title Wicked Good Ruby Conf | Boston, MA Oct 5 - 6, 2013
     %link{:href => '/assets/application.css', :rel => 'stylesheet'}
-    %link{:href => "http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => 'http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic', :rel => 'stylesheet', :type => 'text/css'}
     %script{:src => '/assets/application.js', :type => 'text/javascript'}
 
   %header
-    %div.menu-button
+    .menu
       %p ☰
     %nav
-      %ul#flexnav{:role => 'navigation'}
+      %ul#flexnav
         %li
-          %a{:href => '#speakers'} Speakers
+          %a{:href => '#'} Speakers
         %li
-          %a{:href => '#sponsors'} Sponsors
+          %a{:href => '#'} Sponsors
         %li
-          %a{:href => '#location'} Location
+          %a{:href => '#'} Location
         %li
           %a{:href => '#'} Register
 
@@ -123,22 +123,40 @@
           //%h2 Where to eat
           //%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique tincidunt nulla ut facilisis. Curabitur commodo suscipit odio. Donec luctus sem non tortor vestibulum mollis. Quisque dictum suscipit dui vitae pellentesque.
     .triangle-end
+    .terrier-wrapper
+      .terrier
     %footer
       %p &copy; Copyright 2013 All rights reserved.
 
-
-
-
-
   :javascript
     $("[id='flexnav']").flexNav();
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+    $('.register').waypoint(function(direction) {
+      if (direction === 'down') {
+        $('.menu').css({'background-color':'#ED4543'});
+      }
+      else {
+        $('.menu').css({'background-color':'#363636'})
+      }
+    });
+    
+    $('.register').waypoint(function(direction) {
+      if (($(window).width()) > 800)
+        if (direction === 'down') {
+          $('nav').css({'background-color':'#ED4543'});
+        }
+        else {
+          $('nav').css({'background-color':'#363636'})
+        }
+    });
+
+    $('footer').waypoint(function() {
+      $('.terrier').transition({y: '-20em'});
+    }, { offset: 'bottom-in-view' });
+
+
+
+
+
+
   

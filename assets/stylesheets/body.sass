@@ -23,12 +23,11 @@ $gray: #E7E7E7
 .hub
   z-index: 9
   background-image: url(/logo/hub.svg)
-  //+transition-property(rotate)
-  //+transition-duration(2s)
+  +transition-property(rotate)
+  +transition-duration(2s)
   position: relative
 .logo:hover + .hub
   //+rotate(45deg)
-
 .content
   padding-top: 3.75em
   position: absolute
@@ -155,29 +154,54 @@ $gray: #E7E7E7
         h2
           clear: both
       #sponsors
+        p
+          @media (min-width: 800px)
+            margin-bottom: 1em
         li
+          margin: 1em 0
+          @media (min-width: 800px)
+            width: 49%
+            margin-right: 2%
+            float: left
+            margin-top: 0
+            &:nth-child(2n+2)
+              margin-right: 0
           a
             display: block
             background-color: $white
             +border-radius(5px)
-            margin: 1em 0
+            @media (min-width: 800px)
+              height: 150px
           img
             width: 200px
             margin: 0 auto
             display: block
             padding: 1em
+            @media (min-width: 500px)
+              width: 250px
+              padding: 2em
       #location
         h1
           font-size: 1.5em
         h1, .address
           text-align: center
+          display: block
         .wilbur
-          background: url(/location/wilbur.jpg) center center
+          background:
+            image: url(/location/wilbur.jpg)
+            position: center center
+            size: cover
           +border-radius(5px)
           height: 300px
           width: 100%
-          background-size: cover
           margin: 1em 0
+          +transition-duration(1s)
+          +transition-property(background-image)
+          @media (min-width: 1000px)
+            height: 500px
+          &:hover
+            background:
+              image: url(/location/wilbur2.jpg)
   .triangle-end
     +rotate(180deg)
     background:
@@ -189,6 +213,26 @@ $gray: #E7E7E7
     top: -13.8em
     z-index: 3
     clear: both
+    @media (min-width: 600px)
+      background-size: 100% 120px
+      height: 120px
+      top: -16.1em
+  .terrier-wrapper
+    position: relative
+    height: 300px
+    top: -10em
+    overflow: hidden
+    margin: 0 auto
+    width: 300px
+  .terrier
+    height: 300px
+    position: absolute
+    width: 100%
+    top: 20em
+    background:
+      image: url(/terrier.svg)
+      repeat: no-repeat
+      size: 300px 300px
 
 
 

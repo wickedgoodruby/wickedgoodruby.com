@@ -10,15 +10,14 @@ header
   display: block
   position: fixed
   z-index: 15
-  div
-    background-color: $black
-    +transition-property(background-color)
-    +transition-duration(.25s)
 
-.menu-button
+.menu
   display: block
   cursor: pointer
   padding: .5em 2em
+  background-color: $black
+  +transition-property(background-color)
+  +transition-duration(.25s)
   p
     text-align: right
     font-size: 1em
@@ -39,7 +38,7 @@ header
     position: relative
     list-style: none
     display: block
-    background-color: rgba($black, .8)
+    background-color: rgba(lighten($black, 10%), .75)
     width: 100%
     padding: 10px 10px 0
     box-sizing: border-box
@@ -53,15 +52,24 @@ header
       padding: 5px
       background-color: $gray
       color: $black
+      +border-radius(5px)
+      font:
+        family: blanch
+        size: 42px
+      line-height: 1
+      &:hover
+        background-color: white
 
 @media (min-width: 800px)
   .flexNav-touch #flexnav, .flexNav-no-touch #flexnav
     display: block
-  .menu-button
+  .menu
     display: none
   nav
     display: block
     background-color: $black
+    +transition-property(background-color)
+    +transition-duration(.25s)
     #flexnav
       width: 600px
       margin: 0 auto
