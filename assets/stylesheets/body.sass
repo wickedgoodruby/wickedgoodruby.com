@@ -17,15 +17,15 @@ $gray: #E7E7E7
   width: 250px
   height: 250px
 .logo
-  z-index: 10
   position: absolute
+  z-index: 10
   background-image: url(/logo/logo.svg)
 .hub
+  position: relative
   z-index: 9
   background-image: url(/logo/hub.svg)
   +transition-property(rotate)
   +transition-duration(2s)
-  position: relative
 .logo:hover + .hub
   //+rotate(45deg)
 .content
@@ -37,6 +37,8 @@ $gray: #E7E7E7
     repeat: repeat
     size: 400px
     position: center
+  @media (min-width: 580px) and (max-width: 860px)
+    background-image: url(/rubies2.png)
   .intro
     color: $black
     width: 80%
@@ -44,6 +46,7 @@ $gray: #E7E7E7
     margin: 1em auto
     position: relative
     z-index: 8
+    max-width: 500px
   .date
     color: $black
     font:
@@ -91,14 +94,13 @@ $gray: #E7E7E7
     #main
       width: 80%
       margin: 0 auto
-      max-width: 1200px
       #speakers
         ul
           li
             width: 100%
             float: left
             margin: 1em 0
-            @media (min-width: 800px)
+            @media (min-width: 650px) and (max-width: 1000px)
               width: 49%
               float: left
               margin-right: 2%
@@ -121,8 +123,10 @@ $gray: #E7E7E7
                 +transition-property(opacity)
                 background-color: rgba($red,.65)
                 width: 80%
-                @media (min-width: 800px)
+                @media (min-width: 650px)
                   width: 39.25%
+                @media (min-width: 1000px)
+                  width: 25.5%
                 height: 280px
                 position: absolute
                 +border-radius(5px)
@@ -169,7 +173,7 @@ $gray: #E7E7E7
             margin-bottom: 1em
         li
           margin: 1em 0
-          @media (min-width: 800px)
+          @media (min-width: 800px) and (max-width: 1000px)
             width: 49%
             margin-right: 2%
             float: left
@@ -180,7 +184,7 @@ $gray: #E7E7E7
             display: block
             background-color: $white
             +border-radius(5px)
-            @media (min-width: 800px)
+            @media (min-width: 800px) and (max-width: 1000px)
               height: 150px
           img
             width: 200px
@@ -212,6 +216,13 @@ $gray: #E7E7E7
           &:hover
             background:
               image: url(/location/wilbur2.jpg)
+      #speakers, #sponsors, #location
+        @media (min-width: 1000px)
+          width: 30%
+          float: left
+          margin-right: 2%
+          &:nth-child(3n)
+            margin-right: 0
   .triangle-end
     background:
       image: url(/triangle-end.png)
@@ -222,10 +233,10 @@ $gray: #E7E7E7
     top: -13.8em
     z-index: 3
     clear: both
-    //@media (min-width: 600px)
-    //  background-size: 100% 120px
-    //  height: 120px
-    //  top: -16.1em
+    @media (min-width: 600px)
+      background-size: 100% 120px
+      height: 120px
+      top: -16.05em
   .terrier-wrapper
     position: relative
     height: 300px
@@ -242,19 +253,3 @@ $gray: #E7E7E7
       image: url(/terrier.svg)
       repeat: no-repeat
       size: 300px 300px
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     
