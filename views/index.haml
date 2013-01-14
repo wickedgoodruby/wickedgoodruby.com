@@ -12,13 +12,13 @@
     %nav
       %ul#flexnav
         %li
-          %a{:href => '#'} Speakers
+          %a{:href => '#speakers'} Speakers
         %li
-          %a{:href => '/'} Sponsors
+          %a{:href => '#sponsors'} Sponsors
         %li
-          %a{:href => '/'} Location
+          %a{:href => '#location'} Location
         %li
-          %a{:href => '/'} Register
+          %a{:href => '#'} Register
 
   .content
     .rubies-wrapper
@@ -130,7 +130,57 @@
       %p &copy; Copyright 2013 Wicked Good Ruby Conf
 
   :javascript
-    $("[id='flexnav']").flexNav();
+
+    //$(window).resize(toggleNav);
+    //$(document).ready(toggleNav);
+    //function toggleNav() {
+    // if($(window).width() < 800)
+    //    $('.menu').click(function() {
+    //      $('#flexnav').toggle($(window).width());
+    //    });
+    //    $('#flexnav a').click(function() {
+    //      $('#flexnav').toggle($(window).width());
+    //    });
+    // else
+    //    $(".leftnav").show();
+    //}
+
+    //$(window).resize(function() {
+    //  if (($(window).width()) < 800) {
+    //    $('.menu').click(function() {
+    //      console.log('yay?')
+    //      //$('#flexnav').show();
+    //    });
+    //    $('#flexnav a').click(function() {
+    //      $('#flexnav').hide();
+    //    });
+    //  }
+    //});
+    
+    $(document).ready(function() {
+      $('.menu').click(function() {
+        $('#flexnav').toggle();
+      });
+      if ($(window).width() < 800) {
+        $('#flexnav a').click(function() {
+          $('#flexnav').hide();
+        });
+      };
+    });
+    
+    //$(window).resize(function() {
+    //  var resizer = function() {
+    //    if ($(window).width() < 800) {
+    //      $('.menu').click(function() {
+    //        $('#flexnav').show();
+    //      });
+    //    }
+    //    else {
+    //      $('nav #flexnav').show();
+    //    }
+    //  };
+    //  resizer();
+    //});
 
     $('.register').waypoint(function(direction) {
       if (direction === 'down') {

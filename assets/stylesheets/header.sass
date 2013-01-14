@@ -22,9 +22,6 @@ header
     text-align: right
     font-size: 1em
 
-.flexNav-touch #flexnav, .flexNav-no-touch #flexnav
-  display: none
-
 #flexnav
   display: none
   &:after
@@ -53,16 +50,18 @@ header
       background-color: $gray
       color: $black
       +border-radius(5px)
+      @media (min-width: 800px)
+        +border-radius(0)
       font:
         family: blanch
         size: 42px
       line-height: 1
       &:hover
-        background-color: white
+        background-color: $white
+        @media (min-width: 800px)
+          background-color: rgba($white, .15)
 
 @media (min-width: 800px)
-  .flexNav-touch #flexnav, .flexNav-no-touch #flexnav
-    display: block
   .menu
     display: none
   nav
