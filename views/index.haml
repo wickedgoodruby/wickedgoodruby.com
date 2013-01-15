@@ -138,17 +138,16 @@
       else {
         $('body').removeClass('small').addClass('big');
       };
-      $('.big #flexnav').show();
-      $('.small .menu').click(function() {
-        $('.small #flexnav').toggle();
-      });
-      $('.small #flexnav a').click(function() {
-        $('.small #flexnav').hide();
-      });
-
     };
     $(document).ready(screenWidth);
     $(window).resize(screenWidth);
+
+    $('.small .menu p').live('click', function() {
+      $('.small #flexnav').toggle();
+    });
+    $('.small #flexnav a').live('click', function() {
+      $('.small #flexnav').hide();
+    });
 
     $('.register').waypoint(function(direction) {
       if (direction === 'down') {
