@@ -139,14 +139,17 @@
         $('body').removeClass('small').addClass('big');
       };
     };
-    $(document).ready(screenWidth);
+
     $(window).resize(screenWidth);
 
-    $('.small .menu p').live('click', function() {
-      $('.small #flexnav').toggle();
-    });
-    $('.small #flexnav a').live('click', function() {
-      $('.small #flexnav').hide();
+    $(function() {
+      screenWidth();
+      $('.small .menu p').click(function() {
+        $('.small #flexnav').toggle();
+      });
+      $('.small #flexnav a').click(function() {
+        $('.small #flexnav').hide();
+      });
     });
 
     $('.register').waypoint(function(direction) {
