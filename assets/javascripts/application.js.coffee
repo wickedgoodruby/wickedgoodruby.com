@@ -1,3 +1,1 @@
-#= require jquery.min.js
-#= require waypoints.js
-#= require jquery.transit.js
+#= require_tree .

@@ -3,48 +3,53 @@
   %head
     %title Wicked Good Ruby Conf | Boston, MA Oct 5 - 6, 2013
     %link{:href => '/assets/application.css', :rel => 'stylesheet'}
-    %link{:href => 'http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic', :rel => 'stylesheet', :type => 'text/css'}
     %script{:src => '/assets/application.js', :type => 'text/javascript'}
 
-  %header
-    .menu
-      %p ☰
-    %nav
-      %ul#flexnav
-        %li
-          %a{:href => '#speakers'} Speakers
-        %li
-          %a{:href => '#sponsors'} Sponsors
-        %li
-          %a{:href => '#location'} Location
-        %li
-          %a{:href => '#'} Register
+  %body
 
-  .content
-    .rubies-wrapper
-    .wicked
+    %header
+      .nav-bar
+        %p ☰
+      %nav
+        %ul.nav-wrap
+          %li.nav-item
+            %a{:href => '#speakers'} Speakers
+          %li.nav-item
+            %a{:href => '#sponsors'} Sponsors
+          %li.nav-item
+            %a{:href => '#location'} Location
+          %li.nav-item
+            %a{:href => '#'} Register
+
+    .intro
       .logo
-      .hub
-    %p.intro Join us for a two-day single-track Ruby conference full of passion and diversity. Prior to the conference there will be educational workshops and afterwards, a code retreat.
-    %h1.date Oct 5-6, 2013
-    %a.button.register{:href => 'http://www.eventbrite.com/', :target => '_blank'} Register
-    .triangle
+        .logo-main
+        .logo-rotate
+      %p.intro-info Join us for a two-day single-track Ruby conference full of passion and diversity. Prior to the conference there will be educational workshops and afterwards, a code retreat.
+      %p.intro-date Oct 5-6, 2013
+
+    %a.button.button-register{:href => 'http://www.eventbrite.com/', :target => '_blank'} Register
+
+    .triangle-wrap.triangle-wrap-background
+      .triangle
+
     #main-wrap
       #main
-        %p
+        %p.main-info
           Currently we are looking for speakers and sponsors. If you would like to help out for the conference, please email
           %a{:href => 'mailto:contact@wickedgoodruby.com'}
             contact@wickedgoodruby.com
-        #speakers
-          %img.banner{:src => '/banners/speakers.svg'}
-          %p
+
+        %section#speakers
+          %img.banner{:src => '/banners/speakers.svg', :alt => 'Speakers'}
+          %p.article-info
             Do you want to present at Wicked Good Ruby? We are accepting calls for proposals in the form of pull requests through
             %a{:href => 'https://github.com/wickedgoodruby/wickedgoodruby.com', :target => '_blank'} our GitHub.
           %ul
-            %li
-              .speaker#speaker1
-                .overlay
-                  .links
+            %li.speaker#speaker1
+              .speaker-pic
+                .speaker-overlay
+                  .speaker-links
                     %a{:href => '#'}
                       %span #
                       @_danmcclain
@@ -52,12 +57,12 @@
                       %span ★
                       danmcclain
                     %a{:href => '#'} danmcclain.net
-              %h1 Dan McClain
-              %p DockYard, LLC.
-            %li
-              .speaker#speaker2
-                .overlay
-                  .links
+              %p.speaker-name Dan McClain
+              %p.speaker-company DockYard, LLC.
+            %li.speaker#speaker2
+              .speaker-pic
+                .speaker-overlay
+                  .speaker-links
                     %a{:href => '#'}
                       %span #
                       @acacheung
@@ -65,12 +70,12 @@
                       %span ★
                       acacheung
                     %a{:href => '#'} acacheung.com
-              %h1 Amanda Cheung
-              %p DockYard, LLC.
-            %li
-              .speaker#speaker3
-                .overlay
-                  .links
+              %p.speaker-name Amanda Cheung
+              %p.speaker-company DockYard, LLC.
+            %li.speaker#speaker3
+              .speaker-pic
+                .speaker-overlay
+                  .speaker-links
                     %a{:href => '#'}
                       %span #
                       @DougYun
@@ -78,110 +83,109 @@
                       %span ★
                       duggie
                     %a{:href => '#'} dougyun.com
-              %h1 Doug Yun
-              %p DockYard, LLC.
-            %li
-              .speaker#speaker4
-              %h1 This could be you!
+              %p.speaker-name Doug Yun
+              %p.speaker-company DockYard, LLC.
+            %li.speaker#speaker4
+              .speaker-pic
+              %p.speaker-name This could be you!
           %a.button{:href => '#'} Submit Your Proposal
-        #sponsors
-          %img.banner{:src => '/banners/sponsors.svg'}
-          %p
+
+        %section#sponsors
+          %img.banner{:src => '/banners/sponsors.svg', :alt => 'Sponsors'}
+          %p.article-info
             Would you like to be a Wicked Good Ruby Conf sponsor?
             %a{:href => 'mailto:sponsor@wickedgoodruby.com'} Email us
             if you would like more info about sponsorship.
           %ul
-            %li
-              %a{:href => 'http://www.heroku.com/', :target => '_blank'}
+            %li.sponsor
+              %a.sponsor-logo{:href => 'http://www.heroku.com/', :target => '_blank'}
                 %img{:alt => 'Heroku', :src => '/sponsors/heroku.png'}
-              //%p Gold Sponsor: Heroku
-              //%p A cloud application platform that lets app developers spend more time on their application code, not managing servers, deployment, ongoing operations, or scaling.
-            %li
-              %a{:href => 'http://www.engineyard.com/', :target => '_blank'}
+            %li.sponsor
+              %a.sponsor-logo{:href => 'http://www.engineyard.com/', :target => '_blank'}
                 %img{:alt => 'EngineYard', :src => '/sponsors/engineyard.png'}
-            %li
-              %a{:href => 'http://pivotallabs.com/', :target => '_blank'}
+            %li.sponsor
+              %a.sponsor-logo{:href => 'http://pivotallabs.com/', :target => '_blank'}
                 %img{:alt => 'Pivotal Labs', :src => '/sponsors/pivotal.png'}
-            %li
-              %a{:href => 'http://www.livingsocial.com/', :target => '_blank'}
+            %li.sponsor
+              %a.sponsor-logo{:href => 'http://www.livingsocial.com/', :target => '_blank'}
                 %img{:alt => 'Living Social', :src => '/sponsors/livingsocial.png'}
           %a.button{:href => '#'} Become a Sponsor
-        #location
-          %img.banner{:src => '/banners/location.svg'}
-          %h1 The Wilbur Theatre
-          %a.address{:href => 'https://maps.google.com/maps?q=Wilbur+Theatre,+Tremont+Street,+Boston,+MA&hl=en&sll=42.036922,-71.683501&sspn=4.887368,7.163086&oq=wilbur&hq=Wilbur+Theatre,+Tremont+Street,+Boston,+MA&t=m&z=15&iwloc=A', :target => '_blank'} 246 Tremont Street Boston, MA 02116
-          .wilbur
-          %p
+
+        %section#location
+          %img.banner{:src => '/banners/location.svg', :alt => 'Location'}
+          %h1.venue-name The Wilbur Theatre
+          %a.venue-address{:href => 'https://maps.google.com/maps?q=Wilbur+Theatre,+Tremont+Street,+Boston,+MA&hl=en&sll=42.036922,-71.683501&sspn=4.887368,7.163086&oq=wilbur&hq=Wilbur+Theatre,+Tremont+Street,+Boston,+MA&t=m&z=15&iwloc=A', :target => '_blank'} 246 Tremont Street Boston, MA 02116
+          .venue-pic
+          %p.venue-info
             Wicked Good Ruby Conf is going to be held at the Wilbur Theatre in downtown Boston. For info regarding the venue, please visit
-            %a{:href => 'http://www.thewilburtheatre.com/', :target => '_blank'}
+            %a.venue-link{:href => 'http://www.thewilburtheatre.com/', :target => '_blank'}
               www.thewilburtheatre.com
-          //%h1 Boston, MA
-          //%h2 Things to do
-          //%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique tincidunt nulla ut facilisis. Curabitur commodo suscipit odio. Donec luctus sem non tortor vestibulum mollis. Quisque dictum suscipit dui vitae pellentesque.
-          //%h2 Places to stay
-          //%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique tincidunt nulla ut facilisis. Curabitur commodo suscipit odio. Donec luctus sem non tortor vestibulum mollis. Quisque dictum suscipit dui vitae pellentesque.
-          //%h2 Where to eat
-          //%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique tincidunt nulla ut facilisis. Curabitur commodo suscipit odio. Donec luctus sem non tortor vestibulum mollis. Quisque dictum suscipit dui vitae pellentesque.
-        .clear
-    .triangle-end
+
+    .triangle-wrap-end.triangle-wrap-background
+      .triangle.triangle-end
+
+    %a.button.button-register-big{:href => '#'} Register
+
     .terrier-wrapper
-      .terrier
+      %a.terrier{:href => '#'}
+
     %footer
       %p &copy; Copyright 2013 Wicked Good Ruby Conf
 
-  :javascript
-  
-    var screenWidth = function() {
-      if ($(window).width() < 800) {
-        $('body').removeClass('big').addClass('small');
-      }
-      else {
-        $('body').removeClass('small').addClass('big');
-      };
-    };
+    :javascript
 
-    $(window).resize(screenWidth);
-
-    $(function() {
-      screenWidth();
-      $('.small .menu p').click(function() {
-        $('.small #flexnav').toggle();
-      });
-      $('.small #flexnav a').click(function() {
-        $('.small #flexnav').hide();
-      });
-    });
-
-    $('.register').waypoint(function(direction) {
-      if (direction === 'down') {
-        $('.menu').css({'background-color':'#ED4543'});
-      }
-      else {
-        $('.menu').css({'background-color':'#363636'});
-      }
-    });
-
-    $('.register').waypoint(function(direction) {
-      if (($(window).width()) > 800)
-        if (direction === 'down') {
-          $('nav').css({'background-color':'#ED4543'});
+      var screenWidth = function() {
+        if ($(window).width() < 800) {
+          $('body').removeClass('big').addClass('small');
         }
         else {
-          $('nav').css({'background-color':'#363636'});
-        }
-    });
+          $('body').removeClass('small').addClass('big');
+        };
+      };
+      $(window).resize(screenWidth);
 
-    $('footer').waypoint(function() {
-      $('.terrier').transition({y: '-20em'});
-    }, { offset: 'bottom-in-view' });
-    
-    $('a[href^="#"]').bind('click.smoothscroll',function (e) {
-        e.preventDefault();
-        var target = this.hash;
-            $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
-        }, 500, 'swing', function () {
-            window.location.hash = target;
+      $(function() {
+        screenWidth();
+        $('.small .nav-bar p').click(function() {
+          $('.small .nav-wrap').toggle();
         });
-    });
+        $('.small .nav-wrap a').click(function() {
+          $('.small .nav-wrap').hide();
+        });
+      });
+
+      $('.button-register').waypoint(function(direction) {
+        if (direction === 'down') {
+          $('.nav-bar').css({'background-color':'#ED4543'});
+        }
+        else {
+          $('.nav-bar').css({'background-color':'#363636'});
+        }
+      });
+
+      $('.button-register').waypoint(function(direction) {
+        if (($(window).width()) > 800)
+          if (direction === 'down') {
+            $('nav').css({'background-color':'#ED4543'});
+          }
+          else {
+            $('nav').css({'background-color':'#363636'});
+          }
+      });
+
+      $('footer').waypoint(function() {
+        $('.terrier').delay(300).transition({y: '-20em'});
+      }, { offset: 'bottom-in-view' });
+
+      $('a[href^="#"]').bind('click.smoothscroll',function (e) {
+          e.preventDefault();
+          var target = this.hash;
+              $target = $(target);
+          $('html, body').stop().animate({
+              'scrollTop': $target.offset().top
+          }, 500, 'swing', function () {
+              window.location.hash = target;
+          });
+      });
+
+  %body

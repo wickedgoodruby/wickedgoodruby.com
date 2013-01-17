@@ -1,0 +1,164 @@
+@import compass/css3
+
+$black: #363636
+$red: #ed4543
+$gray: #E7E7E7
+$white: #FFFFFF
+
+.nav-bar
+  cursor: pointer
+  background-color: $black
+  +transition-property(background-color)
+  +transition-duration(.25s)
+  p
+    font-size: 1em
+    padding: .5em 2em
+    text-align: right
+
+.nav-wrap
+  display: none
+  &:after
+    visibility: hidden
+    display: block
+    font-size: 0
+    content: " "
+    clear: both
+    height: 0
+.nav-item
+  position: relative
+  list-style: none
+  display: block
+  background-color: rgba(lighten($black, 10%), .75)
+  width: 100%
+  padding: 10px 10px 0
+  box-sizing: border-box
+  &:last-child
+    padding-bottom: 10px
+  a
+    display: block
+    text:
+      decoration: none
+      align: center
+    padding: 5px
+    background-color: $gray
+    color: $black
+    +border-radius(5px)
+    @media (min-width: 800px)
+      +border-radius(0)
+    font:
+      family: blanch
+      size: 42px
+    line-height: 1
+    &:hover
+      background-color: $white
+      @media (min-width: 800px)
+        background-color: rgba($white, .15)
+
+@media (min-width: 800px)
+  .nav-bar
+    display: none
+  nav
+    display: block
+    background-color: $black
+    +transition-property(background-color)
+    +transition-duration(.25s)
+    .nav-wrap
+      width: 600px
+      margin: 0 auto
+      display: block
+  .nav-item
+    display: block
+    float: left
+    width: 150px
+    background-color: transparent
+    padding: 0 10px
+    &:last-child
+      padding-bottom: 0
+    a
+      font:
+        size: 2em
+        family: blanch
+      color: $white
+      line-height: 1
+      background-color: transparent
+
+
+
+//
+//.menu
+//  display: block
+//  cursor: pointer
+//  background-color: $black
+//  +transition-property(background-color)
+//  +transition-duration(.25s)
+//  p
+//    font-size: 1em
+//    padding: .5em 2em
+//    text-align: right
+//
+//#flexnav
+//  display: none
+//  &:after
+//    visibility: hidden
+//    display: block
+//    font-size: 0
+//    content: " "
+//    clear: both
+//    height: 0
+//  li
+//    position: relative
+//    list-style: none
+//    display: block
+//    background-color: rgba(lighten($black, 10%), .75)
+//    width: 100%
+//    padding: 10px 10px 0
+//    box-sizing: border-box
+//    &:last-child
+//      padding-bottom: 10px
+//    a
+//      display: block
+//      text:
+//        decoration: none
+//        align: center
+//      padding: 5px
+//      background-color: $gray
+//      color: $black
+//      +border-radius(5px)
+//      @media (min-width: 800px)
+//        +border-radius(0)
+//      font:
+//        family: blanch
+//        size: 42px
+//      line-height: 1
+//      &:hover
+//        background-color: $white
+//        @media (min-width: 800px)
+//          background-color: rgba($white, .15)
+//
+//@media (min-width: 800px)
+//  .menu
+//    display: none
+//  nav
+//    display: block
+//    background-color: $black
+//    +transition-property(background-color)
+//    +transition-duration(.25s)
+//    #flexnav
+//      width: 600px
+//      margin: 0 auto
+//      display: block
+//      li
+//        display: block
+//        float: left
+//        width: 150px
+//        background-color: transparent
+//        padding: 0 10px
+//        &:last-child
+//          padding-bottom: 0
+//        a
+//          font:
+//            size: 2em
+//            family: blanch
+//          color: $white
+//          line-height: 1
+//          background-color: transparent
