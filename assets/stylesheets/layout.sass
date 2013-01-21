@@ -21,9 +21,44 @@ header
 
 section
   width: 80%
+  max-width: 1300px
   margin: 0 auto
   padding: 2em 0
   &:last-child
     padding-bottom: 8em
   .article-info
     margin-bottom: 1em
+    @media (min-width: 750px)
+      text-align: center
+      margin-left: auto
+      margin-right: auto
+
+.speaker
+  margin-bottom: 2em
+  @media (min-width: 600px) and (max-width: 1200px)
+    width: 49%
+    float: left
+    margin-right: 2%
+    &:nth-child(2n)
+      margin-right: 0
+  @media (min-width: 1200px)
+    width: 32%
+    float: left
+    margin-right: 2%
+    &:nth-child(3n+3)
+      margin-right: 0
+
+.sponsor
+  margin-bottom: 1em
+  @media (min-width: 800px) and (max-width: 1200px)
+    float: left
+    width: 49%
+    margin-right: 2%
+    &:nth-child(2n+2)
+      margin-right: 0
+  @media (min-width: 1200px)
+    width: 32%
+    float: left
+    margin-right: 2%
+    &:nth-child(3n+3)
+      margin-right: 0

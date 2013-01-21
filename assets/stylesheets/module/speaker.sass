@@ -5,61 +5,58 @@ $red: #ed4543
 $gray: #E7E7E7
 $white: #FFFFFF
 
-.speaker
-  margin-bottom: 2em
-  @media (min-width: 650px) and (max-width: 1000px)
-    width: 49%
-    float: left
-    margin-right: 2%
-    &:nth-child(2n+2)
-      margin-right: 0
-
 .speaker > *
   text-align: center
 
-.speaker-pic
+.speaker-pic, .speaker-overlay
   height: 280px
-  margin: 1em 0
-  &:first-child
-    margin-top: 0
   +border-radius(5px)
+
+.speaker-pic
+  margin: 1em 0
   background:
     size: cover
     position: center
+  &:first-child
+    margin-top: 0
 
 #speaker1 .speaker-pic
-  background-image: url(/speakers/dan_m.jpg)
+  background-image: url(/speakers/angelo.jpg)
 #speaker2 .speaker-pic
-  background-image: url(/speakers/amanda.jpg)
+  background-image: url(/speakers/dan_m.jpg)
 #speaker3 .speaker-pic
-  background-image: url(/speakers/doug.jpg)
+  background-image: url(/speakers/amanda.jpg)
 #speaker4 .speaker-pic
+  background-image: url(/speakers/doug.jpg)
+#speaker5 .speaker-pic
+  background-image: url(/speakers/dan_c.jpg)
+#speaker6 .speaker-pic
   background-image: url(/speakers/avatar.jpg)
 
 .speaker-overlay
-  height: 280px
   width: 100%
-  +border-radius(5px)
   background-color: rgba($red,.65)
   +transition-duration(1s)
   +transition-property(opacity)
   opacity: 0
   &:hover
     opacity: 1
-  .speaker-links
-    padding-top: 3.75em
-    a
-      display: block
-      width: 200px
-      margin: 0 auto
-      padding: 5px 0
-      font-size: 1.25em
-      text-decoration: none
-      color: $white
-      &:hover
-        background-color: $red
-      span
-        font-family: fontello
+
+.speaker-links
+  padding-top: 3.75em
+  a
+    display: block
+    width: 200px
+    margin: 0 auto
+    padding: 5px 0
+    +border-radius(5px)
+    font-size: 1.25em
+    text-decoration: none
+    color: $white
+    &:hover
+      background-color: $red
+    span
+      font-family: fontello
 
 .speaker-name
   font-weight: bold
