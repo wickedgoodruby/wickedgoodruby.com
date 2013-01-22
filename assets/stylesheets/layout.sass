@@ -26,12 +26,17 @@ section
   padding: 2em 0
   &:last-child
     padding-bottom: 8em
-  .article-info
-    margin-bottom: 1em
-    @media (min-width: 750px)
-      text-align: center
-      margin-left: auto
-      margin-right: auto
+
+.article-info
+  margin-bottom: 1em
+  @media (min-width: 750px)
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+  @media (min-width: 1200px)
+    margin-right: 0
+    text-align: right
+    width: 600px
 
 .speaker
   margin-bottom: 2em
@@ -48,3 +53,18 @@ section
     &:nth-child(3n+3)
       margin-right: 0
 
+.sponsor
+  margin-bottom: 1em
+  position: relative
+  @media (min-width: 800px) and (max-width: 1200px)
+    float: left
+    width: 49%
+    margin-right: 2%
+    &:nth-child(2n+2)
+      margin-right: 0
+  @media (min-width: 1200px)
+    width: 32%
+    float: left
+    margin-right: 2%
+    &:nth-child(3n+3)
+      margin-right: 0

@@ -6,56 +6,54 @@ $gray: #E7E7E7
 $white: #FFFFFF
 
 .sponsor
-  margin-bottom: 1em
-  background-color: $white
   +border-radius(5px)
-  position: relative
-  
-  
-  @media (min-width: 800px) and (max-width: 1200px)
-    float: left
-    width: 49%
-    margin-right: 2%
-    &:nth-child(2n+2)
-      margin-right: 0
-  @media (min-width: 1200px)
-    width: 32%
-    float: left
-    margin-right: 2%
-    &:nth-child(3n+3)
-      margin-right: 0
+  background-color: $white
 
-.sponsor-level
-  margin-top: 39%
-  width: 119px
-  position: absolute
-  left: -46px
-  background:
-    size: cover
-    position: center
-  +border-top-left-radius(5px)
-  +border-top-right-radius(5px)
-  text:
-    align: center
-    transform: uppercase
-  +rotate(-90deg)
-  color: $white
+//.sponsor-level
+//  margin-top: 39%
+//  width: 119px
+//  position: absolute
+//  left: -46px
+//  background:
+//    size: cover
+//    position: center
+//  +border-top-left-radius(5px)
+//  +border-top-right-radius(5px)
+//  text:
+//    align: center
+//    transform: uppercase
+//  +rotate(-90deg)
+//  color: $white
+//
+//.sponsor-level-ruby
+//  background-color: $red
+//
+//.sponsor-level-emerald
+//  background-color: #90c542
+//
+//.sponsor-level-sapphire
+//  background-color: #18b4cf
 
-.sponsor-level-ruby
-  background-color: $red
-
-.sponsor-level-emerald
-  background-color: #90c542
-
-.sponsor-level-sapphire
-  background-color: #18b4cf
+.sponsor-logo-wrap
+  display: block
+  padding: 1.25em
 
 .sponsor-logo
-  display: block
-  @media (min-width: 800px) and (max-width: 1000px)
-    height: 150px
-  img
-    width: 250px
-    margin: 0 auto
-    display: block
-    padding: 1em
+  width: 250px
+  height: 100px
+  margin: 0 auto
+  background-image: url(/sponsors.png)
+  background-size: 250px 600px
+
+.sponsor-logo-heroku
+  background-position: 0 0
+.sponsor-logo-engineyard
+  background-position: 0 -100px
+.sponsor-logo-pivotal
+  background-position: 0 -200px
+.sponsor-logo-livingsocial
+  background-position: 0 -300px
+.sponsor-logo-google
+  background-position: 0 -400px
+.sponsor-logo-groupon
+  background-position: 0 -500px
