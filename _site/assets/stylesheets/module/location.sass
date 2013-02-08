@@ -1,0 +1,32 @@
+@import compass/css3
+
+$black: #363636
+$red: #ed4543
+$gray: #E7E7E7
+$white: #FFFFFF
+
+.venue-name, .venue-address
+  text-align: center
+  display: block
+  @media (min-width: 1200px)
+    text-align: right
+
+.venue-name
+  font-size: 1.5em
+  @media (min-width: 1200px)
+    line-height: 1
+
+.venue-pic
+  height: 280px
+  @media (min-width: 1000px)
+    height: 500px
+  margin: 1em 0
+  +border-radius(5px)
+  background:
+    image: url(/location/wilbur.jpg)
+    position: center
+    size: cover
+  +transition-duration(1s)
+  +transition-property(background-image)
+  &:hover
+    background-image: url(/location/wilbur2.jpg)

@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "fontello",
   "glyphs": [
     {
       "search": [
@@ -17,19 +17,28 @@
       "search": [
         "twitter"
       ],
-      "code": 35,
-      "uid": "b1ec8e90c2c85cf0035849980a3789b3",
-      "css": "twitter",
-      "orig_css": "twitter",
-      "orig_code": 35,
-      "src": "zocial",
-      "from": 84
+      "code": 84,
+      "meta": {
+        "homepage": "https://twitter.com/about/resources/logos",
+        "author": "Twitter"
+      },
+      "uid": "4c01f5d3ba5fbf029bca8630cce41e6a",
+      "file": "twitter-bird",
+      "transform": {
+        "rescale": 0.9,
+        "offset": 0.05
+      },
+      "css": "twitter-bird",
+      "orig_css": "twitter-bird",
+      "orig_code": 84,
+      "src": "brandico",
+      "from": 62211
     },
     {
       "search": [
         "github"
       ],
-      "code": 9733,
+      "code": 71,
       "meta": {
         "twitter": "https://twitter.com/puzrin",
         "github": "https://github.com/puzrin",
@@ -41,11 +50,23 @@
         "rescale": 0.9,
         "offset": 0.05
       },
-      "css": "github",
+      "css": "github-2",
       "orig_css": "github",
-      "orig_code": 9733,
+      "orig_code": 71,
       "src": "brandico",
       "from": 62216
+    },
+    {
+      "search": [
+        "ticket"
+      ],
+      "code": 66,
+      "uid": "333bae7aaf7395d1004875be5a075661",
+      "css": "ticket",
+      "orig_css": "ticket",
+      "orig_code": 66,
+      "src": "entypo",
+      "from": 127915
     }
   ]
 }

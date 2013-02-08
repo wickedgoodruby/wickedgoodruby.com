@@ -1,30 +1,17 @@
 @import compass/css3
 
-$black: #363636
+$black: #2D2528
 $red: #ed4543
 $gray: #E7E7E7
 $white: #FFFFFF
 
-.triangle-wrap-background
-  background:
-    color: $black
-    image: url(/bg.png)
-
 .triangle
   background:
-    size: 100% 80px
-    image: url(/triangle.png)
-  height: 80px
+    size: 100% 50px
+    image: url(/wave.png)
+  height: 50px
   position: relative
   z-index: 3
-  @media (min-width: 600px)
-    height: 120px
-    background-size: 100% 120px
-
-.triangle-wrap
-  margin-top: -4.5em
-  @media (min-width: 600px)
-    margin-top: -6.75em
 
 .triangle-end
   +rotate(180deg)

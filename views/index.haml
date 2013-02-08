@@ -8,8 +8,6 @@
   %body
 
     %header
-      .nav-bar
-        %p ☰
       %nav
         %ul.nav-wrap
           %li.nav-item
@@ -25,7 +23,9 @@
       .logo
         .logo-main
         .logo-rotate
-      %p.intro-info Join us for a two-day single-track Ruby conference full of passion and diversity. Prior to the conference there will be educational workshops and afterwards, a code retreat.
+      %p.intro-info
+        %span Join us
+        for a two-day single-track Ruby conference full of passion and diversity. Prior to the conference there will be educational workshops and afterwards, a code retreat.
       %p.intro-date Oct 5-6, 2013
 
     %a.button.button-register{:href => 'http://www.eventbrite.com/', :target => '_blank'} Register
@@ -39,6 +39,7 @@
           Currently we are looking for speakers and sponsors. If you would like to help out for the conference, please email
           %a{:href => 'mailto:contact@wickedgoodruby.com'}
             contact@wickedgoodruby.com
+          &#046;
 
         %section#speakers
           %h1.section-name Speakers
@@ -46,17 +47,18 @@
             .banner.banner-speaker
             %p.article-info
               Do you want to present at Wicked Good Ruby? We are accepting calls for proposals in the form of pull requests through
-              %a{:href => 'https://github.com/wickedgoodruby/wickedgoodruby.com', :target => '_blank'} our GitHub.
+              %a{:href => 'https://github.com/wickedgoodruby/wickedgoodruby.com', :target => '_blank'} our GitHub
+              &#046;
             %ul
               %li.speaker#speaker1
                 .speaker-pic
                   .speaker-overlay
                     .speaker-links
                       %a{:href => '#'}
-                        %span #
+                        %span T
                         @cssboy
                       %a{:href => '#'}
-                        %span ★
+                        %span G
                         cssboy
                       %a{:href => '#'} cssboy.com
                 %p.speaker-name Angelo Simeoni
@@ -66,10 +68,10 @@
                   .speaker-overlay
                     .speaker-links
                       %a{:href => '#'}
-                        %span #
+                        %span T
                         @_danmcclain
                       %a{:href => '#'}
-                        %span ★
+                        %span G
                         danmcclain
                       %a{:href => '#'} danmcclain.net
                 %p.speaker-name Dan McClain
@@ -79,10 +81,10 @@
                   .speaker-overlay
                     .speaker-links
                       %a{:href => '#'}
-                        %span #
+                        %span T
                         @acacheung
                       %a{:href => '#'}
-                        %span ★
+                        %span G
                         acacheung
                       %a{:href => '#'} acacheung.com
                 %p.speaker-name Amanda Cheung
@@ -92,10 +94,10 @@
                   .speaker-overlay
                     .speaker-links
                       %a{:href => '#'}
-                        %span #
+                        %span T
                         @DougYun
                       %a{:href => '#'}
-                        %span ★
+                        %span G
                         duggie
                       %a{:href => '#'} dougyun.com
                 %p.speaker-name Doug Yun
@@ -115,8 +117,7 @@
                 %p.speaker-company DockYard, LLC.
               %li.speaker#speaker6
                 .speaker-pic
-                %p.speaker-name This could be you!
-            %a.button{:href => '#'} Submit Your Proposal
+                %a.button{:href => '#'} Submit Your Proposal
 
         %section#sponsors
           %h1.section-name Sponsors
@@ -164,62 +165,76 @@
               Wicked Good Ruby Conf is going to be held at the Wilbur Theatre in downtown Boston. For info regarding the venue, please visit
               %a.venue-link{:href => 'http://www.thewilburtheatre.com/', :target => '_blank'}
                 www.thewilburtheatre.com
+              &#046;
 
     .triangle-wrap-end.triangle-wrap-background
       .triangle.triangle-end
 
-    %a.button.button-register-big{:href => '#'} Register
-
     .terrier-wrapper
-      %a.terrier{:href => '#'}
+      .terrier
 
-    %footer
-      %p &copy; Copyright 2013 Wicked Good Ruby Conf
+    %footer.footer
+      %h2.callout Get excited for Boston's first Ruby conference!
+      %ul.footer-buttons
+        %li.footer-button
+          %a.footer-button-link{:href => '#', :target => '_blank'}
+            %span.footer-button-link-icon{'aria-hidden' => 'true', 'data-icon' => 'B'}
+            Register on Guestlist
+        %li.footer-button
+          %a.footer-button-link{:href => '#', :target => '_blank'}
+            %span.footer-button-link-icon{'aria-hidden' => 'true', 'data-icon' => 'T'}
+            Follow us on Twitter
+        %li.footer-button
+          %a.footer-button-link{:href => '#', :target => '_blank'}
+            %span.footer-button-link-icon{'aria-hidden' => 'true', 'data-icon' => 'L'}
+            Track us on Lanyrd
+      %p.copyright Copyright Wicked Good Ruby Conf
+      %p.copyright All Rights Reserved
 
     :javascript
 
-      var screenWidth = function() {
-        if ($(window).width() < 800) {
-          $('body').removeClass('big').addClass('small');
-        }
-        else {
-          $('body').removeClass('small').addClass('big');
-        };
-      };
-      $(window).resize(screenWidth);
+      //var screenWidth = function() {
+      //  if ($(window).width() < 800) {
+      //    $('body').removeClass('big').addClass('small');
+      //  }
+      //  else {
+      //    $('body').removeClass('small').addClass('big');
+      //  };
+      //};
+      //$(window).resize(screenWidth);
+      //
+      //$(function() {
+      //  screenWidth();
+      //  $('.small .nav-bar p').click(function() {
+      //    $('.small .nav-wrap').toggle();
+      //  });
+      //  $('.small .nav-wrap a').click(function() {
+      //    $('.small .nav-wrap').hide();
+      //  });
+      //});
 
-      $(function() {
-        screenWidth();
-        $('.small .nav-bar p').click(function() {
-          $('.small .nav-wrap').toggle();
-        });
-        $('.small .nav-wrap a').click(function() {
-          $('.small .nav-wrap').hide();
-        });
-      });
-
-      $('.button-register').waypoint(function(direction) {
+      $('.intro-info').waypoint(function(direction) {
         if (direction === 'down') {
           $('.nav-bar').css({'background-color':'#ED4543'});
         }
         else {
-          $('.nav-bar').css({'background-color':'#363636'});
+          $('.nav-bar').css({'background-color':'#2D2528'});
         }
       });
 
-      $('.button-register').waypoint(function(direction) {
+      $('.intro-info').waypoint(function(direction) {
         if (($(window).width()) > 800)
           if (direction === 'down') {
             $('nav').css({'background-color':'#ED4543'});
           }
           else {
-            $('nav').css({'background-color':'#363636'});
+            $('nav').css({'background-color':'#2D2528'});
           }
       });
 
-      $('footer').waypoint(function() {
-        $('.terrier').delay(300).transition({y: '-20em'});
-      }, { offset: 'bottom-in-view' });
+      //$('footer').waypoint(function() {
+      //  $('.terrier').delay(300).transition({y: '-20em'});
+      //}, { offset: 'bottom-in-view' });
 
       $('a[href^="#"]').bind('click.smoothscroll',function (e) {
           e.preventDefault();

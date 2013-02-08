@@ -24,7 +24,7 @@
 //    $('.menu').css({'background-color':'#ED4543'});
 //  }
 //  else {
-//    $('.menu').css({'background-color':'#363636'});
+//    $('.menu').css({'background-color':'#2D2528'});
 //  }
 //});
 //
@@ -34,7 +34,7 @@
 //      $('nav').css({'background-color':'#ED4543'});
 //    }
 //    else {
-//      $('nav').css({'background-color':'#363636'});
+//      $('nav').css({'background-color':'#2D2528'});
 //    }
 //});
 //

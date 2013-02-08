@@ -1,87 +1,46 @@
 @import compass/css3
 
-$black: #363636
+$black: #2D2528
 $red: #ed4543
 $gray: #E7E7E7
 $white: #FFFFFF
 
-@media (min-width: 1200px)
-  header
-    display: none
-
-.nav-bar
+header
   background-color: $black
   +transition-property(background-color)
   +transition-duration(.25s)
-  cursor: pointer
-  p
-    padding: .5em 2em
-    font-size: 1em
-    text-align: right
+  height: 50px
+
+nav
+  display: block
+  background-color: $black
+  +transition-property(background-color)
+  +transition-duration(.25s)
 
 .nav-wrap
-  display: none
-  &:after
-    clear: both
-    visibility: hidden
-    display: block
-    height: 0
-    font-size: 0
-    content: " "
-.nav-item
+  margin: 0 auto
   display: block
-  position: relative
-  width: 100%
-  padding: 10px 10px 0
-  box-sizing: border-box
-  background-color: rgba(lighten($black, 10%), .75)
-  list-style: none
-  &:last-child
-    padding-bottom: 10px
+  width: 600px
+  @media (max-width: 800px)
+    width: 100%
+
+.nav-item
+  display: inline-block
+  float: left
+  padding: 10px 0
+  width: 150px
+  @media (max-width: 800px)
+    width: 25%
+  +box-sizing(border-box)
+  text-align: center
   a
-    padding: 5px
-    display: block
-    +border-radius(5px)
-    background-color: $gray
-    font:
-      family: blanch
-      size: 42px
+    padding: 5px 0
+    display: inline-block
+    color: $white
+    line-height: 1
+    text-transform: uppercase
+    +box-sizing(border-box)
+    letter-spacing: 1px
+    font-size: 14px
     text:
       decoration: none
-      align: center
-    color: $black
-    line-height: 1
-    @media (min-width: 800px)
-      +border-radius(0)
-    &:hover
-      background-color: $white
-      @media (min-width: 800px)
-        background-color: rgba($white, .15)
-
-@media (min-width: 800px)
-  .nav-bar
-    display: none
-  nav
-    display: block
-    background-color: $black
-    +transition-property(background-color)
-    +transition-duration(.25s)
-    .nav-wrap
-      margin: 0 auto
-      display: block
-      width: 600px
-  .nav-item
-    display: block
-    float: left
-    padding: 0 10px
-    width: 150px
-    background-color: transparent
-    &:last-child
-      padding-bottom: 0
-    a
-      background-color: transparent
-      font:
-        size: 2em
-        family: blanch
-      color: $white
-      line-height: 1  

@@ -1,0 +1,235 @@
+!!!5
+%html
+  %head
+    %title Wicked Good Ruby Conf | Boston, MA Oct 5 - 6, 2013
+    %link{:href => '/assets/application.css', :rel => 'stylesheet'}
+    %script{:src => '/assets/application.js', :type => 'text/javascript'}
+
+  %body
+
+    %header
+      .nav-bar
+        %p ☰
+      %nav
+        %ul.nav-wrap
+          %li.nav-item
+            %a{:href => '#speakers'} Speakers
+          %li.nav-item
+            %a{:href => '#sponsors'} Sponsors
+          %li.nav-item
+            %a{:href => '#location'} Location
+          %li.nav-item
+            %a{:href => '#'} Register
+
+    .intro
+      .logo
+        .logo-main
+        .logo-rotate
+      %p.intro-info Join us for a two-day single-track Ruby conference full of passion and diversity. Prior to the conference there will be educational workshops and afterwards, a code retreat.
+      %p.intro-date Oct 5-6, 2013
+
+    %a.button.button-register{:href => 'http://www.eventbrite.com/', :target => '_blank'} Register
+
+    .triangle-wrap.triangle-wrap-background
+      .triangle
+
+    #main-wrap
+      #main
+        %p.main-info
+          Currently we are looking for speakers and sponsors. If you would like to help out for the conference, please email
+          %a{:href => 'mailto:contact@wickedgoodruby.com'}
+            contact@wickedgoodruby.com
+
+        %section#speakers
+          %h1.section-name Speakers
+          .section-wrap
+            .banner.banner-speaker
+            %p.article-info
+              Do you want to present at Wicked Good Ruby? We are accepting calls for proposals in the form of pull requests through
+              %a{:href => 'https://github.com/wickedgoodruby/wickedgoodruby.com', :target => '_blank'} our GitHub.
+            %ul
+              %li.speaker#speaker1
+                .speaker-pic
+                  .speaker-overlay
+                    .speaker-links
+                      %a{:href => '#'}
+                        %span #
+                        @cssboy
+                      %a{:href => '#'}
+                        %span ★
+                        cssboy
+                      %a{:href => '#'} cssboy.com
+                %p.speaker-name Angelo Simeoni
+                %p.speaker-company DockYard, LLC.
+              %li.speaker#speaker2
+                .speaker-pic
+                  .speaker-overlay
+                    .speaker-links
+                      %a{:href => '#'}
+                        %span #
+                        @_danmcclain
+                      %a{:href => '#'}
+                        %span ★
+                        danmcclain
+                      %a{:href => '#'} danmcclain.net
+                %p.speaker-name Dan McClain
+                %p.speaker-company DockYard, LLC.
+              %li.speaker#speaker3
+                .speaker-pic
+                  .speaker-overlay
+                    .speaker-links
+                      %a{:href => '#'}
+                        %span #
+                        @acacheung
+                      %a{:href => '#'}
+                        %span ★
+                        acacheung
+                      %a{:href => '#'} acacheung.com
+                %p.speaker-name Amanda Cheung
+                %p.speaker-company DockYard, LLC.
+              %li.speaker#speaker4
+                .speaker-pic
+                  .speaker-overlay
+                    .speaker-links
+                      %a{:href => '#'}
+                        %span #
+                        @DougYun
+                      %a{:href => '#'}
+                        %span ★
+                        duggie
+                      %a{:href => '#'} dougyun.com
+                %p.speaker-name Doug Yun
+                %p.speaker-company DockYard, LLC.
+              %li.speaker#speaker5
+                .speaker-pic
+                  .speaker-overlay
+                    .speaker-links
+                      %a{:href => '#'}
+                        %span #
+                        @DanCrowther
+                      %a{:href => '#'}
+                        %span ★
+                        crowther
+                      %a{:href => '#'} crowther.com
+                %p.speaker-name Dan Crowther
+                %p.speaker-company DockYard, LLC.
+              %li.speaker#speaker6
+                .speaker-pic
+                %p.speaker-name This could be you!
+            %a.button{:href => '#'} Submit Your Proposal
+
+        %section#sponsors
+          %h1.section-name Sponsors
+          .section-wrap
+            .banner.banner-sponsor
+            %p.article-info
+              Would you like to be a Wicked Good Ruby Conf sponsor?
+              %a{:href => 'mailto:sponsor@wickedgoodruby.com'} Email us
+              if you would like more info about sponsorship.
+            %ul
+              %li.sponsor
+                //%p.sponsor-level.sponsor-level-ruby Ruby
+                %a.sponsor-logo-wrap{:href => 'http://www.heroku.com/', :target => '_blank'}
+                  .sponsor-logo.sponsor-logo-heroku
+              %li.sponsor
+                //%p.sponsor-level.sponsor-level-emerald Emerald
+                %a.sponsor-logo-wrap{:href => 'http://www.engineyard.com/', :target => '_blank'}
+                  .sponsor-logo.sponsor-logo-engineyard
+              %li.sponsor
+                //%p.sponsor-level.sponsor-level-emerald Emerald
+                %a.sponsor-logo-wrap{:href => 'http://pivotallabs.com/', :target => '_blank'}
+                  .sponsor-logo.sponsor-logo-pivotal
+              %li.sponsor
+                //%p.sponsor-level.sponsor-level-sapphire Sapphire
+                %a.sponsor-logo-wrap{:href => 'http://www.livingsocial.com/', :target => '_blank'}
+                  .sponsor-logo.sponsor-logo-livingsocial
+              %li.sponsor
+                //%p.sponsor-level.sponsor-level-sapphire Sapphire
+                %a.sponsor-logo-wrap{:href => 'http://www.google.com/', :target => '_blank'}
+                  .sponsor-logo.sponsor-logo-google
+              %li.sponsor
+                //%p.sponsor-level.sponsor-level-sapphire Sapphire
+                %a.sponsor-logo-wrap{:href => 'http://www.groupon.com/', :target => '_blank'}
+                  .sponsor-logo.sponsor-logo-groupon
+            %a.button{:href => '#'} Become a Sponsor
+
+        %section#location
+          %h1.section-name Location
+          .section-wrap
+            .banner.banner-location
+            %h1.venue-name The Wilbur Theatre
+            %a.venue-address{:href => 'https://maps.google.com/maps?q=Wilbur+Theatre,+Tremont+Street,+Boston,+MA&hl=en&sll=42.036922,-71.683501&sspn=4.887368,7.163086&oq=wilbur&hq=Wilbur+Theatre,+Tremont+Street,+Boston,+MA&t=m&z=15&iwloc=A', :target => '_blank'} 246 Tremont Street Boston, MA 02116
+            .venue-pic
+            %p.venue-info
+              Wicked Good Ruby Conf is going to be held at the Wilbur Theatre in downtown Boston. For info regarding the venue, please visit
+              %a.venue-link{:href => 'http://www.thewilburtheatre.com/', :target => '_blank'}
+                www.thewilburtheatre.com
+
+    .triangle-wrap-end.triangle-wrap-background
+      .triangle.triangle-end
+
+    %a.button.button-register-big{:href => '#'} Register
+
+    .terrier-wrapper
+      %a.terrier{:href => '#'}
+
+    %footer
+      %p &copy; Copyright 2013 Wicked Good Ruby Conf
+
+    :javascript
+
+      var screenWidth = function() {
+        if ($(window).width() < 800) {
+          $('body').removeClass('big').addClass('small');
+        }
+        else {
+          $('body').removeClass('small').addClass('big');
+        };
+      };
+      $(window).resize(screenWidth);
+
+      $(function() {
+        screenWidth();
+        $('.small .nav-bar p').click(function() {
+          $('.small .nav-wrap').toggle();
+        });
+        $('.small .nav-wrap a').click(function() {
+          $('.small .nav-wrap').hide();
+        });
+      });
+
+      $('.button-register').waypoint(function(direction) {
+        if (direction === 'down') {
+          $('.nav-bar').css({'background-color':'#ED4543'});
+        }
+        else {
+          $('.nav-bar').css({'background-color':'#363636'});
+        }
+      });
+
+      $('.button-register').waypoint(function(direction) {
+        if (($(window).width()) > 800)
+          if (direction === 'down') {
+            $('nav').css({'background-color':'#ED4543'});
+          }
+          else {
+            $('nav').css({'background-color':'#363636'});
+          }
+      });
+
+      $('footer').waypoint(function() {
+        $('.terrier').delay(300).transition({y: '-20em'});
+      }, { offset: 'bottom-in-view' });
+
+      $('a[href^="#"]').bind('click.smoothscroll',function (e) {
+          e.preventDefault();
+          var target = this.hash;
+              $target = $(target);
+          $('html, body').stop().animate({
+              'scrollTop': $target.offset().top
+          }, 500, 'swing', function () {
+              window.location.hash = target;
+          });
+      });
+
+  %body
