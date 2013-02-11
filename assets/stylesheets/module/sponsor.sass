@@ -18,7 +18,6 @@ $white: #FFFFFF
 
 .sponsor
   width: 100%
-  height: 140px
   @include perspective(600px)
   &:hover
     .sponsor-front
@@ -36,8 +35,8 @@ $white: #FFFFFF
   background-color: $white
 
 .sponsor-back
-  width: 100%
-  height: 100%
+  width: inherit
+  height: 120px
   padding-top: 1em
   position: absolute
   top: 0
@@ -49,24 +48,29 @@ $white: #FFFFFF
 
 .sponsor-logo-wrap
   display: block
-  padding: 1.25em
+  padding:
+    top: 20px
+    bottom: 20px
 
 .sponsor-logo
-  width: 250px
-  height: 100px
-  margin: 0 auto
-  background-image: url(/sponsors.png)
-  background-size: 250px 600px
+  width: 200px
+  height: 80px
+  margin:
+    left: auto
+    right: auto
+  background:
+    image: url(/sponsors.png)
+    size: 200px 480px
 
 .sponsor-logo-heroku
   background-position: 0 0
 .sponsor-logo-engineyard
-  background-position: 0 -100px
+  background-position: 0 -80px
 .sponsor-logo-pivotal
-  background-position: 0 -200px
+  background-position: 0 -160px
 .sponsor-logo-livingsocial
-  background-position: 0 -300px
+  background-position: 0 -240px
 .sponsor-logo-google
-  background-position: 0 -400px
+  background-position: 0 -320px
 .sponsor-logo-groupon
-  background-position: 0 -500px
+  background-position: 0 -400px

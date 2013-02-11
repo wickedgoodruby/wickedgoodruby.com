@@ -115,8 +115,7 @@
                 %p.speaker-company DockYard, LLC.
               %p.section-info
                 Do you want to present at Wicked Good Ruby?
-                %a.section-info-link{:href => 'https://github.com/wickedgoodruby/wickedgoodruby.com', :target => '_blank'} Submit your proposal in the form of a pull request through our GitHub
-                &#046;
+                %a.section-info-link{:href => 'https://github.com/wickedgoodruby/wickedgoodruby.com', :target => '_blank'} Submit your proposal in the form of a pull request through our GitHub.
               %a.button{:href => '#'} Submit Your Proposal
 
         %section#sponsors
@@ -177,13 +176,12 @@
           %h1.section-name Location
           .section-wrap
             %h1.venue-name The Wilbur Theatre
-            %a.section-info-link{:href => 'https://maps.google.com/maps?q=Wilbur+Theatre,+Tremont+Street,+Boston,+MA&hl=en&sll=42.036922,-71.683501&sspn=4.887368,7.163086&oq=wilbur&hq=Wilbur+Theatre,+Tremont+Street,+Boston,+MA&t=m&z=15&iwloc=A', :target => '_blank'} 246 Tremont Street Boston, MA 02116
+            %a.section-info-link.venue-address{:href => 'https://maps.google.com/maps?q=Wilbur+Theatre,+Tremont+Street,+Boston,+MA&hl=en&sll=42.036922,-71.683501&sspn=4.887368,7.163086&oq=wilbur&hq=Wilbur+Theatre,+Tremont+Street,+Boston,+MA&t=m&z=15&iwloc=A', :target => '_blank'} 246 Tremont Street Boston, MA 02116
             .venue-pic
             %p.section-info
-              Wicked Good Ruby Conf is going to be held at the Wilbur Theatre in downtown Boston. For information regarding the venue, please visit
-              %a.section-info-link{:href => 'http://www.thewilburtheatre.com/', :target => '_blank'}
-                their website
-              &#046;
+              Wicked Good Ruby Conf is going to be held at the Wilbur Theatre in downtown Boston. Visit
+              %a.section-info-link{:href => 'http://www.thewilburtheatre.com/', :target => '_blank'}thewilburtheatre.com
+              for more information.
 
     .triangle.triangle-end
 
@@ -266,5 +264,7 @@
               window.location.hash = target;
           });
       });
+      
+      $('.section-name').fitText();
 
   %body
