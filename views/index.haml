@@ -185,8 +185,7 @@
 
     .triangle.triangle-end
 
-    .terrier-wrapper
-      .terrier
+    .terrier
 
     %footer.footer
       %h2.footer-callout Get excited for Boston's first Ruby conference!
@@ -210,45 +209,6 @@
           %a.footer-text-link{:href => 'http://dockyard.com/', :target => '_blank'} DockYard
 
     :javascript
-
-      //var screenWidth = function() {
-      //  if ($(window).width() < 800) {
-      //    $('body').removeClass('big').addClass('small');
-      //  }
-      //  else {
-      //    $('body').removeClass('small').addClass('big');
-      //  };
-      //};
-      //$(window).resize(screenWidth);
-      //
-      //$(function() {
-      //  screenWidth();
-      //  $('.small .nav-bar p').click(function() {
-      //    $('.small .nav-wrap').toggle();
-      //  });
-      //  $('.small .nav-wrap a').click(function() {
-      //    $('.small .nav-wrap').hide();
-      //  });
-      //});
-
-      $('.intro-info').waypoint(function(direction) {
-        if (direction === 'down') {
-          $('.nav-bar').css({'background-color':'#ED4543'});
-        }
-        else {
-          $('.nav-bar').css({'background-color':'#2D2528'});
-        }
-      });
-
-      $('.intro-info').waypoint(function(direction) {
-        if (($(window).width()) > 800)
-          if (direction === 'down') {
-            $('nav').css({'background-color':'#ED4543'});
-          }
-          else {
-            $('nav').css({'background-color':'#2D2528'});
-          }
-      });
 
       //$('footer').waypoint(function() {
       //  $('.terrier').delay(300).transition({y: '-20em'});
