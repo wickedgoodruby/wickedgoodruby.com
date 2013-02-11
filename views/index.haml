@@ -30,17 +30,10 @@
 
     %a.button.button-register{:href => 'http://www.eventbrite.com/', :target => '_blank'} Register
 
-    .triangle-wrap.triangle-wrap-background
-      .triangle
+    .triangle
 
     #main-wrap
       #main
-        //%p.main-info
-        //  Currently we are looking for speakers and sponsors. If you would like to help out for the conference, please email
-        //  %a{:href => 'mailto:contact@wickedgoodruby.com'}
-        //    contact@wickedgoodruby.com
-        //  &#046;
-
         %section#speakers
           %h1.section-name Speakers
           .section-wrap
@@ -55,7 +48,9 @@
                       %a{:href => '#'}
                         %span G
                         cssboy
-                      %a{:href => '#'} cssboy.com
+                      %a{:href => '#'}
+                        %span ⌂
+                        cssboy.com
                 %p.speaker-name Angelo Simeoni
                 %p.speaker-company DockYard, LLC.
               %li.speaker#speaker2
@@ -68,7 +63,9 @@
                       %a{:href => '#'}
                         %span G
                         danmcclain
-                      %a{:href => '#'} danmcclain.net
+                      %a{:href => '#'}
+                        %span ⌂
+                        danmcclain.net
                 %p.speaker-name Dan McClain
                 %p.speaker-company DockYard, LLC.
               %li.speaker#speaker3
@@ -81,7 +78,9 @@
                       %a{:href => '#'}
                         %span G
                         acacheung
-                      %a{:href => '#'} acacheung.com
+                      %a{:href => '#'}
+                        %span ⌂
+                        acacheung.com
                 %p.speaker-name Amanda Cheung
                 %p.speaker-company DockYard, LLC.
               %li.speaker#speaker4
@@ -94,7 +93,9 @@
                       %a{:href => '#'}
                         %span G
                         duggie
-                      %a{:href => '#'} dougyun.com
+                      %a{:href => '#'}
+                        %span ⌂
+                        dougyun.com
                 %p.speaker-name Doug Yun
                 %p.speaker-company DockYard, LLC.
               %li.speaker#speaker5
@@ -102,69 +103,89 @@
                   .speaker-overlay
                     .speaker-links
                       %a{:href => '#'}
-                        %span #
+                        %span T
                         @DanCrowther
                       %a{:href => '#'}
-                        %span ★
+                        %span G
                         crowther
-                      %a{:href => '#'} crowther.com
+                      %a{:href => '#'}
+                        %span ⌂
+                        crowther.com
                 %p.speaker-name Dan Crowther
                 %p.speaker-company DockYard, LLC.
-              %p.article-info
-                Do you want to present at Wicked Good Ruby? We are accepting calls for proposals in the form of pull requests through
-                %a{:href => 'https://github.com/wickedgoodruby/wickedgoodruby.com', :target => '_blank'} our GitHub
+              %p.section-info
+                Do you want to present at Wicked Good Ruby?
+                %a.section-info-link{:href => 'https://github.com/wickedgoodruby/wickedgoodruby.com', :target => '_blank'} Submit your proposal in the form of a pull request through our GitHub
                 &#046;
               %a.button{:href => '#'} Submit Your Proposal
 
         %section#sponsors
           %h1.section-name Sponsors
           .section-wrap
-            %ul
-              %li.sponsor
-                //%p.sponsor-level.sponsor-level-ruby Ruby
+
+            %h2.sponsor-level &mdash; Gold &mdash;
+            .sponsor
+              .sponsor-front
                 %a.sponsor-logo-wrap{:href => 'http://www.heroku.com/', :target => '_blank'}
                   .sponsor-logo.sponsor-logo-heroku
-              %li.sponsor
-                //%p.sponsor-level.sponsor-level-emerald Emerald
+              .sponsor-back
+                %p Heroku is awesome!
+
+            %h2.sponsor-level &mdash; Silver &mdash;
+            .sponsor
+              .sponsor-front
                 %a.sponsor-logo-wrap{:href => 'http://www.engineyard.com/', :target => '_blank'}
                   .sponsor-logo.sponsor-logo-engineyard
-              %li.sponsor
-                //%p.sponsor-level.sponsor-level-emerald Emerald
+              .sponsor-back
+                %p Engineyard is awesome!
+
+            .sponsor
+              .sponsor-front
                 %a.sponsor-logo-wrap{:href => 'http://pivotallabs.com/', :target => '_blank'}
                   .sponsor-logo.sponsor-logo-pivotal
-              %li.sponsor
-                //%p.sponsor-level.sponsor-level-sapphire Sapphire
+              .sponsor-back
+                %p Pivotal Labs is awesome!
+
+            %h2.sponsor-level &mdash; Bronze &mdash;
+            .sponsor
+              .sponsor-front
                 %a.sponsor-logo-wrap{:href => 'http://www.livingsocial.com/', :target => '_blank'}
                   .sponsor-logo.sponsor-logo-livingsocial
-              %li.sponsor
-                //%p.sponsor-level.sponsor-level-sapphire Sapphire
+              .sponsor-back
+                %p Living Social is awesome!
+
+            .sponsor
+              .sponsor-front
                 %a.sponsor-logo-wrap{:href => 'http://www.google.com/', :target => '_blank'}
                   .sponsor-logo.sponsor-logo-google
-              %li.sponsor
-                //%p.sponsor-level.sponsor-level-sapphire Sapphire
+              .sponsor-back
+                %p Google is awesome!
+
+            .sponsor
+              .sponsor-front
                 %a.sponsor-logo-wrap{:href => 'http://www.groupon.com/', :target => '_blank'}
                   .sponsor-logo.sponsor-logo-groupon
-            %p.article-info
+              .sponsor-back
+                %p Groupon is awesome!
+
+            %p.section-info
               Would you like to be a Wicked Good Ruby Conf sponsor?
-              %a{:href => 'mailto:sponsor@wickedgoodruby.com'} Email us
-              if you would like more info about sponsorship.
+              %a.section-info-link{:href => 'mailto:sponsor@wickedgoodruby.com'} Email us for sponsorship information.
             %a.button{:href => '#'} Become a Sponsor
 
         %section#location
           %h1.section-name Location
           .section-wrap
-            //.banner.banner-location
             %h1.venue-name The Wilbur Theatre
-            %a.venue-address{:href => 'https://maps.google.com/maps?q=Wilbur+Theatre,+Tremont+Street,+Boston,+MA&hl=en&sll=42.036922,-71.683501&sspn=4.887368,7.163086&oq=wilbur&hq=Wilbur+Theatre,+Tremont+Street,+Boston,+MA&t=m&z=15&iwloc=A', :target => '_blank'} 246 Tremont Street Boston, MA 02116
+            %a.section-info-link{:href => 'https://maps.google.com/maps?q=Wilbur+Theatre,+Tremont+Street,+Boston,+MA&hl=en&sll=42.036922,-71.683501&sspn=4.887368,7.163086&oq=wilbur&hq=Wilbur+Theatre,+Tremont+Street,+Boston,+MA&t=m&z=15&iwloc=A', :target => '_blank'} 246 Tremont Street Boston, MA 02116
             .venue-pic
-            %p.venue-info
-              Wicked Good Ruby Conf is going to be held at the Wilbur Theatre in downtown Boston. For info regarding the venue, please visit
-              %a.venue-link{:href => 'http://www.thewilburtheatre.com/', :target => '_blank'}
-                www.thewilburtheatre.com
+            %p.section-info
+              Wicked Good Ruby Conf is going to be held at the Wilbur Theatre in downtown Boston. For information regarding the venue, please visit
+              %a.section-info-link{:href => 'http://www.thewilburtheatre.com/', :target => '_blank'}
+                their website
               &#046;
 
-    .triangle-wrap-end.triangle-wrap-background
-      .triangle.triangle-end
+    .triangle.triangle-end
 
     .terrier-wrapper
       .terrier
