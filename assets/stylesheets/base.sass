@@ -1,9 +1,9 @@
 @import compass/reset
 @import compass/css3
 
-$black: #2D2528
+$black: #192126
 $red: #ed4543
-$gray: #E7E7E7
+$gray: #E4E4E4
 $white: #FFFFFF
 
 @font-face
@@ -22,12 +22,16 @@ $white: #FFFFFF
   src: url('/fonts/blanch.eot')
   src: url('/fonts/blanch.eot?#iefix') format('embedded-opentype'), url('/fonts/blanch.woff') format('woff'), url('/fonts/blanch.ttf') format('truetype'), url('/fonts/blanch.svg#blanch') format('svg')
 
-html, body
-  color: white
+html
   background:
     color: $gray
-    image: url(/bg-light2.png)
-    size: 400px 400px
+    image: url(/bg-light.png)
+    size: 300px 300px
+
+body
+  background:
+    image: url(/rubies.png)
+    position: top center
   font:
     family: lato
     size: 18px

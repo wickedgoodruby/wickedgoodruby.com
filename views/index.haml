@@ -25,7 +25,7 @@
         .logo-rotate
       %p.intro-info
         %span Join us
-        for a two-day single-track Ruby conference full of passion and diversity. Prior to the conference there will be educational workshops and afterwards, a code retreat.
+        for a two-day single-track Ruby conference in "The Hub". Prior to the conference there will be educational workshops, and afterwards, a code retreat.
       %p.intro-date Oct 5-6, 2013
 
     %a.button.button-register{:href => 'http://www.eventbrite.com/', :target => '_blank'} Register
@@ -35,20 +35,15 @@
 
     #main-wrap
       #main
-        %p.main-info
-          Currently we are looking for speakers and sponsors. If you would like to help out for the conference, please email
-          %a{:href => 'mailto:contact@wickedgoodruby.com'}
-            contact@wickedgoodruby.com
-          &#046;
+        //%p.main-info
+        //  Currently we are looking for speakers and sponsors. If you would like to help out for the conference, please email
+        //  %a{:href => 'mailto:contact@wickedgoodruby.com'}
+        //    contact@wickedgoodruby.com
+        //  &#046;
 
         %section#speakers
           %h1.section-name Speakers
           .section-wrap
-            .banner.banner-speaker
-            %p.article-info
-              Do you want to present at Wicked Good Ruby? We are accepting calls for proposals in the form of pull requests through
-              %a{:href => 'https://github.com/wickedgoodruby/wickedgoodruby.com', :target => '_blank'} our GitHub
-              &#046;
             %ul
               %li.speaker#speaker1
                 .speaker-pic
@@ -115,18 +110,15 @@
                       %a{:href => '#'} crowther.com
                 %p.speaker-name Dan Crowther
                 %p.speaker-company DockYard, LLC.
-              %li.speaker#speaker6
-                .speaker-pic
-                %a.button{:href => '#'} Submit Your Proposal
+              %p.article-info
+                Do you want to present at Wicked Good Ruby? We are accepting calls for proposals in the form of pull requests through
+                %a{:href => 'https://github.com/wickedgoodruby/wickedgoodruby.com', :target => '_blank'} our GitHub
+                &#046;
+              %a.button{:href => '#'} Submit Your Proposal
 
         %section#sponsors
           %h1.section-name Sponsors
           .section-wrap
-            .banner.banner-sponsor
-            %p.article-info
-              Would you like to be a Wicked Good Ruby Conf sponsor?
-              %a{:href => 'mailto:sponsor@wickedgoodruby.com'} Email us
-              if you would like more info about sponsorship.
             %ul
               %li.sponsor
                 //%p.sponsor-level.sponsor-level-ruby Ruby
@@ -152,12 +144,16 @@
                 //%p.sponsor-level.sponsor-level-sapphire Sapphire
                 %a.sponsor-logo-wrap{:href => 'http://www.groupon.com/', :target => '_blank'}
                   .sponsor-logo.sponsor-logo-groupon
+            %p.article-info
+              Would you like to be a Wicked Good Ruby Conf sponsor?
+              %a{:href => 'mailto:sponsor@wickedgoodruby.com'} Email us
+              if you would like more info about sponsorship.
             %a.button{:href => '#'} Become a Sponsor
 
         %section#location
           %h1.section-name Location
           .section-wrap
-            .banner.banner-location
+            //.banner.banner-location
             %h1.venue-name The Wilbur Theatre
             %a.venue-address{:href => 'https://maps.google.com/maps?q=Wilbur+Theatre,+Tremont+Street,+Boston,+MA&hl=en&sll=42.036922,-71.683501&sspn=4.887368,7.163086&oq=wilbur&hq=Wilbur+Theatre,+Tremont+Street,+Boston,+MA&t=m&z=15&iwloc=A', :target => '_blank'} 246 Tremont Street Boston, MA 02116
             .venue-pic
@@ -174,7 +170,7 @@
       .terrier
 
     %footer.footer
-      %h2.callout Get excited for Boston's first Ruby conference!
+      %h2.footer-callout Get excited for Boston's first Ruby conference!
       %ul.footer-buttons
         %li.footer-button
           %a.footer-button-link{:href => '#', :target => '_blank'}
@@ -188,8 +184,11 @@
           %a.footer-button-link{:href => '#', :target => '_blank'}
             %span.footer-button-link-icon{'aria-hidden' => 'true', 'data-icon' => 'L'}
             Track us on Lanyrd
-      %p.copyright Copyright Wicked Good Ruby Conf
-      %p.copyright All Rights Reserved
+      %p.footer-text &copy; Copyright 2013 Wicked Good Ruby Conf
+      %p.footer-text
+        Designed &amp; built by
+        %span
+          %a.footer-text-link{:href => 'http://dockyard.com/', :target => '_blank'} DockYard
 
     :javascript
 

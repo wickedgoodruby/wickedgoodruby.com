@@ -1,23 +1,25 @@
 @import compass/css3
 
-$black: #2D2528
+$black: #192126
 $red: #ed4543
-$gray: #E7E7E7
+$gray: #E4E4E4
 $white: #FFFFFF
-
-#main-wrap
-  background:
-    color: $black
-    size: 54px 58px
 
 .section-wrap
   position: relative
   z-index: 5
   overflow: auto
+  width: 80%
+  margin:
+    left: auto
+    right: auto
 
 @media (max-width: 1200px)
   .section-name
-    display: none
+    text-align: center
+    font-size: 8em
+    font-family: blanch
+    color: $red
 
 @media (min-width: 1200px)
   .section-name

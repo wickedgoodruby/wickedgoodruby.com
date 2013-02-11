@@ -1,17 +1,22 @@
 @import compass/css3
 
-$black: #2D2528
+$black: #192126
 $red: #ed4543
-$gray: #E7E7E7
+$gray: #E4E4E4
 $white: #FFFFFF
 
 .triangle
   background:
     size: 100% 50px
-    image: url(/wave.png)
+    image: url(/triangle.png)
   height: 50px
   position: relative
   z-index: 3
+  margin-top: -3em
 
 .triangle-end
   +rotate(180deg)
+  position: relative
+  top: 53px
+  margin-bottom: 8em
+  background-image: url(/triangle-end.png)

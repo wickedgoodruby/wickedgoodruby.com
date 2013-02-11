@@ -1,26 +1,73 @@
+@import compass/css3
+
 $red: #ED4543
 $white: #FFFFFF
+$black: #192126
 
 .footer
-  padding:
-    top: 3em
-    bottom: 3.5em
+  padding: 3em 5% 3.5em
   background-color: $red
+  color: $white
+  text-align: center
 
-.callout
-  padding:
-    left: 10%
-    right: 10%
+.footer-callout
   font:
     size: 2em
     weight: 900
     style: italic
-  text-align: center
 
-.copyright
-  text-align: center
+.footer-buttons
+  margin: 1em auto 1.25em
+  @media (min-width: 880px)
+    width: 780px
+  @media (max-width: 880px)
+    width: 250px
+
+.footer-button
+  @media (min-width: 880px)
+    display: inline
+    margin:
+      left: 5px
+      right: 5px
+  @media (max-width: 880px)
+    display: block
+    margin:
+      right: auto
+      bottom: 10px
+      left: auto
+
+.footer-button-link
+  display: inline-block
+  width: 250px
+  padding:
+    top: 10px
+    bottom: 12px
+  +border-radius(8px)
+  background-color: lighten($red, 5%)
+  font-weight: bold
+  text-decoration: none
   color: $white
+  &:hover
+    background-color: lighten($red, 10%)
+
+.footer-button-link-icon
+  font:
+    family: fontello
+    size: 1.5em
+  margin:
+    right: 10px
+  &:before
+    content: attr(data-icon)
+
+.footer-text
   text-transform: uppercase
   letter-spacing: 1px
   font-size: 14px
+
+.footer-text-link
+  color: $white
+  +transition-duration(.5s)
+  +transition-property(color)
+  &:hover
+    color: $black
   

@@ -2,7 +2,7 @@
 
 $black: #2D2528
 $red: #ED4543
-$gray: #E7E7E7
+$gray: #E4E4E4
 $white: #FFFFFF
 
 .button
@@ -10,67 +10,25 @@ $white: #FFFFFF
   max-width: 630px
   margin: 0 auto
   display: block
+  padding:
+    top: 15px
+    bottom: 15px
   +border-radius(5px)
   background-color: $red
-  font:
-    family: blanch, sans-serif
-    size: 42px
+  font-size: 1.25em
   text:
     decoration: none
     align: center
   color: $white
   line-height: 1.2
+  &:hover
+    background-color: lighten($red, 5%)
 
 .button-register
   width: 200px
   max-width: none
   position: relative
   z-index: 15
-  border: .05em solid $gray
   +border-radius(8px)
-
-.footer-buttons
-  margin: 1em auto 1.25em
-  @media (min-width: 850px)
-    width: 780px
-  @media (max-width: 850px)
-    width: 250px
-
-.footer-button
-  @media (min-width: 850px)
-    display: inline
-    margin:
-      left: 5px
-      right: 5px
-  @media (max-width: 850px)
-    display: block
-    margin:
-      right: auto
-      bottom: 10px
-      left: auto
-
-.footer-button-link
-  display: inline-block
-  width: 250px
-  padding:
-    top: 10px
-    bottom: 12px
-  +border-radius(8px)
-  background-color: rgba($white, .12)
-  font-weight: bold
-  text:
-    align: center
-    decoration: none
-  color: $white
-  &:hover
-    background-color: rgba($white, .2)
-
-.footer-button-link-icon
-  font:
-    family: fontello
-    size: 1.5em
-  margin:
-    right: 10px
-  
-  &:before
-    content: attr(data-icon)
+  margin-top: 5px
+  border: 2px solid #F7F7F7

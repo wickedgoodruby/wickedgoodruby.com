@@ -1,17 +1,13 @@
 @import compass/css3
 
-$black: #2D2528
+$black: #192126
 $red: #ed4543
 $white: #FFFFFF
-$gray: #E7E7E7
+$gray: #E4E4E4
 
 .intro
-  margin-top: 4em
-  background:
-    image: url(/rubies.png)
-    position: center
+  margin-top: 2em
   text-align: center
-  color: $black
 
 .logo
   width: 250px
@@ -32,12 +28,12 @@ $gray: #E7E7E7
 
 .logo-rotate
   background-image: url(/logo/hub.svg)
-//  +transition-property(rotate)
-//  +transition-duration(2s)
+  +transition-property(rotate)
+  +transition-duration(2s)
 
 //rotating logo animation on hover
-//.logo-main:hover + .logo-rotate
-//  +rotate(45deg)
+.logo-main:hover + .logo-rotate
+  +rotate(45deg)
 
 .intro-info
   width: 80%
