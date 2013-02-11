@@ -5,6 +5,9 @@ $red: #ed4543
 $gray: #E4E4E4
 $white: #FFFFFF
 
+.speaker
+  margin-bottom: 3em
+
 .speaker > *
   text-align: center
 
@@ -13,12 +16,10 @@ $white: #FFFFFF
   +border-radius(5px)
 
 .speaker-pic
-  margin: 1em 0
   background:
     size: cover
     position: center
-  &:first-child
-    margin-top: 0
+  margin-bottom: .5em
 
 #speaker1 .speaker-pic
   background-image: url(/speakers/angelo.jpg)
@@ -43,21 +44,25 @@ $white: #FFFFFF
     opacity: 1
 
 .speaker-links
-  padding-top: 4.25em
+  padding-top: 4em
   a
+    height: 40px
     display: block
     width: 200px
-    margin: 0 auto
+    margin:
+      left: auto
+      right: auto
     padding: 5px 0
     +border-radius(5px)
     text-decoration: none
     color: $white
-    letter-spacing: 1px
     &:hover
       background-color: $red
     span
-      font-family: fontello
-      font-size: 24px
+      font:
+        family: fontello
+        size: 24px
+      margin-right: 8px
 
 .speaker-name
   font-weight: bold
