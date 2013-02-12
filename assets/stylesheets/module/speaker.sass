@@ -7,36 +7,27 @@ $white: #FFFFFF
 
 .speaker
   margin-bottom: 3em
+  position: relative
 
 .speaker > *
   text-align: center
 
 .speaker-pic, .speaker-overlay
-  height: 280px
   +border-radius(5px)
 
 .speaker-pic
-  background:
-    size: cover
-    position: center
   margin-bottom: .5em
-
-#speaker1 .speaker-pic
-  background-image: url(/speakers/angelo.jpg)
-#speaker2 .speaker-pic
-  background-image: url(/speakers/dan_m.jpg)
-#speaker3 .speaker-pic
-  background-image: url(/speakers/amanda.jpg)
-#speaker4 .speaker-pic
-  background-image: url(/speakers/doug.jpg)
-#speaker5 .speaker-pic
-  background-image: url(/speakers/dan_c.jpg)
-#speaker6 .speaker-pic
-  background-image: url(/speakers/avatar.jpg)
+  width: 100%
+  height: auto
 
 .speaker-overlay
+  display: none
+  position: absolute
+  top: 0
   width: 100%
-  background-color: rgba($red,.65)
+  //fix height!!!
+  height: 82%
+  background-color: rgba($red, .65)
   +transition-duration(1s)
   +transition-property(opacity)
   opacity: 0
@@ -44,7 +35,7 @@ $white: #FFFFFF
     opacity: 1
 
 .speaker-links
-  padding-top: 4em
+  padding-top: 25%
   a
     height: 40px
     display: block

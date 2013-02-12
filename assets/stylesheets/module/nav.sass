@@ -5,24 +5,20 @@ $red: #ed4543
 $gray: #E4E4E4
 $white: #FFFFFF
 
-header
-  background-color: $black
-  +transition-property(background-color)
-  +transition-duration(.25s)
-  height: 100px
+.main-nav
+  background-color: $white
+  height: 50px
 
-nav
-  display: block
-  background-color: $black
-  +transition-property(background-color)
-  +transition-duration(.25s)
+//nav
+//  display: block
+//  background-color: $black
+//  +transition-property(background-color)
+//  +transition-duration(.25s)
 
 .nav-wrap
   margin: 0 auto
   display: block
   width: 600px
-  @media (max-width: 800px)
-    width: 100%
 
 .nav-item
   display: inline-block
@@ -34,11 +30,14 @@ nav
     width: 150px
     padding: 5px 0
     display: inline-block
-    color: $white
+    color: $black
     line-height: 1
     text-transform: uppercase
     +box-sizing(border-box)
     letter-spacing: 1px
     font-size: 14px
+    font-weight: bold
     text:
       decoration: none
+    &:hover
+      background-color: rgba($black, .1)

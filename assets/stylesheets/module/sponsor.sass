@@ -8,43 +8,20 @@ $white: #FFFFFF
 #sponsors
   background-color: lighten($black, 3%)
 
+.sponsor-group
+  margin-bottom: 3em
+
 .sponsor-level
   margin-bottom: .5em
   text:
     align: center
     transform: uppercase
-  &:not(:first-child)
-    margin-top: 3em
 
 .sponsor
   width: 100%
-  @include perspective(600px)
-  &:hover
-    .sponsor-front
-      +rotateY(180deg)
-    .sponsor-back
-      +rotate(0deg)
-
-.sponsor-front, .sponsor-back
-  +border-radius(5px)
-  +transition-duration(.5s)
-  +transition-timing-function(ease-in-out)
-  @include backface-visibility(hidden)
-
-.sponsor-front
+  height: auto
   background-color: $white
-
-.sponsor-back
-  width: inherit
-  height: 120px
-  padding-top: 1em
-  position: absolute
-  top: 0
-  background-color: darken($gray, 10%)
-  text-align: center
-  color: $black
-  +rotateY(-180deg)
-  +box-sizing(border-box)
+  +border-radius(5px)
 
 .sponsor-logo-wrap
   display: block

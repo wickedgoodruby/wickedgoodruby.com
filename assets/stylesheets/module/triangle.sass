@@ -6,17 +6,20 @@ $gray: #E4E4E4
 $white: #FFFFFF
 
 .triangle
-  background:
-    size: 100% 50px
-    image: url(/triangle.png)
-  height: 50px
-  position: relative
-  z-index: 3
-  margin-top: -3.5em
+  @media (max-width: 600px)
+    height: 60px
+    background-size: 100% 60px
+  @media (min-width: 600px)
+    height: 120px
+    background-size: 100% 120px
+
+.triangle-start
+  background-image: url(/triangle.png)
+  @media (max-width: 600px)
+    margin-top: -4em
+  @media (min-width: 600px)
+    margin-top: -7.5em
 
 .triangle-end
-  +rotate(180deg)
-  position: relative
-  top: 63px
   margin-bottom: 8em
   background-image: url(/triangle-end.png)

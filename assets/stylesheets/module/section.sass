@@ -14,24 +14,29 @@ $white: #FFFFFF
     left: auto
     right: auto
 
+.section-info
+  clear: both
+
 .section-info-link
+  font-style: italic
+  text-decoration: none
+  color: lighten($black, 45%)
   &:hover
     text-decoration: underline
 
-@media (max-width: 1200px)
-  .section-name
-    text-align: center
-    font-size: 8em
-    font-family: blanch
-    color: $red
+.section-name
+  text-align: center
+  font-size: 8em
+  font-family: blanch
+  color: $red
 
-@media (min-width: 1200px)
-  .section-name
-    color: $red
-    font:
-      family: blanch-capsinline
-      size: 300px
-    position: relative
-    line-height: 0
-    top: 115px
-    left: -135px
+//@media (min-width: 1200px)
+//  .section-name
+//    position: relative
+//    top: 115px
+//    left: -135px
+//    font:
+//      family: blanch-capsinline
+//      size: 300px
+//    line-height: 0
+//    color: $red
