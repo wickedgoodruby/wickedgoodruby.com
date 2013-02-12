@@ -16,7 +16,8 @@ $black: #192126
   line-height: 1
 
 .venue-pic
-  height: 280px
+  @media (max-width: 1000px)
+    height: 280px
   @media (min-width: 1000px)
     height: 500px
   margin:
@@ -28,5 +29,6 @@ $black: #192126
     position: center
     size: cover
   +transition-duration(1s)
+  +transition-property(background-image)
   &:hover
     background-image: url(/location/wilbur2.jpg)

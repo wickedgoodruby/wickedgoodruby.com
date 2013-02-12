@@ -4,15 +4,11 @@ $black: #192126
 $red: #ed4543
 $white: #FFFFFF
 
-#main-wrap
-  background-color: $black
-  color: $white
-
-.section-info-link
-  font-style: italic
-  color: lighten($black, 45%)
-  &:hover
-    text-decoration: underline
+#speakers, #sponsors, #location
+  margin:
+    left: auto
+    right: auto
+  padding-bottom: 4em
 
 .section-name
   text-align: center
@@ -23,14 +19,6 @@ $white: #FFFFFF
   @media (min-width: 800px)
     line-height: 1.2
 
-section
-  margin:
-    left: auto
-    right: auto
-  padding:
-    top: .25em
-    bottom: 4em
-
 .section-wrap
   width: 80%
   max-width: 1000px
@@ -38,7 +26,16 @@ section
     left: auto
     right: auto
 
-.main-info
-  width: 80%
-  margin: 0 auto
-  padding-top: 2em
+.section-info
+  @media (min-width: 800px)
+    max-width: 600px
+    margin:
+      left: auto
+      right: auto
+    text-align: center
+
+.section-info-link
+  font-style: italic
+  color: lighten($black, 45%)
+  &:hover
+    text-decoration: underline
