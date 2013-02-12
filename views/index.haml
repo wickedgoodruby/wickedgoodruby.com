@@ -42,93 +42,27 @@
           .section-wrap
             %ul
               %li.speaker
-                %img.speaker-pic{:src => '/speakers/angelo-square.png', :alt => ''}
-                //.speaker-overlay
-                //  .speaker-links
-                //    %a{:href => '#'}
-                //      %span T
-                //      @cssboy
-                //    %a{:href => '#'}
-                //      %span G
-                //      cssboy
-                //    %a{:href => '#'}
-                //      %span ⌂
-                //      cssboy.com
+                %img.speaker-pic{:src => '/speakers/angelo.png', :alt => ''}
                 %p.speaker-name Angelo Simeoni
                 %p.speaker-company DockYard, LLC.
               %li.speaker
-                %img.speaker-pic{:src => '/speakers/dan_m-square.png', :alt => ''}
-                //.speaker-overlay
-                //  .speaker-links
-                //    %a{:href => '#'}
-                //      %span T
-                //      @_danmcclain
-                //    %a{:href => '#'}
-                //      %span G
-                //      danmcclain
-                //    %a{:href => '#'}
-                //      %span ⌂
-                //      danmcclain.net
+                %img.speaker-pic{:src => '/speakers/dan.png', :alt => ''}
                 %p.speaker-name Dan McClain
                 %p.speaker-company DockYard, LLC.
               %li.speaker
-                %img.speaker-pic{:src => '/speakers/amanda-square.png', :alt => ''}
-                //.speaker-overlay
-                //  .speaker-links
-                //    %a{:href => '#'}
-                //      %span T
-                //      @acacheung
-                //    %a{:href => '#'}
-                //      %span G
-                //      acacheung
-                //    %a{:href => '#'}
-                //      %span ⌂
-                //      acacheung.com
+                %img.speaker-pic{:src => '/speakers/amanda.png', :alt => ''}
                 %p.speaker-name Amanda Cheung
                 %p.speaker-company DockYard, LLC.
               %li.speaker
-                %img.speaker-pic{:src => '/speakers/doug-square.png', :alt => ''}
-                //.speaker-overlay
-                //  .speaker-links
-                //    %a{:href => '#'}
-                //      %span T
-                //      @DougYun
-                //    %a{:href => '#'}
-                //      %span G
-                //      duggie
-                //    %a{:href => '#'}
-                //      %span ⌂
-                //      dougyun.com
+                %img.speaker-pic{:src => '/speakers/doug.png', :alt => ''}
                 %p.speaker-name Doug Yun
                 %p.speaker-company DockYard, LLC.
               %li.speaker
-                %img.speaker-pic{:src => '/speakers/angelo-square.png', :alt => ''}
-                //.speaker-overlay
-                //  .speaker-links
-                //    %a{:href => '#'}
-                //      %span T
-                //      @cssboy
-                //    %a{:href => '#'}
-                //      %span G
-                //      cssboy
-                //    %a{:href => '#'}
-                //      %span ⌂
-                //      cssboy.com
+                %img.speaker-pic{:src => '/speakers/angelo.png', :alt => ''}
                 %p.speaker-name Angelo Simeoni
                 %p.speaker-company DockYard, LLC.
               %li.speaker
-                %img.speaker-pic{:src => '/speakers/dan_m-square.png', :alt => ''}
-                //.speaker-overlay
-                //  .speaker-links
-                //    %a{:href => '#'}
-                //      %span T
-                //      @_danmcclain
-                //    %a{:href => '#'}
-                //      %span G
-                //      danmcclain
-                //    %a{:href => '#'}
-                //      %span ⌂
-                //      danmcclain.net
+                %img.speaker-pic{:src => '/speakers/dan.png', :alt => ''}
                 %p.speaker-name Dan McClain
                 %p.speaker-company DockYard, LLC.
               %p.section-info
@@ -210,10 +144,6 @@
 
     :javascript
 
-      //$('footer').waypoint(function() {
-      //  $('.terrier').delay(300).transition({y: '-20em'});
-      //}, { offset: 'bottom-in-view' });
-
       $('a[href^="#"]').bind('click.smoothscroll',function (e) {
           e.preventDefault();
           var target = this.hash;
@@ -224,7 +154,7 @@
               window.location.hash = target;
           });
       });
-      
+
       $('.section-name').fitText(.3, {maxFontSize: '250px'});
 
   %body
