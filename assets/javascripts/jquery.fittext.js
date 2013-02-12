@@ -14,7 +14,7 @@
   $.fn.fitText = function( kompressor, options ) {
 
     // Setup options
-    var compressor = kompressor || .3,
+    var compressor = kompressor || 1,
         settings = $.extend({
           'minFontSize' : Number.NEGATIVE_INFINITY,
           'maxFontSize' : Number.POSITIVE_INFINITY

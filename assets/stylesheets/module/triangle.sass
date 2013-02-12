@@ -9,16 +9,21 @@ $white: #FFFFFF
   @media (max-width: 600px)
     height: 60px
     background-size: 100% 60px
-  @media (min-width: 600px)
+  @media (min-width: 600px) and (max-width: 800px)
     height: 120px
     background-size: 100% 120px
+  @media (min-width: 800px)
+    height: 180px
+    background-size: 100% 180px
 
 .triangle-start
   background-image: url(/triangle.png)
   @media (max-width: 600px)
     margin-top: -4em
-  @media (min-width: 600px)
+  @media (min-width: 600px) and (max-width: 800px)
     margin-top: -7.5em
+  @media (min-width: 800px)
+    margin-top: -5.5em
 
 .triangle-end
   margin-bottom: 8em

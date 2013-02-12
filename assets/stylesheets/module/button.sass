@@ -7,7 +7,7 @@ $white: #FFFFFF
 
 .button
   clear: both
-  max-width: 630px
+  max-width: 400px
   margin: 1em auto .5em
   display: block
   padding:
@@ -31,4 +31,5 @@ $white: #FFFFFF
   z-index: 15
   +border-radius(8px)
   margin-top: 5px
-  border: 2px solid #F7F7F7
+  @media (max-width: 800px)
+    border: 2px solid #F7F7F7

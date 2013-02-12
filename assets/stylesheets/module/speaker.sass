@@ -12,48 +12,11 @@ $white: #FFFFFF
 .speaker > *
   text-align: center
 
-.speaker-pic, .speaker-overlay
-  +border-radius(5px)
-
 .speaker-pic
   margin-bottom: .5em
   width: 100%
   height: auto
-
-.speaker-overlay
-  display: none
-  position: absolute
-  top: 0
-  width: 100%
-  //fix height!!!
-  height: 82%
-  background-color: rgba($red, .65)
-  +transition-duration(1s)
-  +transition-property(opacity)
-  opacity: 0
-  &:hover
-    opacity: 1
-
-.speaker-links
-  padding-top: 25%
-  a
-    height: 40px
-    display: block
-    width: 200px
-    margin:
-      left: auto
-      right: auto
-    padding: 5px 0
-    +border-radius(5px)
-    text-decoration: none
-    color: $white
-    &:hover
-      background-color: $red
-    span
-      font:
-        family: fontello
-        size: 24px
-      margin-right: 8px
+  +border-radius(5px)
 
 .speaker-name
   font-weight: bold
