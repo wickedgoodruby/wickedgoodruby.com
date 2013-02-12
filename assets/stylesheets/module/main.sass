@@ -1,0 +1,44 @@
+@import compass/css3
+
+$black: #192126
+$red: #ed4543
+$white: #FFFFFF
+
+#main-wrap
+  background-color: $black
+  color: $white
+
+.section-info-link
+  font-style: italic
+  color: lighten($black, 45%)
+  &:hover
+    text-decoration: underline
+
+.section-name
+  text-align: center
+  font:
+    size: 8em
+    family: blanch, sans-serif
+  color: $red
+  @media (min-width: 800px)
+    line-height: 1.2
+
+section
+  margin:
+    left: auto
+    right: auto
+  padding:
+    top: .25em
+    bottom: 4em
+
+.section-wrap
+  width: 80%
+  max-width: 1000px
+  margin:
+    left: auto
+    right: auto
+
+.main-info
+  width: 80%
+  margin: 0 auto
+  padding-top: 2em

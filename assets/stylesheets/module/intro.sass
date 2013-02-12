@@ -1,38 +1,21 @@
-@import compass/css3
-
-$black: #192126
-$red: #ed4543
-$white: #FFFFFF
-$gray: #E4E4E4
-
 .intro
-  margin-top: 2em
-  text-align: center
+  padding-top: 3em
 
 .logo
+  margin:
+    left: auto
+    right: auto
   width: 250px
   height: 250px
-  margin: 1em auto
+  background-image: url(/logo.svg)
 
-.logo-main, .logo-rotate
-  display: block
-  width: 250px
-  height: 250px
-
-.logo-main
-  position: absolute
-  z-index: 10
-  background-image: url(/logo/logo.svg)
-
-.logo-rotate
-  background-image: url(/logo/hub.svg)
+.intro-info, .intro-date
+  text-align: center
 
 .intro-info
   width: 80%
   max-width: 500px
-  margin: 0 auto 1em
+  margin: 1em auto
 
 .intro-date
   font-size: 1.5em
-  position: relative
-  z-index: 10

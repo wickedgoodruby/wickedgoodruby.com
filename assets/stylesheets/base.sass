@@ -11,16 +11,15 @@ $white: #FFFFFF
     family: 'fontello'
     weight: normal
     style: normal
-  src: url('/fonts/fontello.eot')
-  src: url('/fonts/fontello.eot?#iefix') format('embedded-opentype'), url('/fonts/fontello.woff') format('woff'), url('/fonts/fontello.ttf') format('truetype'), url('/fonts/fontello.svg#fontello') format('svg')
+  src: url('/fonts/fontello.eot') format('eot'), url('/fonts/fontello.woff') format('woff'), url('/fonts/fontello.ttf') format('truetype')
 
+//once copy is finalized, limit character set to blanch for only the ones needed.
 @font-face
   font:
     family: 'blanch'
     weight: normal
     style: normal
-  src: url('/fonts/blanch.eot')
-  src: url('/fonts/blanch.eot?#iefix') format('embedded-opentype'), url('/fonts/blanch.woff') format('woff'), url('/fonts/blanch.ttf') format('truetype'), url('/fonts/blanch.svg#blanch') format('svg')
+  src: url('/fonts/blanch.eot') format('eot'), url('/fonts/blanch.woff') format('woff'), url('/fonts/blanch.ttf') format('truetype')
 
 html
   background:
@@ -37,16 +36,19 @@ body
     size: 18px
   line-height: 1.5
 
-body *
+a, h1, h2, p, span
   -webkit-font-smoothing: antialiased
   font-smoothing: antialiased
 
+a
+  text-decoration: none
+
 p
-  max-width: 600px
   @media (min-width: 750px)
-    margin-left: auto
-    margin-right: auto
-    text-align: center
+    max-width: 600px
+    margin:
+      left: auto
+      right: auto
 
 ::selection
   background: rgba($red, .5)

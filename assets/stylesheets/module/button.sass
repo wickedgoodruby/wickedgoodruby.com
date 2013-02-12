@@ -1,35 +1,30 @@
 @import compass/css3
 
-$black: #2D2528
 $red: #ED4543
-$gray: #E4E4E4
+$gray: #F7F7F7
 $white: #FFFFFF
 
 .button
-  clear: both
   max-width: 400px
   margin: 1em auto .5em
   display: block
   padding:
-    top: 15px
+    top: 10px
     bottom: 15px
   +border-radius(5px)
   background-color: $red
   font-size: 1.25em
-  text:
-    decoration: none
-    align: center
+  text-align: center
   color: $white
-  line-height: 1.2
+  +transition-duration(.25s)
   &:hover
-    background-color: lighten($red, 5%)
+    background-color: lighten($red, 4%)
 
 .button-register
   width: 200px
-  max-width: none
   position: relative
   z-index: 15
   +border-radius(8px)
   margin-top: 5px
   @media (max-width: 800px)
-    border: 2px solid #F7F7F7
+    border: 2px solid $gray

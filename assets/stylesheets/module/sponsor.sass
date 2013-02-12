@@ -1,8 +1,6 @@
 @import compass/css3
 
 $black: #192126
-$red: #ed4543
-$gray: #E4E4E4
 $white: #FFFFFF
 
 #sponsors
@@ -13,16 +11,23 @@ $white: #FFFFFF
   overflow: auto
 
 .sponsor-level
-  margin-bottom: .5em
+  margin-bottom: .75em
   text:
     align: center
     transform: uppercase
 
 .sponsor
   width: 100%
-  height: auto
+  margin-bottom: 1em
+  position: relative
   background-color: $white
   +border-radius(5px)
+  //@media (min-width: 800px)
+  //  float: left
+  //  width: 49%
+  //  margin-right: 2%
+  //  &:nth-child(2n+2)
+  //    margin-right: 0
 
 .sponsor-logo-wrap
   display: block
