@@ -1,22 +1,57 @@
-.terrier
+@import compass/css3
+
+$red: #ED4543
+$white: #FFFFFF
+
+.animation
   width: 225px
   height: 325px
+  position: relative
   margin:
     left: auto
     right: auto
+  &:hover
+    .shine
+      left: 7.5em
+
+.terrier
+  height: 100%
   position: relative
   top: 3.45em
   background:
     image: url(/terrier.svg)
     size: 225px 325px
+  z-index: 10
 
-.ruby
-  width: 225px
-  height: 325px
+.shine
+  position: absolute
+  top: 13.25em
+  left: 4em
+  z-index: 8
+  +transition-duration(.2s)
+
+.line
+  width: 45px
+  height: 2.5px
+  background-color: $white
+  +rotate(45deg)
+  margin-bottom: -8px
+
+.line2
+  width: 50px
+  height: 4px
+  background-color: $white
+  +rotate(45deg)
+  position: relative
+  left: -1em
+
+.red
+  width: 50px
+  height: 50px
   margin:
     left: auto
     right: auto
-  position: absolute
-  top: 0
-  background-size: 225px 325px
-  background-image: url(/terrier-animation.svg)
+  position: relative
+  top: -6em
+  background-color: $red
+  z-index: 5
