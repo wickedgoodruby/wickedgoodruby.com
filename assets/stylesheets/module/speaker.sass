@@ -12,7 +12,7 @@ $black: #192126
   position: relative
   &:hover
     .speaker-links
-      margin-top: -60px
+      margin-top: -55px
       opacity: 1
   @media (min-width: 425px) and (max-width: 800px)
     width: 48%
@@ -31,6 +31,7 @@ $black: #192126
   position: relative
   width: 100%
   +border-radius(5px)
+  display: block
 
 .speaker-links-wrap
   position: absolute
@@ -57,7 +58,7 @@ $black: #192126
   color: $white
   width: 40px
   height: 40px
-  display: inline-block
+  display: block
   border-radius: 50%
   background-color: $red
   text-align: center
@@ -66,7 +67,7 @@ $black: #192126
   &:before
     content: attr(data-icon)
   &:hover
-    background-color: lighten($red, 5%)
+    background-color: lighten($red, 7%)
 
 .speaker-name, .speaker-company
   clear: both
@@ -74,7 +75,7 @@ $black: #192126
   background-color: $black
 
 .speaker-name
-  padding-top: .5em
+  padding-top: .75em
   font-weight: bold
   position: relative
   z-index: 10
