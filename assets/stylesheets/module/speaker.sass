@@ -1,5 +1,7 @@
 @import compass/css3
 
+$red: #ED4543
+$white: #FFFFFF
 $black: #192126
 
 #speakers
@@ -7,6 +9,11 @@ $black: #192126
 
 .speaker
   margin-bottom: 3em
+  position: relative
+  &:hover
+    .speaker-links
+      margin-top: -60px
+      opacity: 1
   @media (min-width: 425px) and (max-width: 800px)
     width: 48%
     float: left
@@ -21,16 +28,56 @@ $black: #192126
       margin-right: 0
 
 .speaker-pic
-  margin-bottom: .5em
+  position: relative
   width: 100%
-  height: auto
   +border-radius(5px)
 
-.speaker-name, .speaker-company
+.speaker-links-wrap
+  position: absolute
+  width: 100%
+
+.speaker-links
+  width: 150px
+  margin:
+    left: auto
+    right: auto
+  opacity: 0
+  +transition-duration(.5s)
+  li
+    float: left
+
+.speaker-link
+  font:
+    family: fontello
+    size: 1em
+  margin:
+    left: 5px
+    right: 5px
+  padding-top: 6px
+  color: $white
+  width: 40px
+  height: 40px
+  display: inline-block
+  border-radius: 50%
+  background-color: $red
   text-align: center
+  +box-sizing(border-box)
+  +transition-duration(.25s)
+  &:before
+    content: attr(data-icon)
+  &:hover
+    background-color: lighten($red, 5%)
+
+.speaker-name, .speaker-company
+  clear: both
+  text-align: center
+  background-color: $black
 
 .speaker-name
+  padding-top: .5em
   font-weight: bold
+  position: relative
+  z-index: 10
 
 .speaker-company
   font-style: italic
