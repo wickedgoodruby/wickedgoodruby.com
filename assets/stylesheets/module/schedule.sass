@@ -7,11 +7,15 @@ $white: #FFFFFF
 #schedule
   background-color: $black
 
+.schedule-date
+  text-align: center
+  text-transform: uppercase
+
 .schedule-slots
   background-color: lighten($black, 5%)
-  margin:
-    top: 1em
-    bottom: 1em
+  margin-top: 1em
+  &:not(:last-child)
+    margin-bottom: 3em
   +border-radius(5px)
 
 .schedule-slot
@@ -23,3 +27,11 @@ $white: #FFFFFF
   font-size: 14px
   color: $white
   float: left
+
+.schedule-talk
+  color: white
+
+.schedule-speaker
+  font-style: italic
+  color: lighten($black, 45%)
+  
