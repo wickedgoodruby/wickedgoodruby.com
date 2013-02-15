@@ -1,0 +1,25 @@
+@import compass/css3
+
+$black: #192126
+$red: #ed4543
+$white: #FFFFFF
+
+#schedule
+  background-color: $black
+
+.schedule-slots
+  background-color: lighten($black, 5%)
+  margin:
+    top: 1em
+    bottom: 1em
+  +border-radius(5px)
+
+.schedule-slot
+  border-bottom: 2px solid $black
+  padding: 1em
+
+.schedule-time
+  letter-spacing: 1px
+  font-size: 14px
+  color: $white
+  float: left

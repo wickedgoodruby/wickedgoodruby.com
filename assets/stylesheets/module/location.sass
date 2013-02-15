@@ -16,19 +16,19 @@ $black: #192126
   line-height: 1
 
 .venue-pic
-  @media (max-width: 1000px)
+  @media (max-width: 800px)
     height: 280px
-  @media (min-width: 1000px)
+  @media (min-width: 800px)
     height: 500px
   margin:
     top: 1em
     bottom: 3em
   +border-radius(5px)
   background:
-    image: url(/location/wilbur.jpg)
+    image: url(/location/seaport.jpg)
     position: center
     size: cover
-  +transition-duration(1s)
-  +transition-property(background-image)
-  &:hover
-    background-image: url(/location/wilbur2.jpg)
+  //+transition-duration(1s)
+  //+transition-property(background-image)
+  //&:hover
+  //  background-image: url(/location/wilbur2.jpg)
