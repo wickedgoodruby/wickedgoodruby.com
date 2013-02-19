@@ -3,48 +3,52 @@
 $black: #192126
 $red: #ed4543
 $white: #FFFFFF
+$gray: #F7F7F7
 
 #schedule
   background-color: $black
 
 .schedule-date
-  text-align: center
-  text-transform: uppercase
+  text:
+    align: center
+    transform: uppercase
 
 .schedule-slots
-  background-color: lighten($black, 5%)
   margin-top: 1em
+  +border-radius(5px)
+  background-color: lighten($black, 5%)
+  +box-sizing(border-box)
   &:not(:last-child)
     margin-bottom: 3em
   &:last-child
     margin-bottom: 1em
-  +border-radius(5px)
 
 .schedule-slot
-  border-bottom: 2px solid $black
-  padding: 1em
+  &:not(:last-child)
+    border-bottom: 2px solid $black
+  &:first-child
+    +border-top-radius(5px)
+  &:last-child
+    +border-bottom-radius(5px)
+  &:hover
+    background-color: lighten($black, 7%)
 
 .schedule-time
-  letter-spacing: 1px
-  color: $white
+  position: relative
   float: left
+  color: $white
   padding-top: 2px
+  letter-spacing: 1px
+  left: 2em
+  top: .85em
 
 .schedule-talk
-  color: white
+  padding: 1em
   text-align: center
   color: lighten($black, 45%)
 
-.schedule-speaker
-  font-style: italic
-
-.schedule-more
-  text-align: right
-  color: lighten($black, 35%)
-  float: right
-  position: relative
-  top: -1.35em
-  font:
-    family: fontello
-  &:before
-    content: attr(data-icon)
+.schedule-talk-info
+  display: none
+  padding: 1em 1.5em
+  background-color: $white
+  color: $black
