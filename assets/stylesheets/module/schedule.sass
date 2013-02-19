@@ -16,6 +16,8 @@ $white: #FFFFFF
   margin-top: 1em
   &:not(:last-child)
     margin-bottom: 3em
+  &:last-child
+    margin-bottom: 1em
   +border-radius(5px)
 
 .schedule-slot
@@ -24,14 +26,25 @@ $white: #FFFFFF
 
 .schedule-time
   letter-spacing: 1px
-  font-size: 14px
   color: $white
   float: left
+  padding-top: 2px
 
 .schedule-talk
   color: white
+  text-align: center
+  color: lighten($black, 45%)
 
 .schedule-speaker
   font-style: italic
-  color: lighten($black, 45%)
-  
+
+.schedule-more
+  text-align: right
+  color: lighten($black, 35%)
+  float: right
+  position: relative
+  top: -1.35em
+  font:
+    family: fontello
+  &:before
+    content: attr(data-icon)

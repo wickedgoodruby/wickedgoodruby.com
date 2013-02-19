@@ -15,6 +15,18 @@
     },
     {
       "search": [
+        "plus"
+      ],
+      "code": 43,
+      "from": 10133,
+      "uid": "4ba33d2607902cf690dd45df09774cb0",
+      "css": "plus-circle",
+      "orig_css": "plus-circle",
+      "orig_code": 43,
+      "src": "fontawesome"
+    },
+    {
+      "search": [
         "twitter"
       ],
       "code": 84,
