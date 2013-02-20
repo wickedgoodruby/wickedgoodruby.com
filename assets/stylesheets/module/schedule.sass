@@ -39,18 +39,29 @@ $gray: #F7F7F7
   color: lighten($black, 45%)
 
 .schedule-time
-  float: left
-  width: 20%
+  @media (min-width: 950px)
+    float: left
+    width: 20%
 
 .schedule-talk
-  text-align: center
-  width: 60%
-  float: left
+  font-weight: bold
+  @media (min-width: 950px)
+    float: left
+    width: 60%
+    text-align: center
 
 .schedule-speaker
-  width: 20%
-  float: right
-  text-align: right
+  font-style: italic
+  @media (min-width: 950px)
+    float: right
+    width: 20%
+    text-align: right
+
+.schedule-time, .schedule-talk, .schedule-speaker
+  @media (max-width: 950px)
+    float: none
+    width: 100%
+    text-align: center
 
 .schedule-summary
   display: none
