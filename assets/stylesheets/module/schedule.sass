@@ -17,7 +17,6 @@ $gray: #F7F7F7
   margin-top: 1em
   +border-radius(5px)
   background-color: lighten($black, 5%)
-  +box-sizing(border-box)
   &:not(:last-child)
     margin-bottom: 3em
   &:last-child
@@ -33,22 +32,29 @@ $gray: #F7F7F7
   &:hover
     background-color: lighten($black, 7%)
 
-.schedule-time
-  position: relative
-  float: left
-  color: $white
-  padding-top: 2px
-  letter-spacing: 1px
-  left: 2em
-  top: .85em
-
-.schedule-talk
-  padding: 1em
-  text-align: center
+.schedule-info
+  overflow: auto
+  display: block
+  padding: 1em 2em
   color: lighten($black, 45%)
 
-.schedule-talk-info
+.schedule-time
+  float: left
+  width: 20%
+
+.schedule-talk
+  text-align: center
+  width: 60%
+  float: left
+
+.schedule-speaker
+  width: 20%
+  float: right
+  text-align: right
+
+.schedule-summary
   display: none
-  padding: 1em 1.5em
+  padding: 1em 2em
   background-color: $white
   color: $black
+  cursor: pointer
