@@ -15,53 +15,51 @@ $black: #192126
       margin-top: -55px
       opacity: 1
   @media (min-width: 425px) and (max-width: 800px)
+    float: left
     width: 48%
-    float: left
-    margin-right: 4%
-    &:nth-child(2n)
-      margin-right: 0
+    &:nth-child(2n+1)
+      margin-right: 4%
   @media (min-width: 800px)
-    width: 31%
+    width: 32%
     float: left
-    margin-right: 3%
-    &:nth-child(3n+3)
-      margin-right: 0
+    &:nth-child(3n+1), &:nth-child(3n-1)
+      margin-right: 2%
 
 .speaker-pic
+  display: block
   position: relative
   width: 100%
   +border-radius(5px)
-  display: block
 
 .speaker-links-wrap
   position: absolute
   width: 100%
 
 .speaker-links
-  width: 150px
   margin:
     left: auto
     right: auto
+  width: 150px
   opacity: 0
   +transition-duration(.5s)
   li
     float: left
 
 .speaker-link
-  font:
-    family: fontello
-    size: 1em
+  display: block
+  height: 40px
+  width: 40px
   margin:
     left: 5px
     right: 5px
   padding-top: 6px
-  color: $white
-  width: 40px
-  height: 40px
-  display: block
-  border-radius: 50%
+  +border-radius(50%)
   background-color: $red
+  font:
+    family: fontello
+    size: 1em
   text-align: center
+  color: $white
   +box-sizing(border-box)
   +transition-duration(.25s)
   &:before
@@ -71,13 +69,13 @@ $black: #192126
 
 .speaker-name, .speaker-company
   clear: both
-  text-align: center
   background-color: $black
+  text-align: center
 
 .speaker-name
   padding-top: .75em
-  font-weight: bold
   position: relative
+  font-weight: bold
   z-index: 10
 
 .speaker-company
