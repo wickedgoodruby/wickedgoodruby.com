@@ -7,6 +7,13 @@ $black: #192126
 #speakers
   background-color: $black
 
+.keynote-speakers
+  @media (min-width: 800px)
+    margin:
+      right: auto
+      left: auto
+    width: 660px
+
 .speaker
   margin-bottom: 3em
   position: relative
@@ -20,10 +27,20 @@ $black: #192126
     &:nth-child(2n+1)
       margin-right: 4%
   @media (min-width: 800px)
-    width: 32%
+    width: 320px
     float: left
-    &:nth-child(3n+1), &:nth-child(3n-1)
-      margin-right: 2%
+    &:first-child
+      margin-right: 20px
+  //@media (min-width: 425px) and (max-width: 800px)
+  //  float: left
+  //  width: 48%
+  //  &:nth-child(2n+1)
+  //    margin-right: 4%
+  //@media (min-width: 800px)
+  //  width: 32%
+  //  float: left
+  //  &:nth-child(3n+1), &:nth-child(3n-1)
+  //    margin-right: 2%
 
 .speaker-pic
   display: block

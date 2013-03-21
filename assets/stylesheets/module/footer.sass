@@ -6,7 +6,9 @@ $black: #192126
 
 .footer
   padding: 3.5em 5%
+  position: relative
   background-color: $red
+  overflow: auto
 
 .footer-callout, .footer-button-link, .footer-text
   text-align: center
@@ -61,8 +63,17 @@ $black: #192126
   letter-spacing: 1px
   font-size: 14px
 
-.footer-text-link
-  color: $white
+.made-by-dockyard
+  margin:
+    top: 1.5em
+    right: 5%
+  display: block
+  float: right
+  position: relative
+  width: 135px
+  +rotate(15deg)
+  opacity: .6
   +transition-duration(.25s)
+  +transition-property(opacity)
   &:hover
-    color: $black
+    opacity: 1

@@ -13,10 +13,11 @@
     .intro
       .logo
       %p.intro-info
-        Join us for a two-day single-track Ruby conference in Boston, MA. Prior to the conference there will be educational workshops, and afterwards, a code retreat.
+        Join us for a two-day single-track Ruby conference at the Seaport World Trade Center in Boston, MA!
+        // Prior to the conference there will be educational workshops, and afterwards, a code retreat.
       %p.intro-date Oct 12-13, 2013
 
-    %a.button.button-register{:href => 'http://www.eventbrite.com/', :target => '_blank'} Register
+    %a.button.button-register{:href => 'https://guestlistapp.com/', :target => '_blank'} Register
 
     .triangle.triangle-start
 
@@ -24,114 +25,67 @@
       %section#speakers
         %h1.section-name Speakers
         .section-wrap
-          %ul
+          %ul.keynote-speakers
             %li.speaker
-              %img.speaker-pic{:src => '/speakers/angelo.jpg', :alt => '',}
+              %img.speaker-pic{:src => '/speakers/#.jpg', :alt => ''}
               .speaker-links-wrap
                 %ul.speaker-links
                   %li
-                    %a.speaker-link{:href => '#', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+                    %a.speaker-link{:href => 'https://twitter.com/sandimetz', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
                   %li
-                    %a.speaker-link{:href => '#', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+                    %a.speaker-link{:href => 'https://github.com/skmetz', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
                   %li
-                    %a.speaker-link{:href => '#', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-              %p.speaker-name Angelo Simeoni
-              %p.speaker-company DockYard, LLC.
+                    %a.speaker-link{:href => 'http://sandimetz.com/', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
+              %p.speaker-name Sandi Metz
+              //%p.speaker-company Keynote
             %li.speaker
-              %img.speaker-pic{:src => '/speakers/dan.jpg', :alt => ''}
+              %img.speaker-pic{:src => '/speakers/#.jpg', :alt => ''}
               .speaker-links-wrap
                 %ul.speaker-links
                   %li
-                    %a.speaker-link{:href => '#', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+                    %a.speaker-link{:href => 'https://twitter.com/foysavas', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
                   %li               
-                    %a.speaker-link{:href => '#', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+                    %a.speaker-link{:href => 'https://github.com/foysavas', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
                   %li               
-                    %a.speaker-link{:href => '#', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-              %p.speaker-name Dan McClain
-              %p.speaker-company DockYard, LLC.
-            %li.speaker
-              %img.speaker-pic{:src => '/speakers/amanda.jpg', :alt => ''}
-              .speaker-links-wrap 
-                %ul.speaker-links
-                  %li
-                    %a.speaker-link{:href => '#', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
-                  %li               
-                    %a.speaker-link{:href => '#', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
-                  %li               
-                    %a.speaker-link{:href => '#', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-              %p.speaker-name Amanda Cheung
-              %p.speaker-company DockYard, LLC.
-            %li.speaker
-              %img.speaker-pic{:src => '/speakers/doug.jpg', :alt => ''}
-              .speaker-links-wrap
-                %ul.speaker-links
-                  %li
-                    %a.speaker-link{:href => '#', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
-                  %li               
-                    %a.speaker-link{:href => '#', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
-                  %li               
-                    %a.speaker-link{:href => '#', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-              %p.speaker-name Doug Yun
-              %p.speaker-company DockYard, LLC.
-            %li.speaker
-              %img.speaker-pic{:src => '/speakers/angelo.jpg', :alt => ''}
-              .speaker-links-wrap
-                %ul.speaker-links
-                  %li
-                    %a.speaker-link{:href => '#', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
-                  %li               
-                    %a.speaker-link{:href => '#', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
-                  %li               
-                    %a.speaker-link{:href => '#', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-              %p.speaker-name Angelo Simeoni
-              %p.speaker-company DockYard, LLC.
-            %li.speaker
-              %img.speaker-pic{:src => '/speakers/dan.jpg', :alt => ''}
-              .speaker-links-wrap
-                %ul.speaker-links
-                  %li
-                    %a.speaker-link{:href => '#', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
-                  %li               
-                    %a.speaker-link{:href => '#', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
-                  %li               
-                    %a.speaker-link{:href => '#', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-              %p.speaker-name Dan McClain
-              %p.speaker-company DockYard, LLC.
-            %p.section-info
-              Do you want to present at Wicked Good Ruby?
-              %a.section-info-link{:href => 'https://github.com/wickedgoodruby/wickedgoodruby.com', :target => '_blank'} Submit your proposal in the form of a pull request through our GitHub.
-            %a.button{:href => '#'} Submit Your Proposal
+                    %a.speaker-link{:href => 'http://www.foysavas.com/', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
+              %p.speaker-name Foy Savas
+              //%p.speaker-company Keynote
+
+          %p.section-info
+            So far we have confirmed our two keynote speakers. We are looking for twelve more speakers! Do you want to present at Wicked Good Ruby Conf?
+            %a.section-info-link{:href => 'https://github.com/wickedgoodruby/wickedgoodruby.com', :target => '_blank'} Submit your proposal in the form of a pull request through our GitHub.
+          %a.button{:href => '#'} Submit Your Proposal
 
       %section#sponsors
         %h1.section-name Sponsors
         .section-wrap
 
-          .sponsor-group
-            %h2.sponsor-level &mdash; Gold &mdash;
-            .sponsor
-              %a.sponsor-logo-wrap{:href => 'http://www.heroku.com/', :target => '_blank'}
-                .sponsor-logo.sponsor-logo-heroku
-
-          .sponsor-group
-            %h2.sponsor-level &mdash; Silver &mdash;
-            .sponsor
-              %a.sponsor-logo-wrap{:href => 'http://www.engineyard.com/', :target => '_blank'}
-                .sponsor-logo.sponsor-logo-engineyard
-            .sponsor
-              %a.sponsor-logo-wrap{:href => 'http://pivotallabs.com/', :target => '_blank'}
-                .sponsor-logo.sponsor-logo-pivotal
-
-          .sponsor-group
-            %h2.sponsor-level &mdash; Bronze &mdash;
-            .sponsor
-              %a.sponsor-logo-wrap{:href => 'http://www.livingsocial.com/', :target => '_blank'}
-                .sponsor-logo.sponsor-logo-livingsocial
-            .sponsor
-              %a.sponsor-logo-wrap{:href => 'http://www.google.com/', :target => '_blank'}
-                .sponsor-logo.sponsor-logo-google
-            .sponsor
-              %a.sponsor-logo-wrap{:href => 'http://www.groupon.com/', :target => '_blank'}
-                .sponsor-logo.sponsor-logo-groupon
+          //.sponsor-group
+          //  %h2.sponsor-level &mdash; Gold &mdash;
+          //  .sponsor
+          //    %a.sponsor-logo-wrap{:href => '#', :target => '_blank'}
+          //      .sponsor-logo
+          //
+          //.sponsor-group
+          //  %h2.sponsor-level &mdash; Silver &mdash;
+          //  .sponsor
+          //    %a.sponsor-logo-wrap{:href => 'http://www.engineyard.com/', :target => '_blank'}
+          //      .sponsor-logo
+          //  .sponsor
+          //    %a.sponsor-logo-wrap{:href => 'http://pivotallabs.com/', :target => '_blank'}
+          //      .sponsor-logo
+          //
+          //.sponsor-group
+          //  %h2.sponsor-level &mdash; Bronze &mdash;
+          //  .sponsor
+          //    %a.sponsor-logo-wrap{:href => 'http://www.livingsocial.com/', :target => '_blank'}
+          //      .sponsor-logo
+          //  .sponsor
+          //    %a.sponsor-logo-wrap{:href => 'http://www.google.com/', :target => '_blank'}
+          //      .sponsor-logo
+          //  .sponsor
+          //    %a.sponsor-logo-wrap{:href => 'http://www.groupon.com/', :target => '_blank'}
+          //      .sponsor-logo
 
           %p.section-info
             Interested in sponsoring Wicked Good Ruby Conf?
@@ -176,10 +130,12 @@
             %span.footer-button-link-icon{'aria-hidden' => 'true', 'data-icon' => 'L'}
             Track us on Lanyrd
       %p.footer-text &copy; Copyright 2013 Wicked Good Ruby Conf
-      %p.footer-text
-        Designed &amp; built by
-        %span
-          %a.footer-text-link{:href => 'http://dockyard.com/', :target => '_blank'} DockYard
+      //%p.footer-text
+      //  Designed &amp; built by
+      //  %span
+      //    %a.footer-text-link{:href => 'http://dockyard.com/', :target => '_blank'} DockYard
+      %a{:href => 'http://dockyard.com/', :target => '_blank'}
+        %img.made-by-dockyard{:src => '/made-by-dockyard.svg', :alt => 'Made by DockYard'}
 
     :javascript
 
