@@ -28,7 +28,6 @@ $black: #192126
   @media (max-width: 880px)
     width: 250px
 
-//for positioning
 .footer-button
   @media (min-width: 880px)
     float: left
@@ -64,9 +63,6 @@ $black: #192126
   font-size: 14px
 
 .made-by-dockyard
-  margin:
-    top: 1.5em
-    right: 5%
   display: block
   float: right
   position: relative
@@ -77,3 +73,11 @@ $black: #192126
   +transition-property(opacity)
   &:hover
     opacity: 1
+  @media (min-width: 880px)
+    margin:
+      top: -1.5em
+      right: 10%
+  @media (max-width: 880px)
+    margin:
+      top: 1.5em
+      right: 5%
