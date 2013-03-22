@@ -8,6 +8,8 @@
     %meta{:name => 'description', :content => 'Wicked Good Ruby Conf is a Ruby conference '}
     %meta{:name => 'keywords',    :content => 'ruby on rails, rails, ruby, ruby on rails training, ruby application development, ruby on rails application development, ember application development, ember.js application development, software application development, web, web application development, mobile, mobile application development, ios, ios application development, iphone, iphone application development, android, android application development, postgres, startups, enterprise, Boston, MA, Massachusetts, for hire'}
     %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0", :name => "viewport"}
+    /[if lt IE 9]
+      <script src='assets/html5shiv.js'></script>
 
   %body
     .intro
@@ -131,12 +133,8 @@
             Track us on Lanyrd
       %p.footer-text &copy; Copyright 2013 Wicked Good Ruby Conf
       %p.footer-text All Rights Reserved
-      //%p.footer-text
-      //  Designed &amp; built by
-      //  %span
-      //    %a.footer-text-link{:href => 'http://dockyard.com/', :target => '_blank'} DockYard
       %a{:href => 'http://dockyard.com/', :target => '_blank'}
-        %img.made-by-dockyard{:src => '/made-by-dockyard.svg', :alt => 'Made by DockYard'}
+        %img.made-by-dockyard{:onerror => "this.onerror = null; this.src=\"/made-by-dockyard.png\"", :src => '/made-by-dockyard.svg', :alt => 'Made by DockYard'}
 
     :javascript
 
