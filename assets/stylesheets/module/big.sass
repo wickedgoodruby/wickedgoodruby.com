@@ -1,0 +1,36 @@
+@import compass/css3
+
+$black: #192126
+$red: #ed4543
+$gray: #E4E4E4
+$white: #FFFFFF
+
+@media (min-width: 1200px)
+  html
+    background:
+      color: lighten($black, 6%)
+      image: none
+  .intro
+    float: left
+    height: 100%
+    width: 25%
+    position: fixed
+    background:
+      color: $gray
+      image: url(/bg.png)
+      size: 300px 300px
+  @-moz-document url-prefix()
+    .intro
+      max-width: 400px
+  .big
+    float: right
+    width: 75%
+    border-left: 10px solid $red
+    +box-sizing(border-box)
+  .triangle
+    display: none
+
+@media (min-width: 1600px)
+  @-moz-document url-prefix()
+    .big
+      width: calc(100% - 400px)
