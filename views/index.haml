@@ -109,4 +109,18 @@
     :javascript
       $('.section-name').fitText(.3, {maxFontSize: '225px'});
 
+      if ( $(window).height() < 580) {
+        $('.intro').removeClass('beFixed');
+      } else {
+        $('.intro').addClass('beFixed');
+      }
+
+      $(window).resize(function() {
+        if ( $(window).height() < 580) {
+          $('.intro').removeClass('beFixed');
+        } else {
+          $('.intro').addClass('beFixed');
+        }
+      });
+
   %body
