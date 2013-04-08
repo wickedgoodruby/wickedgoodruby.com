@@ -1,7 +1,23 @@
 $black: #192126
+$red: #ed4543
+$gray: #E4E4E4
 
 .intro
   padding-top: 3em
+  @media (min-width: 1200px)
+    float: left
+    width: 25%
+    background:
+      color: $gray
+      image: url(/bg.png)
+      size: 300px 300px
+    @-moz-document url-prefix()
+      max-width: 400px
+
+.fix-intro
+  @media (min-width: 1200px)
+    position: fixed
+    height: 100%
 
 .logo
   margin:

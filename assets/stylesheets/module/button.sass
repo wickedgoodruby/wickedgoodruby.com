@@ -5,12 +5,12 @@ $gray: #F7F7F7
 $white: #FFFFFF
 
 .button
-  max-width: 400px
   margin: 1em auto .5em
-  display: block
   padding:
     top: 10px
     bottom: 15px
+  display: block
+  max-width: 400px
   +border-radius(5px)
   background-color: $red
   font-size: 1.25em
@@ -21,10 +21,10 @@ $white: #FFFFFF
     background-color: lighten($red, 4%)
 
 .button-register
-  width: 200px
-  position: relative
-  z-index: 15
-  +border-radius(8px)
   margin-top: 1em
+  position: relative
+  width: 200px
+  +border-radius(8px)
+  z-index: 15
   @media (max-width: 800px)
     border: 2px solid $gray

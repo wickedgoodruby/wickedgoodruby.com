@@ -63,13 +63,14 @@ $black: #192126
     float: left
 
 .speaker-link
-  display: block
-  height: 40px
-  width: 40px
   margin:
     left: 5px
     right: 5px
   padding-top: 6px
+  display: block
+  height: 40px
+  width: 40px
+  +box-sizing(border-box)
   +border-radius(50%)
   background-color: $red
   font:
@@ -77,7 +78,6 @@ $black: #192126
     size: 1em
   text-align: center
   color: $white
-  +box-sizing(border-box)
   +transition-duration(.25s)
   &:before
     content: attr(data-icon)

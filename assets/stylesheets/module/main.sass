@@ -1,42 +1,15 @@
 @import compass/css3
 
 $black: #192126
-$red: #ED4543
-$white: #FFFFFF
+$red: #ed4543
 
-#speakers, #schedule, #sponsors, #location
-  margin:
-    left: auto
-    right: auto
-  padding-bottom: 4em
-
-.section-name
-  text-align: center
-  font:
-    size: 8em
-    family: blanch, sans-serif
-  color: $red
-  @media (min-width: 800px)
-    line-height: 1.2
-
-.section-wrap
-  width: 80%
-  max-width: 1000px
-  margin:
-    left: auto
-    right: auto
-
-.section-info
-  clear: both
-  @media (min-width: 800px)
-    max-width: 600px
-    margin:
-      left: auto
-      right: auto
-    text-align: center
-
-.section-info-link
-  font-style: italic
-  color: lighten($black, 45%)
-  &:hover
-    text-decoration: underline
+.main
+  @media (min-width: 1200px)
+    float: right
+    width: 75%
+    border-left: 10px solid $red
+    +box-sizing(border-box)
+    background-color: lighten($black, 6%)
+  @media (min-width: 1600px)
+    @-moz-document url-prefix()
+      width: calc(100% - 400px)
