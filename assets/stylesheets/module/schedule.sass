@@ -25,17 +25,17 @@ $gray: #F7F7F7
 .schedule-slot
   &:not(:last-child)
     border-bottom: 2px solid $black
-  &:first-child
-    +border-top-radius(5px)
   &:last-child
     +border-bottom-radius(5px)
+  &:first-child
+    +border-top-radius(5px)
   &:hover
     background-color: lighten($black, 7%)
 
 .schedule-info
   overflow: auto
-  display: block
   padding: 1em 2em
+  display: block
   color: lighten($black, 45%)
 
 .schedule-time
@@ -62,8 +62,8 @@ $gray: #F7F7F7
     text-align: center
 
 .schedule-summary
-  display: none
   padding: 1em 2em
+  display: none
   background-color: $white
   color: $black
   cursor: pointer

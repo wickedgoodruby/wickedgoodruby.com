@@ -9,17 +9,13 @@ $black: #192126
   text-align: center
 
 .venue-address
-  display: block
   margin-top: .35em
+  display: block
 
 .venue-name
   font-size: 1.5em
 
 .venue-pic
-  @media (max-width: 800px)
-    height: 280px
-  @media (min-width: 800px)
-    height: 500px
   margin:
     top: 1em
     bottom: 3em
@@ -28,3 +24,7 @@ $black: #192126
     image: url(/seaport.jpg)
     position: center
     size: cover
+  @media (max-width: 800px)
+    height: 280px
+  @media (min-width: 800px)
+    height: 500px

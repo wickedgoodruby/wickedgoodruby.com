@@ -4,21 +4,21 @@ $red: #ED4543
 $white: #FFFFFF
 
 .animation
-  width: 225px
-  height: 325px
-  position: relative
   margin:
     left: auto
     right: auto
+  display: none\9
+  position: relative
+  height: 325px
+  width: 225px
   &:hover
     .shine
       left: 7.5em
-  display: none\9
 
 .terrier
-  height: 100%
   position: relative
   top: 3.45em
+  height: 100%
   background:
     image: url(/terrier.svg)
     size: 225px 325px
@@ -32,26 +32,26 @@ $white: #FFFFFF
   +transition-duration(.2s)
 
 .line
-  width: 45px
+  margin-bottom: -8px
   height: 2.5px
+  width: 45px
   background-color: $white
   +rotate(45deg)
-  margin-bottom: -8px
 
 .line2
-  width: 50px
-  height: 4px
-  background-color: $white
-  +rotate(45deg)
   position: relative
   left: -1em
+  height: 4px
+  width: 50px
+  background-color: $white
+  +rotate(45deg)
 
 .red
-  width: 50px
-  height: 50px
   margin:
     left: auto
     right: auto
   position: relative
   top: -6em
+  height: 50px
+  width: 50px
   background-color: $red
