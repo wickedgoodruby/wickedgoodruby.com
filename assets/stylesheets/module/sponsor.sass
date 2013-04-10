@@ -17,9 +17,13 @@ $white: #FFFFFF
     transform: uppercase
 
 .sponsor
-  margin-bottom: 1em
+  margin:
+    right: auto
+    bottom: 1em
+    left: auto
   position: relative
   width: 100%
+  max-width: 660px
   +border-radius(5px)
   background-color: $white
 
@@ -33,8 +37,8 @@ $white: #FFFFFF
   margin:
     left: auto
     right: auto
-  height: 80px
-  width: 200px
-  background:
-    image: url(/sponsors.png)
-    size: 200px 480px
+  height: 100px
+  width: 250px
+
+.sponsor-logo-yesware
+  background-image: url(/sponsors/yesware.svg)
