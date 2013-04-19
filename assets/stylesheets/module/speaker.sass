@@ -8,39 +8,40 @@ $black: #192126
   background-color: $black
 
 .keynote-speakers
+  overflow: auto
   @media (min-width: 800px)
     margin:
       right: auto
       left: auto
     width: 660px
 
-.speaker
+.speakers
+  @media (min-width: 500px)
+    margin:
+      right: auto
+      left: auto
+    width: 420px
+
+.keynote-speaker, .speaker
   margin-bottom: 3em
   position: relative
   &:hover
     .speaker-links
       margin-top: -55px
       opacity: 1
-  @media (min-width: 425px) and (max-width: 800px)
+
+.keynote-speaker
+  @media (min-width: 425px)
     float: left
     width: 48%
-    &:nth-child(2n+1)
+    &:nth-child(odd)
       margin-right: 4%
-  @media (min-width: 800px)
-    float: left
-    width: 320px
-    &:first-child
-      margin-right: 20px
-  //@media (min-width: 425px) and (max-width: 800px)
-  //  float: left
-  //  width: 48%
-  //  &:nth-child(2n+1)
-  //    margin-right: 4%
-  //@media (min-width: 800px)
-  //  float: left
-  //  width: 32%
-  //  &:nth-child(3n+1), &:nth-child(3n-1)
-  //    margin-right: 2%
+
+.speaker
+  float: left
+  width: 48%
+  &:nth-child(odd)
+    margin-right: 4%
 
 .speaker-pic
   display: block
@@ -53,21 +54,18 @@ $black: #192126
   width: 100%
 
 .speaker-links
-  margin:
-    left: auto
-    right: auto
-  width: 150px
+  text-align: center
   opacity: 0
   +transition-duration(.5s)
   li
-    float: left
+    display: inline
 
 .speaker-link
   margin:
     left: 5px
     right: 5px
   padding-top: 6px
-  display: block
+  display: inline-block
   height: 40px
   width: 40px
   +box-sizing(border-box)

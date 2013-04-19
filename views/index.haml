@@ -33,10 +33,11 @@
 
     .main
       %section#speakers
-        %h1.section-name Speakers
+        %h1.section-title Speakers
         .section-wrap
+          %h2.section-subtitle &mdash; Keynote Speakers &mdash;
           %ul.keynote-speakers
-            %li.speaker
+            %li.keynote-speaker
               %img.speaker-pic{:src => '/speakers/sandi.jpg', :alt => 'Sandi Metz'}
               .speaker-links-wrap
                 %ul.speaker-links
@@ -47,7 +48,7 @@
                   %li
                     %a.speaker-link{:href => 'http://sandimetz.com/', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
               %p.speaker-name Sandi Metz
-            %li.speaker
+            %li.keynote-speaker
               %img.speaker-pic{:src => '/speakers/foy.jpg', :alt => 'Foy Savas'}
               .speaker-links-wrap
                 %ul.speaker-links
@@ -58,23 +59,41 @@
                   %li
                     %a.speaker-link{:href => 'http://www.foysavas.com/', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
               %p.speaker-name Foy Savas
+          %h2.section-subtitle &mdash; Speakers &mdash;
+          %ul.speakers
+            %li.speaker
+              %img.speaker-pic{:src => '/speakers/sheena.jpg', :alt => 'Foy Savas'}
+              .speaker-links-wrap
+                %ul.speaker-links
+                  %li
+                    %a.speaker-link{:href => 'https://twitter.com/sheenapmccoy', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %p.speaker-name Sheena McCoy
+            %li.speaker
+              %img.speaker-pic{:src => '/speakers/rachel.jpg', :alt => 'Sandi Metz'}
+              .speaker-links-wrap
+                %ul.speaker-links
+                  %li
+                    %a.speaker-link{:href => 'https://twitter.com/rachelmyers', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+                  %li
+                    %a.speaker-link{:href => 'https://github.com/rachelmyers', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %p.speaker-name Rachel Myers
 
           %p.section-info
             We are looking for a total of fourteen speakers! Do you want to present at Wicked Good Ruby Conf? Please submit your RFP via pull request below.
           %a.button{:href => 'https://github.com/wickedgoodruby/rfp', :target => '_blank'} Submit a Proposal
 
       %section#sponsors
-        %h1.section-name Sponsors
+        %h1.section-title Sponsors
         .section-wrap
 
           .sponsor-group
-            %h2.sponsor-level &mdash; Wicked Good Sponsor &mdash;
+            %h2.section-subtitle &mdash; Wicked Good Sponsor &mdash;
             .sponsor.sponsor-yesware
               %a.sponsor-logo-wrap{:href => 'http://www.yesware.com/', :target => '_blank'}
                 .sponsor-logo.sponsor-logo-yesware
 
           .sponsor-group
-            %h2.sponsor-level &mdash; Good Sponsor &mdash;
+            %h2.section-subtitle &mdash; Good Sponsor &mdash;
             .sponsor.sponsor-cogo
               %a.sponsor-logo-wrap{:href => 'http://cogolabs.com/', :target => '_blank'}
                 .sponsor-logo.sponsor-logo-cogo
@@ -86,7 +105,7 @@
           %a.button{:href => 'sponsorship-prospectus.pdf'} View our Prospectus
 
       %section#location
-        %h1.section-name Location
+        %h1.section-title Location
         .section-wrap
           %h2.venue-name Amphitheater: Seaport World Trade Center
           %a.section-info-link.venue-address{:href => 'http://goo.gl/maps/7wmkf', :target => '_blank'} 200 Seaport Boulevard Boston, MA 02210
