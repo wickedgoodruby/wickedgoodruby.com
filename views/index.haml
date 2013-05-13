@@ -47,7 +47,7 @@
                     %a.speaker-link{:href => 'https://github.com/skmetz', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
                   %li
                     %a.speaker-link{:href => 'http://sandimetz.com/', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-              %p.speaker-name Sandi Metz
+              %p.speaker-name.italic Sandi Metz
             %li.keynote-speaker
               %img.speaker-pic{:src => '/speakers/foy.jpg', :alt => 'Foy Savas'}
               .speaker-links-wrap
@@ -58,7 +58,7 @@
                     %a.speaker-link{:href => 'https://github.com/foysavas', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
                   %li
                     %a.speaker-link{:href => 'http://www.foysavas.com/', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-              %p.speaker-name Foy Savas
+              %p.speaker-name.italic Foy Savas
           %h2.section-subtitle &mdash; Speakers &mdash;
           %ul.speakers
             %li.speaker
@@ -69,7 +69,7 @@
                     %a.speaker-link{:href => 'https://twitter.com/merbist', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
                   %li
                     %a.speaker-link{:href => 'https://github.com/mattetti', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
-              %p.speaker-name Matt Aimonetti
+              %p.speaker-name.italic Matt Aimonetti
             / %li.speaker
             /   %img.speaker-pic{:src => '/speakers/jeremy.jpg', :alt => 'Jeremy McAnally'}
             /   .speaker-links-wrap
@@ -87,14 +87,14 @@
                     %a.speaker-link{:href => 'https://twitter.com/_danmcclain', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
                   %li
                     %a.speaker-link{:href => 'https://github.com/danmcclain', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
-              %p.speaker-name Dan McClain
+              %p.speaker-name.italic Dan McClain
             %li.speaker
               %img.speaker-pic{:src => '/speakers/sheena.jpg', :alt => 'Sheena McCoy'}
               .speaker-links-wrap
                 %ul.speaker-links
                   %li
                     %a.speaker-link{:href => 'https://twitter.com/sheenapmccoy', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
-              %p.speaker-name Sheena McCoy
+              %p.speaker-name.italic Sheena McCoy
             %li.speaker
               %img.speaker-pic{:src => '/speakers/rachel.jpg', :alt => 'Rachel Myers'}
               .speaker-links-wrap
@@ -103,7 +103,7 @@
                     %a.speaker-link{:href => 'https://twitter.com/rachelmyers', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
                   %li
                     %a.speaker-link{:href => 'https://github.com/rachelmyers', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
-              %p.speaker-name Rachel Myers
+              %p.speaker-name.italic Rachel Myers
             %li.speaker
               %img.speaker-pic{:src => '/speakers/loren.jpg', :alt => 'Loren Segal'}
               .speaker-links-wrap
@@ -112,7 +112,7 @@
                     %a.speaker-link{:href => 'https://twitter.com/lsegal', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
                   %li
                     %a.speaker-link{:href => 'https://github.com/lsegal', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
-              %p.speaker-name Loren Segal
+              %p.speaker-name.italic Loren Segal
             %li.speaker
               %img.speaker-pic{:src => '/speakers/charlie.jpg', :alt => 'Charlie Somerville'}
               .speaker-links-wrap
@@ -121,7 +121,7 @@
                     %a.speaker-link{:href => 'https://twitter.com/charliesome', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
                   %li
                     %a.speaker-link{:href => 'https://github.com/charliesome', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
-              %p.speaker-name Charlie Somerville
+              %p.speaker-name.italic Charlie Somerville
 
           %p.section-info
             We are looking for a total of fourteen talks! Do you want to present at Wicked Good Ruby Conf? Please submit your RFP via pull request below.
@@ -138,10 +138,15 @@
                 .sponsor-logo.sponsor-logo-yesware
 
           .sponsor-group
+            %h2.section-subtitle &mdash; Really Good Sponsor &mdash;
+            %p.section-info.italic 4 slots left!
+
+          .sponsor-group
             %h2.section-subtitle &mdash; Good Sponsor &mdash;
             .sponsor.sponsor-cogo
               %a.sponsor-logo-wrap{:href => 'http://cogolabs.com/', :target => '_blank'}
                 .sponsor-logo.sponsor-logo-cogo
+            %p.section-info.italic 7 slots left!
 
           %p.section-info
             Interested in sponsoring Wicked Good Ruby Conf? Please take a look at our sponsorship prospectus pdf below for more information and email
