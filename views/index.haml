@@ -154,6 +154,82 @@
             We are looking for a total of fourteen talks! Do you want to present at Wicked Good Ruby Conf? Please submit your RFP via pull request below.
           %a.button{:href => 'https://github.com/wickedgoodruby/rfp', :target => '_blank'} Submit a Proposal
 
+      %section#schedule
+        %h1.section-title Schedule
+        .section-wrap
+
+          %h2.schedule-date Friday, Oct. 4
+          %ul.schedule-slots
+            %li.schedule-slot
+              %a.schedule-info{:href => '#'}
+                %h3.schedule-time 9a&ndash;6p
+                %h3.schedule-talk Intro to Ruby on Rails Workshop
+                %h3.schedule-speaker JumpstartLab
+              %p.schedule-summary JumpstartLab offers the best web development training anywhere. They are known for our expertise in Ruby on Rails, but also instruct courses in jQuery, JavaScript, ExtJS, and Git.
+
+          %h2.schedule-date Saturday, Oct. 5
+          %ul.schedule-slots
+            %li.schedule-slot
+              %a.schedule-info{:href => '#'}
+                %h3.schedule-time 9a&ndash;10a
+                %h3.schedule-talk Breakfast
+                %h3.schedule-speaker New Relic
+              %p.schedule-summary Saturday's continental breakfast is sponsored by Yesware. There will be vegetarian &amp; vegan options.
+            %li.schedule-slot
+              %a.schedule-info{:href => '#'}
+                %h3.schedule-time 10a&ndash;11a
+                %h3.schedule-talk People Patterns
+                %h3.schedule-speaker Joe O'Brien
+              %p.schedule-summary We spend a large portion of our time thinking about code and technical project issues. What about the people side of things? The majority of project failures occur because of people, not technology. What we need are guides that help us navigate the waters between the people around us.
+            %li.schedule-slot
+              %a.schedule-info{:href => '#'}
+                %h3.schedule-time 11a&ndash;12p
+                %h3.schedule-talk Why Is A Math Proof Like A Unit Test?
+                %h3.schedule-speaker Heather Rivers
+              %p.schedule-summary Once the realm of shadowy government organizations, cryptography now permeates computing. Unfortunately, it is difficult to get correct and most developers know just enough to be harmful for their projects. Together, we’ll go through the basics of modern cryptography and where things can go horribly wrong.
+            %li.schedule-slot
+              %a.schedule-info{:href => '#'}
+                %h3.schedule-time 12p&ndash;1p
+                %h3.schedule-talk Go Ahead, Make a Mess
+                %h3.schedule-speaker Steven Ragnorok
+              %p.schedule-summary Square manages big data, high uptime, secure payment info and large teams in an agile Rails environment. It's hard. Our system has outgrown the patterns of a young Rails app and some of what used to help has started to hurt. It's painful to have your email templates in the same project as your API backend. It's agonizing to use your main datastore for analytics, and it hurts to throw code into ./lib or require unnecessary gems. This talk is about how we've turned individual Rails pieces into separate services and scaled our codebase, data, and integration testing practices to support multiple big teams efficiently.
+
+          %h2.schedule-date Sunday, Oct. 6
+          %ul.schedule-slots
+            %li.schedule-slot
+              %a.schedule-info{:href => '#'}
+                %h3.schedule-time 9a&ndash;10a
+                %h3.schedule-talk Breakfast
+                %h3.schedule-speaker New Relic
+              %p.schedule-summary Saturday's continental breakfast is sponsored by Yesware. There will be vegetarian &amp; vegan options.
+            %li.schedule-slot
+              %a.schedule-info{:href => '#'}
+                %h3.schedule-time 10a&ndash;11a
+                %h3.schedule-talk Schemas for the Real World
+                %h3.schedule-speaker Carina Zona
+              %p.schedule-summary We spend a large portion of our time thinking about code and technical project issues. What about the people side of things? The majority of project failures occur because of people, not technology. What we need are guides that help us navigate the waters between the people around us.
+            %li.schedule-slot
+              %a.schedule-info{:href => '#'}
+                %h3.schedule-time 11a&ndash;12p
+                %h3.schedule-talk Grasping Complexity with Both Hands
+                %h3.schedule-speaker Steven Ragnorok
+              %p.schedule-summary Square manages big data, high uptime, secure payment info and large teams in an agile Rails environment. It's hard. Our system has outgrown the patterns of a young Rails app and some of what used to help has started to hurt. It's painful to have your email templates in the same project as your API backend. It's agonizing to use your main datastore for analytics, and it hurts to throw code into ./lib or require unnecessary gems. This talk is about how we've turned individual Rails pieces into separate services and scaled our codebase, data, and integration testing practices to support multiple big teams efficiently.
+            %li.schedule-slot
+              %a.schedule-info{:href => '#'}
+                %h3.schedule-time 12p&ndash;1p
+                %h3.schedule-talk High Performance Ruby
+                %h3.schedule-speaker Heather Rivers
+              %p.schedule-summary Square manages big data, high uptime, secure payment info and large teams in an agile Rails environment. It's hard. Our system has outgrown the patterns of a young Rails app and some of what used to help has started to hurt. It's painful to have your email templates in the same project as your API backend. It's agonizing to use your main datastore for analytics, and it hurts to throw code into ./lib or require unnecessary gems. This talk is about how we've turned individual Rails pieces into separate services and scaled our codebase, data, and integration testing practices to support multiple big teams efficiently.
+
+          %h2.schedule-date Monday, Oct. 7
+          %ul.schedule-slots
+            %li.schedule-slot
+              %a.schedule-info{:href => '#'}
+                %h3.schedule-time 9a&ndash;6p
+                %h3.schedule-talk Code Retreat
+                %h3.schedule-speaker Corey Haines
+              %p.schedule-summary Join Corey Haines at the DockYard office on Tremont Street for a day-long hackathon. Work on any project you like or have some fun with your peers.
+
       %section#sponsors
         %h1.section-title Sponsors
         .section-wrap
@@ -243,4 +319,21 @@
         %a{:href => 'http://dockyard.com/', :target => '_blank'}
           %img.made-by-dockyard{:onerror => "this.onerror = null; this.src=\"/made-by-dockyard.png\"", :src => '/made-by-dockyard.svg', :alt => 'Made by DockYard'}
 
-  %body
+:javascript
+
+      $('a[href^="#"]').bind('click.smoothscroll',function (e) {
+          e.preventDefault();
+          var target = this.hash;
+              $target = $(target);
+          $('html, body').stop().animate({
+              'scrollTop': $target.offset().top
+          }, 500, 'swing', function () {
+              window.location.hash = target;
+          });
+      });
+
+
+      $('.schedule-slot').click(function(){
+        $(this).find('.schedule-summary').slideToggle(function() {
+        });
+      });
