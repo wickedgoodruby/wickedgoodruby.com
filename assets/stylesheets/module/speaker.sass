@@ -25,10 +25,10 @@ $black: #192126
 .keynote-speaker, .speaker
   margin-bottom: 3em
   position: relative
+  +transition-duration(.25s)
+  +transition-property(opacity)
   &:hover
-    .speaker-links
-      margin-top: -55px
-      opacity: 1
+    opacity: .75
 
 .keynote-speaker
   @media (min-width: 425px)
@@ -48,23 +48,52 @@ $black: #192126
     &:not(:nth-child(3n+3))
       margin-right: 2%
 
-
 .speaker-pic
   display: block
   position: relative
   width: 100%
   +border-radius(5px)
 
-.speaker-links-wrap
-  position: absolute
-  width: 100%
+.speaker-name
+  clear: both
+  background-color: $black
+  text-align: center
+
+.speaker-name
+  padding-top: .75em
+  position: relative
+  font-weight: bold
+  z-index: 10
+
+.speaker-link
+  display: block
+  color: $white
+
+.speaker-index
+  padding-top: 3em
+  &:first-child
+    margin-top: -3em
+
+.speaker-pic-index
+  margin:
+    right: auto
+    left: auto
+  width: 180px
+
+.speaker-bio, .speaker-talk
+  margin:
+    right: auto
+    left: auto
+  max-width: 600px
+
+.speaker-bio
+  margin-bottom: 1em
 
 .speaker-links
+  margin:
+    top: .5em
+    bottom: .5em
   text-align: center
-  opacity: 0
-  +transition-duration(.5s)
-  li
-    display: inline
 
 .speaker-link
   margin:
@@ -87,17 +116,3 @@ $black: #192126
     content: attr(data-icon)
   &:hover
     background-color: lighten($red, 7%)
-
-.speaker-name, .speaker-company
-  clear: both
-  background-color: $black
-  text-align: center
-
-.speaker-name
-  padding-top: .75em
-  position: relative
-  font-weight: bold
-  z-index: 10
-
-.speaker-company
-  font-style: italic

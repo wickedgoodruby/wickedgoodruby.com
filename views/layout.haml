@@ -1,0 +1,62 @@
+!!!5
+%html
+  %head
+    %title Wicked Good Ruby Conf | Boston, MA Oct 12 - 13, 2013
+    %link{:href => '/assets/application.css', :rel => 'stylesheet'}
+    %link{:href => "http://fonts.googleapis.com/css?family=Lato:400,400italic,900italic", :rel => "stylesheet", :type => "text/css"}
+    %script{:src => '/assets/application.js', :type => 'text/javascript'}
+    %meta{:name => 'description', :content => 'Wicked Good Ruby Conf is a Ruby conference '}
+    %meta{:name => 'keywords',    :content => 'ruby on rails, rails, ruby, ruby on rails training, ruby application development, ruby on rails application development, ember application development, ember.js application development, software application development, web, web application development, mobile, mobile application development, ios, ios application development, iphone, iphone application development, android, android application development, postgres, startups, enterprise, Boston, MA, Massachusetts, for hire'}
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0", :name => "viewport"}
+    /[if lt IE 9]
+      <script src='assets/html5shiv.js'></script>
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-39682399-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+  %body
+    .intro
+      %a.logo{:href => '/'}
+      %p.intro-info
+        Join us for a two day, double track Ruby conference at the Seaport World Trade Center in Boston, MA!
+      %p.intro-date Oct 12-13, 2013
+
+      %a.button.button-register{:href => 'http://wickedgoodruby2013.eventbrite.com/', :target => '_blank'} Register
+
+    .triangle.triangle-start
+
+    .main
+      = yield
+
+      .animation
+        .terrier
+        .shine
+          .line
+          .line2
+        .red
+
+      %footer.footer
+        %h2.footer-callout Get excited for Boston's first Ruby conference!
+        %ul.footer-buttons
+          %li.footer-button
+            %a.footer-button-link{:href => 'http://wickedgoodruby2013.eventbrite.com/', :target => '_blank'}
+              %span.footer-button-link-icon{'aria-hidden' => 'true', 'data-icon' => 'B'}
+              Buy tix on Eventbrite
+          %li.footer-button
+            %a.footer-button-link{:href => 'https://twitter.com/WickedGoodRuby', :target => '_blank'}
+              %span.footer-button-link-icon{'aria-hidden' => 'true', 'data-icon' => 'T'}
+              Follow us on Twitter
+          %li.footer-button
+            %a.footer-button-link{:href => 'http://lanyrd.com/2013/wickedgoodruby/', :target => '_blank'}
+              %span.footer-button-link-icon{'aria-hidden' => 'true', 'data-icon' => 'L'}
+              Track us on Lanyrd
+        %p.footer-text &copy; Copyright 2013 Wicked Good Ruby Conf
+        %p.footer-text All Rights Reserved
+        %a{:href => 'http://dockyard.com/', :target => '_blank'}
+          %img.made-by-dockyard{:onerror => "this.onerror = null; this.src=\"/made-by-dockyard.png\"", :src => '/made-by-dockyard.svg', :alt => 'Made by DockYard'}

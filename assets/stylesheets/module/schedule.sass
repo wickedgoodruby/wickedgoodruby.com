@@ -6,7 +6,7 @@ $white: #FFFFFF
 $gray: #F7F7F7
 
 #schedule
-  background-color: $black
+  background-color: lighten($black, 3%)
 
 .schedule-date
   text:
@@ -16,15 +16,18 @@ $gray: #F7F7F7
 .schedule-slots
   margin-top: 1em
   +border-radius(5px)
-  background-color: lighten($black, 5%)
+  background-color: lighten($black, 6%)
   &:not(:last-child)
     margin-bottom: 3em
   &:last-child
     margin-bottom: 1em
+  & li:not(:last-child)
+    border-bottom: 2px solid lighten($black, 3%)
 
 .schedule-slot
-  &:not(:last-child)
-    border-bottom: 2px solid $black
+  overflow: auto
+  padding: 1em 2em
+  display: block
   &:last-child
     +border-bottom-radius(5px)
   &:first-child
@@ -32,11 +35,12 @@ $gray: #F7F7F7
   &:hover
     background-color: lighten($black, 7%)
 
-.schedule-info
-  overflow: auto
-  padding: 1em 2em
-  display: block
+.schedule-time, .schedule-talk, .schedule-speaker
   color: lighten($black, 45%)
+
+.schedule-time, .schedule-speaker
+  @media (max-width: 950px)
+    text-align: center
 
 .schedule-time
   @media (min-width: 950px)
@@ -56,10 +60,6 @@ $gray: #F7F7F7
     float: right
     width: 20%
     text-align: right
-
-.schedule-time, .schedule-speaker
-  @media (max-width: 950px)
-    text-align: center
 
 .schedule-summary
   padding: 1em 2em
