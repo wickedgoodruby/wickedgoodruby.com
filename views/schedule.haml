@@ -27,23 +27,54 @@
         %a.schedule-slot
           %a.schedule-info{:href => '#'}
             %h3.schedule-time 10a&ndash;11a
-            %h3.schedule-talk People Patterns
-            %h3.schedule-speaker Joe O'Brien
-        %p.schedule-summary We spend a large portion of our time thinking about code and technical project issues. What about the people side of things? The majority of project failures occur because of people, not technology. What we need are guides that help us navigate the waters between the people around us.
+            %h3.schedule-talk Creativity with Ruby-Processing
+            %h3.schedule-speaker Joanne Cheng
+        %p.schedule-summary Many of us are developers working in great jobs that can, after a while, cause our minds to settle into habits. We work so hard to make deadlines that sometimes we forget to step out of our comfort zones. Enter Processing: Processing is a programming environment where developers can easily create images, animations, and visually interactive programs. A developer can break out of a rut by expressing themselves with beautiful interactions and visualizations through code. Out of the box, the Processing environment requires Java programming skills.
+        %p.schedule-summary Ruby-Processing is a simple wrapper for the Processing framework that combines the visual-driven environment of Processing with the fun of writing Ruby. In this talk, we'll go through the ways to "sketch" with Ruby-Processing with several live coding examples and create something together. Through creativity, we can increase the breadth of problems we can solve in our day to day jobs.
       %li
         %a.schedule-slot
           %a.schedule-info{:href => '#'}
             %h3.schedule-time 11a&ndash;12p
-            %h3.schedule-talk Why Is A Math Proof Like A Unit Test?
-            %h3.schedule-speaker Heather Rivers
-        %p.schedule-summary Once the realm of shadowy government organizations, cryptography now permeates computing. Unfortunately, it is difficult to get correct and most developers know just enough to be harmful for their projects. Together, we’ll go through the basics of modern cryptography and where things can go horribly wrong.
+            %h3.schedule-talk Towards Tooling; A Look at What is Missing From Our Toolbox
+            %h3.schedule-speaker Loren Segal
+        %p.schedule-summary You can usually judge the maturity of a programming language ecosystem by the breadth of its tooling. For example, Java has a plethora of IDEs that each, in turn, have many well maintained refactoring and code quality plugins (like FindBugs and PMD). C/C++ is equally well established in this space. Even JavaScript is becoming well represented, with a number of static code analyzers and language supersets (like Dart and TypeScript) aimed at improving tooling in the language. But where is Ruby in all of this? This talk will shed some light on the existing tools available in the Ruby world as well as some new tools just starting to be built out in the areas of static analysis, formal verification, and code quality checking. We will look at what kind of tools the Ruby community is good at building, what kind of tools we are bad at, and most of all, some of the tooling we should be working on to really improve our ecosystem and drive more developers to this wonderful language.
       %li
         %a.schedule-slot
           %a.schedule-info{:href => '#'}
             %h3.schedule-time 12p&ndash;1p
-            %h3.schedule-talk Go Ahead, Make a Mess
-            %h3.schedule-speaker Steven Ragnorok
-        %p.schedule-summary Square manages big data, high uptime, secure payment info and large teams in an agile Rails environment. It's hard. Our system has outgrown the patterns of a young Rails app and some of what used to help has started to hurt. It's painful to have your email templates in the same project as your API backend. It's agonizing to use your main datastore for analytics, and it hurts to throw code into ./lib or require unnecessary gems. This talk is about how we've turned individual Rails pieces into separate services and scaled our codebase, data, and integration testing practices to support multiple big teams efficiently.
+            %h3.schedule-talk Escaping Reality With Shoes
+            %h3.schedule-speaker Zachary Scott
+        %p.schedule-summary Are you bored of hearing about Rails, Node, or Ember? Is your day job hacking on the same Rails app getting the best of you? Maybe you're looking for a fun way to get into this programming thing.
+        %p.schedule-summary Let's imagine for a moment, your boss just gave you the day off because you've managed to squash the remaining bugs and shipped some invaluable features. With all of this free time there's so many options, what do you dooo? I know! You can build a game and experiment with some new code in the Magical Land of Shoes.
+        %p.schedule-summary _why once said, "if you program and want any longevity to your work, make a game. all else recycles, but people rewrite architectures to keep games alive."
+        %p.schedule-summary It's important to step out of your comfort zone and try something new! This talk will give you a whirlwind tour and cover the essentials that Shoes has to offer.
+        %p.schedule-summary Together we can build a fun little game you can share with your friends, and inspire you to venture to places you're unaccustomed to.
+      %li
+        %a.schedule-slot
+          %a.schedule-info{:href => '#'}
+            %h3.schedule-time 10a&ndash;11a
+            %h3.schedule-talk Bloom: A language for disorderly distributed programming
+            %h3.schedule-speaker Christopher Meiklejohn
+        %p.schedule-summary Traditional programming languages use a model of computation where individual instructions are executed in order. However, when building distributed systems this model fails to match the reality of how your application code is actually executed. Bloom is a language which allows programmers to build applications as a series of unordered statements while also providing facilities for imposing a particular ordering of events when necessary.
+        %p.schedule-summary During this talk we will explore building applications in Bud, which is a prototype of Bloom implemented as a domain specific language in Ruby. We will discuss the concepts of logical monotonicity, disorderly collections, the CALM principle which is the root of the Bloom language, and how to use he Bloom language to identify critical sections of your code where a coordiation library should be used to ensure consistency.
+      %li
+        %a.schedule-slot
+          %a.schedule-info{:href => '#'}
+            %h3.schedule-time 11a&ndash;12p
+            %h3.schedule-talk PEACE: Programming Expertly Amid Corporations & Enterprises
+            %h3.schedule-speaker Steven Haddox
+        %p.schedule-summary Everyone casts the "Enterprise" as the most horrid place in the world to be a Ruby developer, and they used to be right. How does a Rubyist trying to stay current work in a confined and archaic environment with strict security restrictions? You do everything other Rubyists do, but you do it without sudo and from source. Together we'll identify the best open source self-hosted options for agile managment, provisioning, git hosting, error tracking, CI, isolated RVM, metrics, central logging, and security. As a bonus, you'll learn how to automate the setup of all these tools as much as possible without sudo privileges.
+      %li
+        %a.schedule-slot
+          %a.schedule-info{:href => '#'}
+            %h3.schedule-time 12p&ndash;1p
+            %h3.schedule-talk asdfasdfadsfEscaping Reality With Shoes
+            %h3.schedule-speaker asdfasdfdsfZachary Scott
+        %p.schedule-summary Are you bored of hearing about Rails, Node, or Ember? Is your day job hacking on the same Rails app getting the best of you? Maybe you're looking for a fun way to get into this programming thing.
+        %p.schedule-summary Let's imagine for a moment, your boss just gave you the day off because you've managed to squash the remaining bugs and shipped some invaluable features. With all of this free time there's so many options, what do you dooo? I know! You can build a game and experiment with some new code in the Magical Land of Shoes.
+        %p.schedule-summary _why once said, "if you program and want any longevity to your work, make a game. all else recycles, but people rewrite architectures to keep games alive."
+        %p.schedule-summary It's important to step out of your comfort zone and try something new! This talk will give you a whirlwind tour and cover the essentials that Shoes has to offer.
+        %p.schedule-summary Together we can build a fun little game you can share with your friends, and inspire you to venture to places you're unaccustomed to.
 
     %h2.schedule-date Sunday, Oct. 6
     %ul.schedule-slots
