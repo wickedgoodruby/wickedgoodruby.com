@@ -7,6 +7,9 @@ $black: #192126
 #speakers
   background-color: $black
 
+#speakers-index
+  background-color: lighten($black, 9%)
+
 .keynote-speakers
   overflow: auto
   @media (min-width: 800px)
@@ -55,19 +58,8 @@ $black: #192126
   +border-radius(5px)
 
 .speaker-name
-  clear: both
-  background-color: $black
-  text-align: center
-
-.speaker-name
   padding-top: .75em
-  position: relative
   font-weight: bold
-  z-index: 10
-
-.speaker-link
-  display: block
-  color: $white
 
 .speaker-index
   padding-top: 3em
