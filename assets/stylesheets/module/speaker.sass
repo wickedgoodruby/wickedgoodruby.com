@@ -7,9 +7,6 @@ $black: #192126
 #speakers
   background-color: $black
 
-#speakers-index
-  background-color: lighten($black, 9%)
-
 .keynote-speakers
   overflow: auto
   @media (min-width: 800px)
@@ -70,7 +67,8 @@ $black: #192126
   margin:
     right: auto
     left: auto
-  width: 180px
+  width: 100%
+  max-width: 320px
 
 .speaker-bio, .speaker-talk
   margin:
@@ -108,3 +106,7 @@ $black: #192126
     content: attr(data-icon)
   &:hover
     background-color: lighten($red, 7%)
+
+.break
+  margin-top: 3em
+  text-align: center
