@@ -33,33 +33,24 @@ $gray: #F7F7F7
   &:first-child
     +border-top-radius(5px)
 
-.schedule-time, .schedule-speaker
+.schedule-time
   @media (max-width: 950px)
     text-align: center
-
-.schedule-time
   @media (min-width: 950px)
     float: left
     width: 20%
 
 .schedule-talk
+  display: block
   text-align: center
   @media (min-width: 950px)
     float: left
     width: 60%
 
-.schedule-speaker
+.schedule-location
+  @media (max-width: 950px)
+    text-align: center
   @media (min-width: 950px)
     float: right
     width: 20%
     text-align: right
-
-.schedule-summary
-  padding: 1em 2em
-  display: none
-  background-color: lighten($black, 45%)
-  color: $black
-  cursor: pointer
-
-.schedule-time
-  color: $white
