@@ -32,11 +32,6 @@ $gray: #F7F7F7
     +border-bottom-radius(5px)
   &:first-child
     +border-top-radius(5px)
-  &:hover
-    background-color: lighten($black, 7%)
-
-.schedule-time, .schedule-talk, .schedule-speaker
-  color: lighten($black, 45%)
 
 .schedule-time, .schedule-speaker
   @media (max-width: 950px)
@@ -48,14 +43,12 @@ $gray: #F7F7F7
     width: 20%
 
 .schedule-talk
-  font-weight: bold
   text-align: center
   @media (min-width: 950px)
     float: left
     width: 60%
 
 .schedule-speaker
-  font-style: italic
   @media (min-width: 950px)
     float: right
     width: 20%
@@ -67,3 +60,6 @@ $gray: #F7F7F7
   background-color: lighten($black, 45%)
   color: $black
   cursor: pointer
+
+.schedule-time
+  color: $white
