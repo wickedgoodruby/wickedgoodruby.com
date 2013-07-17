@@ -3,8 +3,8 @@
 %section.detail-page
   %h1.section-title Speakers
   .section-wrap
-    %ul.speakers-index
-      %li.speaker-index#alcorn
+    %ul
+      %li.detail-section#alcorn
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/alcorn.jpg', :alt => 'Doug Alcorn'}
         .speaker-info
           %h2.detail-title Doug Alcorn
@@ -12,24 +12,22 @@
             %a.speaker-link{:href => 'http://twitter.com/dougalcorn', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/dougalcorn', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
             %a.speaker-link{:href => 'http://gaslight.co', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-          %p.speaker-bio Doug is a lover of ruby, spread sheets, and internet space ships.
-          %p.speaker-talk
+          %p.detail-info Doug is a lover of ruby, spread sheets, and internet space ships.
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#alcorn'} Market Analytics in EVE with Ruby
-        .break
-      %li.speaker-index#aimonetti
+      %li.detail-section#aimonetti
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/matt.jpg', :alt => 'Matt Aimonetti'}
         .speaker-info
           %h2.detail-title Matt Aimonetti
           .speaker-links
             %a.speaker-link{:href => 'https://twitter.com/mattetti', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/mattetti', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
-          %p.speaker-bio Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a venenatis velit. Cras auctor dui non tortor elementum adipiscing. Duis malesuada bibendum neque quis facilisis. Aenean molestie, felis quis lacinia varius, eros odio volutpat nibh, in egestas sapien lacus quis ante. Duis scelerisque eleifend egestas. Vestibulum tincidunt erat eget congue euismod.
-          %p.speaker-talk
+          %p.detail-info Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a venenatis velit. Cras auctor dui non tortor elementum adipiscing. Duis malesuada bibendum neque quis facilisis. Aenean molestie, felis quis lacinia varius, eros odio volutpat nibh, in egestas sapien lacus quis ante. Duis scelerisque eleifend egestas. Vestibulum tincidunt erat eget congue euismod.
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#aimonetti'} ???
-        .break
-      %li.speaker-index#baker
+      %li.detail-section#baker
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/baker.jpg', :alt => 'Steven Baker'}
         .speaker-info
           %h2.detail-title Steven R. Baker
@@ -37,12 +35,11 @@
             %a.speaker-link{:href => 'http://twitter.com/srbaker', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/srbaker', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
             %a.speaker-link{:href => 'http://stevenrbaker.com', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-          %p.speaker-bio ??? This talk goes beyond "how do I capybara on my rails?" and aspires to convey the mentality of a pragmatic TDDing programmer. I hope to enlighten people who are having trouble understanding the TDD mindset and also to share what I believe is a user-centric and highly efficient coding style.
-          %p.speaker-talk
+          %p.detail-info ??? This talk goes beyond "how do I capybara on my rails?" and aspires to convey the mentality of a pragmatic TDDing programmer. I hope to enlighten people who are having trouble understanding the TDD mindset and also to share what I believe is a user-centric and highly efficient coding style.
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#baker'} MagLev: Ruby With an Image
-        .break
-      %li.speaker-index#ballanco
+      %li.detail-section#ballanco
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/ballanco.jpg', :alt => 'Joshua Ballanco'}
         .speaker-info
           %h2.detail-title Joshua Ballanco
@@ -50,12 +47,11 @@
             %a.speaker-link{:href => 'https://twitter.com/manhattanmetric', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/jballanc', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
             %a.speaker-link{:href => 'http://manhattanmetric.com', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-          %p.speaker-bio ??? In the past I gave two relatively well receieved talks on MacRuby to the Boston.rb group, and both times I was asked "What about MacRuby on iOS?" In both cases, I had promised to give a follow-up presentation at "some point in the future". This would be that talk, taking the same approach I did in those talks of looking at the technology from the bottom up. This talk will be less of a tutorial, and more of a deep dive into the heart of RubyMotion itself.
-          %p.speaker-talk
+          %p.detail-info ??? In the past I gave two relatively well receieved talks on MacRuby to the Boston.rb group, and both times I was asked "What about MacRuby on iOS?" In both cases, I had promised to give a follow-up presentation at "some point in the future". This would be that talk, taking the same approach I did in those talks of looking at the technology from the bottom up. This talk will be less of a tutorial, and more of a deep dive into the heart of RubyMotion itself.
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#ballanco'} RubyMotion: Under the Hood
-        .break
-      %li.speaker-index#campbell
+      %li.detail-section#campbell
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/campbell.jpg', :alt => 'Justin Campbell'}
         .speaker-info
           %h2.detail-title Justin Campbell
@@ -63,12 +59,11 @@
             %a.speaker-link{:href => 'https://twitter.com/justincampbell', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/justincampbell', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
             %a.speaker-link{:href => 'http://justincampbell.me/', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-          %p.speaker-bio ???
-          %p.speaker-talk
+          %p.detail-info ???
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#campbell'} Hacking Your Home with Ruby
-        .break
-      %li.speaker-index#cheng
+      %li.detail-section#cheng
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/joanne.jpg', :alt => 'Joanne Cheng'}
         .speaker-info
           %h2.detail-title Joanne Cheng
@@ -76,15 +71,14 @@
             %a.speaker-link{:href => 'https://twitter.com/joannecheng', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/jc-2', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
             %a.speaker-link{:href => 'http://plastic-cities.com', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-          %p.speaker-bio
+          %p.detail-info
             Joanne is a developer for thoughtbot, inc. in Denver, CO, happily writing code all day. When she's not writing code for thoughtbot, inc., she works on open source projects that benefit the state of Colorado and its citizens through
             %a.section-info-link{:href => '/schedulehttp://codeforcommunities.org/', :target => '_blank'} Code for Communities
             &#046; She was once a classical musician in training.
-          %p.speaker-talk
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#cheng'} Creativity with Ruby-Processing
-        .break
-      %li.speaker-index#desjardins
+      %li.detail-section#desjardins
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/desjardins.jpg', :alt => 'Mike Desjardins'}
         .speaker-info
           %h2.detail-title Mike Desjardins
@@ -92,12 +86,11 @@
             %a.speaker-link{:href => 'https://twitter.com/mdesjardins', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/mdesjardins', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
             %a.speaker-link{:href => 'http://www.mikedesjardins.net', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-          %p.speaker-bio I started my career writing assembly language firmware for disk drives. Since then I've done C, some C++, then some SQL and Java, and for the past several years, I've been a Rubyist. Given that background, I really don't consider myself to be a "Ruby Expert." I've presented talks at various events, but this would be my first Ruby talk.
-          %p.speaker-talk
+          %p.detail-info I started my career writing assembly language firmware for disk drives. Since then I've done C, some C++, then some SQL and Java, and for the past several years, I've been a Rubyist. Given that background, I really don't consider myself to be a "Ruby Expert." I've presented talks at various events, but this would be my first Ruby talk.
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#desjardins'} Rails Sojourn: One Man's Journey
-        .break
-      %li.speaker-index#garber
+      %li.detail-section#garber
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/jason.jpg', :alt => 'Jason Garber'}
         .speaker-info
           %h2.detail-title Jason Garber
@@ -105,13 +98,12 @@
             %a.speaker-link{:href => 'https://twitter.com/jasongarber', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/jgarber', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
             %a.speaker-link{:href => 'http://jasongarber.com/ruby-developer', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-          %p.speaker-bio
+          %p.detail-info
             Jason has learned much about parsing since finishing whytheluckystiff’s RedCloth Ragel rewrite in 2008. He’s explored a number of parsing libraries and approaches, used Parslet to do natural language parsing for client work, and is currently rewriting RedCloth in Parslet. Jason is a Ruby developer at PromptWorks in Philadelphia.
-          %p.speaker-talk
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#garber'} Writing DSLs with Parslet
-        .break
-      %li.speaker-index#gauthier
+      %li.detail-section#gauthier
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/gauthier.jpg', :alt => 'Nick Gauthier'}
         .speaker-info
           %h2.detail-title Nick Gauthier
@@ -119,13 +111,12 @@
             %a.speaker-link{:href => 'http://twitter.com/ngauthier', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/ngauthier', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
             %a.speaker-link{:href => 'http://ngauthier.com', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-          %p.speaker-bio
+          %p.detail-info
             ??? This talk goes beyond "how do I capybara on my rails?" and aspires to convey the mentality of a pragmatic TDDing programmer. I hope to enlighten people who are having trouble understanding the TDD mindset and also to share what I believe is a user-centric and highly efficient coding style.
-          %p.speaker-talk
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#gauthier'} Outside-In Testing
-        .break
-      %li.speaker-index#haddox
+      %li.detail-section#haddox
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/steven.jpg', :alt => 'Steven Haddox'}
         .speaker-info
           %h2.detail-title Steven Haddox
@@ -133,29 +124,27 @@
             %a.speaker-link{:href => 'http://twitter.com/stevenhaddox', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/stevenhaddox', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
             %a.speaker-link{:href => 'http://stevenhaddox.com', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-          %p.speaker-bio
+          %p.detail-info
             Steven has been a web developer and server admin for over a decade. He has been using Ruby since 2008 and has spent the majority of his career working within the confines of corporate LANs. His frustrations and pain points have led him to create
             %a.section-info-link{:href => '/schedulehttps://github.com/stevenhaddox/rvm_fw', :target => '_blank'} RVM::FW
             and currently
             %a.section-info-link{:href => '/schedulehttps://github.com/stevenhaddox/SUPPORT', :target => '_blank'} SUPPORT
             to help aid Rubyists struggling with getting their projects off the ground so that they can simply write code.
-          %p.speaker-talk
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#haddox'} PEACE: Programming Expertly Amid Corporations & Enterprises
-        .break
-      %li.speaker-index#liles
+      %li.detail-section#liles
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/bryan.jpg', :alt => 'Bryan Liles'}
         .speaker-info
           %h2.detail-title Bryan Liles
           .speaker-links
             %a.speaker-link{:href => 'https://twitter.com/bryanl', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/bryanl', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
-          %p.speaker-bio ???
-          %p.speaker-talk
+          %p.detail-info ???
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#liles'} ???
-        .break
-      %li.speaker-index#mcanally
+      %li.detail-section#mcanally
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/jeremy.jpg', :alt => 'Jeremy McAnally'}
         .speaker-info
           %h2.detail-title Jeremy McAnally
@@ -163,12 +152,11 @@
             %a.speaker-link{:href => 'https://twitter.com/jm', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/jm', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
             %a.speaker-link{:href => 'http://jeremymcanally.com', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-          %p.speaker-bio I am awesome.  Actually, that's rather false, but I really like Boston a lot.  That counts for something, right?
-          %p.speaker-talk
+          %p.detail-info I am awesome.  Actually, that's rather false, but I really like Boston a lot.  That counts for something, right?
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#mcanally'} RubyMotion: America's iOS Framework
-        .break
-      %li.speaker-index#mcclain
+      %li.detail-section#mcclain
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/dan.jpg', :alt => 'Dan McClain'}
         .speaker-info
           %h2.detail-title Dan McClain
@@ -176,36 +164,33 @@
             %a.speaker-link{:href => 'https://twitter.com/_danmcclain', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/danmcclain', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
             %a.speaker-link{:href => 'http://danmcclain.net', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-          %p.speaker-bio I am the author of the postgre_ext gem, which adds ActiveRecord and Arel support for PostgreSQL datatypes, and contributed commits to Rails 4.0 that added PostgreSQL array support.
-          %p.speaker-talk
+          %p.detail-info I am the author of the postgre_ext gem, which adds ActiveRecord and Arel support for PostgreSQL datatypes, and contributed commits to Rails 4.0 that added PostgreSQL array support.
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#mcclain'} Supercharging ActiveRecord with PostgreSQL
-        .break
-      %li.speaker-index#mccoy
+      %li.detail-section#mccoy
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/sheena.jpg', :alt => 'Sheena McCoy'}
         .speaker-info
           %h2.detail-title Sheena McCoy
           .speaker-links
             %a.speaker-link{:href => 'https://twitter.com/sheenapmccoy', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
-          %p.speaker-bio Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a venenatis velit. Cras auctor dui non tortor elementum adipiscing. Duis malesuada bibendum neque quis facilisis. Aenean molestie, felis quis lacinia varius, eros odio volutpat nibh, in egestas sapien lacus quis ante. Duis scelerisque eleifend egestas. Vestibulum tincidunt erat eget congue euismod.
-          %p.speaker-talk
+          %p.detail-info Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a venenatis velit. Cras auctor dui non tortor elementum adipiscing. Duis malesuada bibendum neque quis facilisis. Aenean molestie, felis quis lacinia varius, eros odio volutpat nibh, in egestas sapien lacus quis ante. Duis scelerisque eleifend egestas. Vestibulum tincidunt erat eget congue euismod.
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#mccoy'} ???
-        .break
-      %li.speaker-index#meiklejohn
+      %li.detail-section#meiklejohn
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/meiklejohn.jpg', :alt => 'Christopher Meiklejohn'}
         .speaker-info
           %h2.detail-title Christopher Meiklejohn
           .speaker-links
             %a.speaker-link{:href => 'https://twitter.com/cmeik', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/cmeiklejohn', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
-          %p.speaker-bio Christopher Meiklejohn is a Software Engineer with Basho Technologies, Inc. where he focuses on building rich web applications for Riak using Erlang and JavaScript. Before joining Basho, he worked at Swipely, a loyalty program startup based in Providence where he maintained critical infrastructure components written in Ruby. Christopher currently serves as one of the maintainers of Rubygems.org.
-          %p.speaker-bio Christopher speaks frequently at meetups about JavaScript and Rich Internet Applications, co-organized DowncityJS, and has most recently spoken at Web Unleashed '12 and Clojure/West '13. Christopher is also a graduate student in computer science at Brown University, in Providence RI.
-          %p.speaker-talk
+          %p.detail-info Christopher Meiklejohn is a Software Engineer with Basho Technologies, Inc. where he focuses on building rich web applications for Riak using Erlang and JavaScript. Before joining Basho, he worked at Swipely, a loyalty program startup based in Providence where he maintained critical infrastructure components written in Ruby. Christopher currently serves as one of the maintainers of Rubygems.org.
+          %p.detail-info Christopher speaks frequently at meetups about JavaScript and Rich Internet Applications, co-organized DowncityJS, and has most recently spoken at Web Unleashed '12 and Clojure/West '13. Christopher is also a graduate student in computer science at Brown University, in Providence RI.
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#meiklejohn'} Bloom: A language for disorderly distributed programming
-        .break
-      %li.speaker-index#menard
+      %li.detail-section#menard
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/menard.jpg', :alt => 'Mark Menard'}
         .speaker-info
           %h2.detail-title Mark Menard
@@ -213,13 +198,12 @@
             %a.speaker-link{:href => 'http://twitter.com/mark_menard', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/MarkMenard', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
             %a.speaker-link{:href => 'http://www.enablelabs.com/', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-          %p.speaker-bio Mark Menard is the founder of Enable Labs, a boutique consulting firm, in Troy, NY, specializing in product develoment, business productity and problem solving. Mark recently did the Intro to Ruby and Rails at LosAngeles Ruby Conf, and has spoken on Ruby at several events including BarCamp Albany and CodeCamp Albany. He has also spoken on Software Patents at TEDxAlbany in 2010. Mark frequently presents on Ruby issues at the TechValley Ruby Brigade; and does training sessions covering Ruby, Rails, refactoring, test/behavior driven development, and other software development topics.
-          %p.speaker-bio Mark used to be a Java developer and caught the dynamic language bug when he started coding in Groovy and then discovered Ruby. Since then he has added iOS development using Objective-C, Ruby's twin separated at birth.
-          %p.speaker-talk
+          %p.detail-info Mark Menard is the founder of Enable Labs, a boutique consulting firm, in Troy, NY, specializing in product develoment, business productity and problem solving. Mark recently did the Intro to Ruby and Rails at LosAngeles Ruby Conf, and has spoken on Ruby at several events including BarCamp Albany and CodeCamp Albany. He has also spoken on Software Patents at TEDxAlbany in 2010. Mark frequently presents on Ruby issues at the TechValley Ruby Brigade; and does training sessions covering Ruby, Rails, refactoring, test/behavior driven development, and other software development topics.
+          %p.detail-info Mark used to be a Java developer and caught the dynamic language bug when he started coding in Groovy and then discovered Ruby. Since then he has added iOS development using Objective-C, Ruby's twin separated at birth.
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#menard'} JRuby: Insights from Six Years in Production
-        .break
-      %li.speaker-index#metz
+      %li.detail-section#metz
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/sandi.jpg', :alt => 'Sandi Metz'}
         .speaker-info
           %h2.detail-title Sandi Metz
@@ -227,24 +211,22 @@
             %a.speaker-link{:href => 'https://twitter.com/sandimetz', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/skmetz', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
             %a.speaker-link{:href => 'http://sandimetz.com/', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-          %p.speaker-bio ???
-          %p.speaker-talk
+          %p.detail-info ???
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#metz'} ???
-        .break
-      %li.speaker-index#myers
+      %li.detail-section#myers
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/rachel.jpg', :alt => 'Rachel Myers'}
         .speaker-info
           %h2.detail-title Rachel Myers
           .speaker-links
             %a.speaker-link{:href => 'https://twitter.com/rachelmyers', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/rachelmyers', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
-          %p.speaker-bio ????
-          %p.speaker-talk
+          %p.detail-info ????
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#myers'} ???
-        .break
-      %li.speaker-index#nicholaides
+      %li.detail-section#nicholaides
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/nicholaides.jpg', :alt => 'Mike Nicholaides'}
         .speaker-info
           %h2.detail-title Mike Nicholaides
@@ -252,12 +234,11 @@
             %a.speaker-link{:href => 'https://twitter.com/nicholaides', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/nicholaides', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
             %a.speaker-link{:href => 'http://ablegray.com/', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-          %p.speaker-bio I have been a Rails consultant since 2006 and have performed Rails security audits for numerous financial institutions and other organizations with highly sensitive data.
-          %p.speaker-talk
+          %p.detail-info I have been a Rails consultant since 2006 and have performed Rails security audits for numerous financial institutions and other organizations with highly sensitive data.
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#nicholaides'} Securing Your Rails App
-        .break
-      %li.speaker-index#savas
+      %li.detail-section#savas
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/foy.jpg', :alt => 'Foy Savas'}
         .speaker-info
           %h2.detail-title Foy Savas
@@ -265,12 +246,11 @@
             %a.speaker-link{:href => 'https://twitter.com/foysavas', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/foysavas', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
             %a.speaker-link{:href => 'http://www.foysavas.com/', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-          %p.speaker-bio ???
-          %p.speaker-talk
+          %p.detail-info ???
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#savas'} ???
-        .break
-      %li.speaker-index#schneeman
+      %li.detail-section#schneeman
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/richard.jpg', :alt => 'Richard Schneeman'}
         .speaker-info
           %h2.detail-title Richard Schneeman
@@ -278,39 +258,36 @@
             %a.speaker-link{:href => 'https://twitter.com/schneems', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/schneems', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
             %a.speaker-link{:href => 'http://schneems.com/', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-          %p.speaker-bio
+          %p.detail-info
             Richard is married to Ruby since 2013, programming Ruby since 2006, and teaching Rails since 2010. He works at Heroku and lectures at the University of Texas, and yes: his wife's name is Ruby. He enjoys obsessively playing Starcraft 2 and writing gems such as Wicked, Sextant, and oPRO. He loves open source and wrote
             %a.section-info-link{:href => '/schedulehttp://www.codetriage.com/', :target => '_blank'} Code Triage
             to help people get involved with their favorite Github repos.
-          %p.speaker-talk
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#schneeman'} Dissecting Ruby with Ruby
-        .break
-      %li.speaker-index#scott
+      %li.detail-section#scott
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/zachary.jpg', :alt => 'Zachary Scott'}
         .speaker-info
           %h2.detail-title Zachary Scott
           .speaker-links
             %a.speaker-link{:href => 'https://twitter.com/_zzak', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/zzak', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
-          %p.speaker-bio Ruby-core member Zachary Scott is a long time contributor and friend of Team Shoes.
-          %p.speaker-talk
+          %p.detail-info Ruby-core member Zachary Scott is a long time contributor and friend of Team Shoes.
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#scott'} Escaping Reality With Shoes
-        .break
-      %li.speaker-index#segal
+      %li.detail-section#segal
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/loren.jpg', :alt => 'Loren Segal'}
         .speaker-info
           %h2.detail-title Loren Segal
           .speaker-links
             %a.speaker-link{:href => 'https://twitter.com/lsegal', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/lsegal', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
-          %p.speaker-bio ???
-          %p.speaker-talk
+          %p.detail-info ???
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#segal'} Towards Tooling; A Look at What is Missing From Our Toolbox
-        .break
-      %li.speaker-index#singh
+      %li.detail-section#singh
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/singh.jpg', :alt => 'Neeraj Singh'}
         .speaker-info
           %h2.detail-title Neeraj Singh
@@ -318,36 +295,33 @@
             %a.speaker-link{:href => 'http://twitter.com/neerajdotname', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/neerajdotname', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
             %a.speaker-link{:href => 'http://bigbinary.com/neeraj', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-          %p.speaker-bio ???
-          %p.speaker-talk
+          %p.detail-info ???
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#singh'} ActiveRecord is still magical
-        .break
-      %li.speaker-index#somerville
+      %li.detail-section#somerville
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/charlie.jpg', :alt => 'Charlie Somerville'}
         .speaker-info
           %h2.detail-title Charlie Somerville
           .speaker-links
             %a.speaker-link{:href => 'https://twitter.com/charliesome', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/charliesome', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
-          %p.speaker-bio ???
-          %p.speaker-talk
+          %p.detail-info ???
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#somerville'} ???
-        .break
-      %li.speaker-index#stolfo
+      %li.detail-section#stolfo
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/stolfo.jpg', :alt => 'Emily Stolfo'}
         .speaker-info
           %h2.detail-title Emily Stolfo
           .speaker-links
             %a.speaker-link{:href => 'https://twitter.com/EmStolfo', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/estolfo', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
-          %p.speaker-bio ???
-          %p.speaker-talk
+          %p.detail-info ???
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#stolfo'} Thread Safety First
-        .break
-      %li.speaker-index#vargo
+      %li.detail-section#vargo
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/vargo.jpg', :alt => 'Seth Vargo'}
         .speaker-info
           %h2.detail-title Seth Vargo
@@ -355,8 +329,8 @@
             %a.speaker-link{:href => 'https://twitter.com/sethvargo', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/sethvargo', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
             %a.speaker-link{:href => 'http://sethvargo.com/', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-          %p.speaker-bio Seth has been a Ruby developer for more than 5 years. Although a recent graduate of Carnegie Mellon, Seth has been involved in the Ruby community for quite some time. He as written projects such as bootstrap_forms and powify. He recently became involved in the Chef community, contributing to Chef core and writing/maintaining open source tools like berkshelf, fauxhai, chefspec, strainer, and more. He also maintains a variety of popular community cookbooks and regularly hangs out in IRC, Twitter, and github.
-          %p.speaker-talk
+          %p.detail-info Seth is a long-time Ruby developer who landed in operations as a Solutions Engineer at Opscode. While his degree is in Information Systems from Carnegie Mellon, Seth specializes in Ruby development and system administration. But most importantly, Seth is incredibly lazy, which is why automation and DRY are two principles that are practiced in his daily life. An author or core contributor to projects such as fauxhai, chefspec, berkshelf, bootstrap_forms, powify, and more, Seth believes in the power of the open source and community.
+          %p.detail-info
             Talk:
             %a.section-info-link{:href => '/schedule#vargo'} Using Ruby to Automate Your Life
 

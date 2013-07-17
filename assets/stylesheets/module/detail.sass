@@ -1,5 +1,13 @@
 @import load
 
+.detail-page
+  background-color: lighten($black, 9%)
+
+.detail-section
+  padding-top: 6em
+  &:first-child
+    margin-top: -6em
+
 .detail-title
   padding-top: .75em
   font:
@@ -8,3 +16,11 @@
     style: italic
   text-align: center
   color: lighten($black, 45%)
+
+.detail-info
+  margin:
+    right: auto
+    left: auto
+  max-width: 600px
+  &:not(:last-child)
+    margin-bottom: 1em

@@ -50,10 +50,8 @@
   width: 100%
   +border-radius(5px)
 
-.speaker-index
-  padding-top: 3em
-  &:first-child
-    margin-top: -3em
+.speaker-name
+  margin-top: .5em
 
 .speaker-pic-index
   margin:
@@ -61,15 +59,6 @@
     left: auto
   width: 100%
   max-width: 320px
-
-.speaker-bio, .speaker-talk
-  margin:
-    right: auto
-    left: auto
-  max-width: 600px
-
-.speaker-bio
-  margin-bottom: 1em
 
 .speaker-links
   margin:
@@ -98,7 +87,3 @@
     content: attr(data-icon)
   &:hover
     background-color: lighten($red, 7%)
-
-.break
-  margin-top: 3em
-  text-align: center
