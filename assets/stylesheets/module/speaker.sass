@@ -8,14 +8,14 @@
       left: auto
     width: 660px
 
-.speakers
+.speakers, .organizers
   max-width: 660px
   @media (min-width: 500px)
     margin:
       right: auto
       left: auto
 
-.keynote-speaker, .speaker
+.keynote-speaker, .speaker, .organizer
   margin-bottom: 3em
   position: relative
   +transition-duration(.25s)
@@ -30,7 +30,7 @@
     &:nth-child(odd)
       margin-right: 4%
 
-.speaker
+.speaker, .organizer
   float: left
   width: 48%
   @media (max-width: 700px)
@@ -41,7 +41,7 @@
     &:not(:nth-child(3n+3))
       margin-right: 2%
 
-.speaker-pic
+.speaker-pic, .organizer-pic
   display: block
   position: relative
   width: 100%
@@ -84,3 +84,9 @@
     content: attr(data-icon)
   &:hover
     background-color: lighten($red, 7%)
+
+.speaker-talk
+  text:
+    align: center
+    transform: uppercase
+  color: lighten($black, 45%)
