@@ -6,7 +6,7 @@
   background-color: $red
   overflow: auto
 
-.footer-callout, .footer__buttons__link, .footer__copy
+.footer__buttons__link, .footer__copy
   color: $white
 
 .footer__callout
@@ -22,14 +22,6 @@
     overflow: auto
   @media (max-width: 880px)
     width: 250px
-
-.footer__buttons__link
-  @media (min-width: 880px)
-    float: left
-    &:not(:last-child)
-      margin-right: 10px
-  @media (max-width: 880px)
-    margin-bottom: 10px
 
 .footer__buttons__link
   padding:
@@ -49,6 +41,12 @@
       size: 1.5em
   &:hover
     background-color: lighten($red, 10%)
+  @media (min-width: 880px)
+    float: left
+    &:not(:last-child)
+      margin-right: 10px
+  @media (max-width: 880px)
+    margin-bottom: 10px
 
 .footer__buttons--eventbrite
   &:before
