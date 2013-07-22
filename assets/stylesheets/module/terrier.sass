@@ -1,52 +1,44 @@
 @import load
 
 .animation
-  margin:
-    left: auto
-    right: auto
+  @include center
   display: none\9
   position: relative
   height: 325px
   width: 225px
   &:hover
-    .shine
-      left: 7.5em
+    .animation__shine
+      left: 7.25em
 
-.terrier
+.animation__terrier
   position: relative
   top: 3.45em
   height: 100%
-  background:
-    image: url(/terrier.svg)
-    size: 225px 325px
+  background-image: url(/terrier.svg)
   z-index: 10
 
-.shine
+.animation__shine
   position: absolute
-  top: 13.25em
-  left: 4em
+  top: 13em
+  left: 3.75em
   z-index: 5
-  +transition-duration(.2s)
+  +transition-duration(.35s)
 
-.line
-  margin-bottom: -8px
-  height: 2.5px
-  width: 45px
+.animation__shine__line1, .animation__shine__line2
   background-color: $white
   +rotate(45deg)
 
-.line2
-  position: relative
-  left: -1em
+.animation__shine__line1
   height: 4px
-  width: 50px
-  background-color: $white
-  +rotate(45deg)
 
-.red
-  margin:
-    left: auto
-    right: auto
+.animation__shine__line2
+  position: relative
+  height: 6px
+  left: -8px
+  width: 55px
+
+.animation__red
+  @include center
   position: relative
   top: -6em
   height: 50px
