@@ -1,6 +1,6 @@
 $ ->
   $(window).bind 'load resize', ->
     if $(window).height() < 580
-      $('.intro').removeClass 'is-fixed'
+      $('.intro').removeClass 'intro-is-fixed'
     else
-      $('.intro').addClass 'is-fixed'
+      $('.intro').addClass 'intro-is-fixed'

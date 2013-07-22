@@ -6,7 +6,7 @@
   background-color: $red
   overflow: auto
 
-.footer__buttons__link, .footer__copy
+.footer__copy
   color: $white
 
 .footer__callout
@@ -23,41 +23,6 @@
   @media (max-width: 880px)
     width: 250px
 
-.footer__buttons__link
-  padding:
-    top: 10px
-    bottom: 12px
-  display: block
-  width: 250px
-  @include round-corners
-  background-color: lighten($red, 5%)
-  font-weight: bold
-  text-align: center
-  +transition-duration(.25s)
-  &:before
-    margin-right: 10px
-    font:
-      family: fontello
-      size: 1.5em
-  &:hover
-    background-color: lighten($red, 10%)
-  @media (min-width: 880px)
-    float: left
-    &:not(:last-child)
-      margin-right: 10px
-  @media (max-width: 880px)
-    margin-bottom: 10px
-
-.footer__buttons--eventbrite
-  &:before
-    content:  "B"
-.footer__buttons--twitter
-  &:before
-    content:  "T"
-.footer__buttons--lanyrd
-  &:before
-    content:  "L"
-
 .footer__copy
   font-size: 14px
   text-transform: uppercase
@@ -68,6 +33,7 @@
   height: 135px
   width: 135px
   background-image: url(/made-by-dockyard.svg)
+  background-image: url(/made-by-dockyard.png)\9
   opacity: .6
   +rotate(15deg)
   +transition-duration(.25s)

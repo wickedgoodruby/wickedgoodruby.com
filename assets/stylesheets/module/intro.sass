@@ -11,29 +11,29 @@
     @-moz-document url-prefix()
       max-width: 400px
 
-.is-fixed
-  @media (min-width: 1200px)
-    position: fixed
-    height: 100%
-
 .logo
-  margin:
-    left: auto
-    right: auto
+  @include center
   display: block
   height: 250px
   width: 250px
   background-image: url(/logo.svg)
   background-image: url(/logo.png)\9
 
-.intro-info, .intro-date
-  text-align: center
+.intro__copy, .intro__callout
   color: $black
 
-.intro-info
-  margin: 1em auto
+.intro__copy
+  @include center
+  margin:
+    top: 1em
+    bottom: 1em
   width: 80%
   max-width: 500px
 
-.intro-date
+.intro__callout
   font-size: 1.5em
+
+.intro-is-fixed
+  @media (min-width: 1200px)
+    position: fixed
+    height: 100%
