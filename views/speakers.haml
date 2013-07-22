@@ -304,16 +304,6 @@
             %a.speaker-link{:href => 'https://twitter.com/charliesome', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
             %a.speaker-link{:href => 'https://github.com/charliesome', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
           %p.detail-info.speaker-talk Talk TBD
-      %li.detail-section#stolfo
-        %img.speaker-pic.speaker-pic-index{:src => '/speakers/default.jpg', :alt => 'Emily Stolfo'}
-        .speaker-info
-          %h2.detail-title Emily Stolfo
-          .speaker-links
-            %a.speaker-link{:href => 'https://twitter.com/EmStolfo', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
-            %a.speaker-link{:href => 'https://github.com/estolfo', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
-          %p.detail-info.speaker-talk Thread Safety First
-          %p.detail-info We rubyists historically haven’t been in the habit of thinking about concurrency but the reality is that our thread-unsafe code often works by sheer luck. There are different implementations of Ruby with their own semantics that can unearth challenging and unexpected concurrency bugs in our code. We have to become more accustomed to writing threadsafe code in order to anticipate these potential surprises, especially in light of the rise in popularity of JRuby.
-          %p.detail-info I will discuss approaches to writing threadsafe  with a specific focus on performance considerations and testing. I'll start by explaining some basic concurrency concepts, describe methods for handling shared mutable data, and touch on the subtleties of concurrency primitives (Queue, ConditionVariable, Mutex). Hair-raising, real-world bugs will be used throughout the presentation to illustrate specific concurrency issues and techniques for solving them.
       %li.detail-section#vargo
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/vargo.jpg', :alt => 'Seth Vargo'}
         .speaker-info
