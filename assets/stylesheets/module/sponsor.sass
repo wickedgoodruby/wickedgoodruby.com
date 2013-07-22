@@ -5,56 +5,38 @@
   overflow: auto
 
 .sponsor
-  margin:
-    right: auto
-    bottom: 1em
-    left: auto
+  @include center
+  margin-bottom: 1em
   position: relative
   width: 100%
   max-width: 660px
-  +border-radius(5px)
+  @include round-corners
   background-color: $white
+  display: block
 
-.sponsor-logo-wrap
+.sponsor__logo
+  @include center
   padding:
     top: 20px
     bottom: 20px
-  display: block
-
-.sponsor-logo
-  margin:
-    left: auto
-    right: auto
   height: 100px
   width: 250px
+  background:
+    size: 100%
+    position: center center
+    repeat: no-repeat
 
-.sponsor-yesware
+.sponsor--yesware
   background-color: #8DC23C
-.sponsor-logo-yesware
-  background-image: url(/sponsors/yesware.png)
 
-.sponsor-cogo
+.sponsor--cogo
   background-color: #272526
-.sponsor-logo-cogo
-  background-image: url(/sponsors/cogo.png)
 
-.sponsor-logo-fiksu
-  background-image: url(/sponsors/fiksu.png)
+$sponsors: yesware cogo fiksu visible jumpstart meyouhealth github
+=company-logos
+  @each $company in $sponsors
+    .sponsor__logo--#{$company}
+      background-image: url(/sponsors/#{$company}.png)
 
-.sponsor-logo-visible
-  background-image: url(/sponsors/visible.png)
-
-.sponsor-logo-jumpstart
-  background:
-    image: url(/sponsors/jumpstart.png)
-    size: 100%
-
-.sponsor-logo-meyouhealth
-  background:
-    image: url(/sponsors/meyouhealth.png)
-    size: 100%
-
-.sponsor-logo-github
-  background:
-    image: url(/sponsors/github.png)
-    size: 100%
+.sponsor
+  +company-logos
