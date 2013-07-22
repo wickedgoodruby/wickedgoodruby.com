@@ -1,3 +1,3 @@
 $ ->
-  $('.section-title').fitText .3,
+  $('.section__title').fitText .3,
     maxFontSize: '225px'

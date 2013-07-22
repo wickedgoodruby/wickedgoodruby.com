@@ -1,8 +1,8 @@
-.triangle.triangle-start
+.triangle.triangle--start
 
 %section.darkest
-  %h1.section-title Speakers
-  .section-wrap
+  %h1.section__title Speakers
+  .wrap
     %ul.keynote-speakers
       %li.keynote-speaker
         %a{:href => '/speakers#metz'}
@@ -119,10 +119,12 @@
     %a.button.section__button{:href => '/speakers'} About the Speakers &amp; Talks
 
 %section.dark
-  %h1.section-title Location
-  .section-wrap
+  %h1.section__title Location
+  .wrap
     %h2.venue-name Seaport World Trade Center
-    .venue-pic
+    %a.section-info-link.center{:href => 'http://goo.gl/maps/IKtU2', :target => '_blank'} 200 Seaport Blvd Boston, MA 02210
+    .wrap
+      .venue-pic
     %p.section-info
       Wicked Good Ruby Conf is going to be held at the Seaport Hotel &amp; World Trade Center in Boston. We recommend staying at their hotel if you are coming from out of town. We have reserved a number of single and double rooms for conference attendees.
       %a.section-info-link{:href => 'https://book.b4checkin.com/seaportboston/rlpv2/NegotiatedRates.asp?TID=DOCK13&CompanyName=Wicked%20Good%20Ruby%20Conference&Category=Group', :target => '_blank'} Be sure to use this link to book your room at the special rate.
@@ -132,31 +134,31 @@
     %a.button.section__button{:href => 'https://book.b4checkin.com/seaportboston/rlpv2/NegotiatedRates.asp?TID=DOCK13&CompanyName=Wicked%20Good%20Ruby%20Conference&Category=Group', :target => '_blank'} Book a room
 
 %section.light
-  %h1.section-title Sponsors
-  .section-wrap
+  %h1.section__title Sponsors
+  .wrap
 
     .sponsor-group
-      %h2.section-subtitle &mdash; Wicked Good Sponsor &mdash;
+      %h2.section__subtitle &mdash; Wicked Good Sponsor &mdash;
       %a.sponsor.sponsor--yesware{:href => 'http://www.yesware.com/', :target => '_blank'}
         .sponsor__logo.sponsor__logo--yesware
 
     .sponsor-group
-      %h2.section-subtitle &mdash; Workshop Sponsor &mdash;
+      %h2.section__subtitle &mdash; Workshop Sponsor &mdash;
       %a.sponsor.sponsor--jumpstart{:href => 'http://jumpstartlab.com/', :target => '_blank'}
         .sponsor__logo.sponsor__logo--jumpstart
 
     .sponsor-group
-      %h2.section-subtitle &mdash; Really Good Sponsors &mdash;
+      %h2.section__subtitle &mdash; Really Good Sponsors &mdash;
       %h3.section-info.blue-text 4 slots left!
 
     .sponsor-group
-      %h2.section-subtitle &mdash; Very Good Sponsors &mdash;
+      %h2.section__subtitle &mdash; Very Good Sponsors &mdash;
       %a.sponsor.sponsor--fiksu{:href => 'http://www.fiksu.com/', :target => '_blank'}
         .sponsor__logo.sponsor__logo--fiksu
       %h3.section-info.blue-text 7 slots left!
 
     .sponsor-group
-      %h2.section-subtitle &mdash; Good Sponsors &mdash;
+      %h2.section__subtitle &mdash; Good Sponsors &mdash;
       %a.sponsor.sponsor--cogo{:href => 'http://cogolabs.com/', :target => '_blank'}
         .sponsor__logo.sponsor__logo--cogo
       %a.sponsor.sponsor--meyouhealth{:href => 'http://meyouhealth.com/', :target => '_blank'}
@@ -164,13 +166,13 @@
       %h3.section-info.blue-text Unlimited slots
 
     .sponsor-group
-      %h2.section-subtitle &mdash; Kinda Good Sponsors &mdash;
+      %h2.section__subtitle &mdash; Kinda Good Sponsors &mdash;
       %a.sponsor.sponsor--visible{:href => 'http://www.visiblemeasures.com/', :target => '_blank'}
         .sponsor__logo.sponsor__logo--visible
       %h3.section-info.blue-text Unlimited slots
 
     .sponsor-group
-      %h2.section-subtitle &mdash; Lanyard Sponsor &mdash;
+      %h2.section__subtitle &mdash; Lanyard Sponsor &mdash;
       %a.sponsor.sponsor--github{:href => 'https://github.com/', :target => '_blank'}
         .sponsor__logo.sponsor__logo--github
 
@@ -181,8 +183,8 @@
     %a.button.section__button{:href => 'sponsorship-prospectus.pdf'} View our Prospectus
 
 %section.lightest
-  %h1.section-title Organizers
-  .section-wrap
+  %h1.section__title Organizers
+  .wrap
     %ul.organizers
       %li.organizer
         %a{:href => 'http://jboursiquot.com/', :target => '_blank'}
@@ -198,4 +200,4 @@
           %h3.speaker-name.blue-text Sean Hussey
     %p.section-info Thanks to all those who helped organize the conference!
 
-.triangle.triangle-end
+.triangle.triangle--end

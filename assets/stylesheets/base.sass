@@ -18,9 +18,7 @@
   src: url('/fonts/blanch.eot?#iefix') format('embedded-opentype'), url('/fonts/blanch.woff') format('woff'), url('/fonts/blanch.ttf') format('truetype')
 
 html
-  background:
-    color: $gray
-    size: 300px 300px
+  background-color: $gray
 
 body
   background:
@@ -31,7 +29,7 @@ body
     size: 18px
   line-height: 1.5
 
-a, h1, h2, p, span
+a, h1, h2, h3, p, span
   -webkit-font-smoothing: antialiased
   font-smoothing: antialiased
 
@@ -42,7 +40,10 @@ h2, p, a
   font-style: italic
   color: lighten($black, 45%)
 
-h1, h2, h3
+.center
+  display: block
+
+h1, h2, h3, .center
   text-align: center
 
 a
@@ -53,3 +54,8 @@ a
 
 ::-moz-selection
   background: rgba($red, .5)
+
+.wrap
+  @include center
+  width: 80%
+  max-width: 1000px
