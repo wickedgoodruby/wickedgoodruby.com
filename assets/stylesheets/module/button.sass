@@ -1,41 +1,51 @@
 @import load
 
-.button
-  margin: 1em auto .5em
+@mixin button
   padding:
     top: 10px
-    bottom: 15px
+    bottom: 13px
   display: block
-  max-width: 400px
   @include round-corners
-  background-color: $red
   text-align: center
   +transition-duration(.25s)
   +transition-property(background-color)
+
+.intro__button, .section__button
+  @include button
+  margin: 1em auto .5em
+  background-color: $red
+  font-size: 1.25em
   &:hover
     background-color: lighten($red, 4%)
 
+.intro__button
+  position: relative
+  width: 200px
+  z-index: 15
+  @media (max-width: 800px)
+    border: 2px solid $gray
+
+.section__button
+  max-width: 400px
+
 .footer__buttons__link
-  padding:
-    top: 10px
-    bottom: 12px
+  @include button
   width: 250px
   background-color: lighten($red, 5%)
   font-weight: bold
-  +transition-duration(.25s)
-  &:before
-    margin-right: 10px
-    font:
-      family: fontello
-      size: 1.5em
-  &:hover
-    background-color: lighten($red, 10%)
   @media (min-width: 880px)
     float: left
     &:not(:last-child)
       margin-right: 10px
   @media (max-width: 880px)
     margin-bottom: 10px
+  &:hover
+    background-color: lighten($red, 10%)
+  &:before
+    margin-right: 10px
+    font:
+      family: fontello
+      size: 1.5em
 
 .footer__buttons--eventbrite
   &:before
@@ -46,14 +56,3 @@
 .footer__buttons--lanyrd
   &:before
     content:  "L"
-
-.intro__button, .section__button
-  font-size: 1.25em
-
-.intro__button
-  position: relative
-  width: 200px
-  z-index: 15
-  @media (max-width: 800px)
-    border: 2px solid $gray
-
