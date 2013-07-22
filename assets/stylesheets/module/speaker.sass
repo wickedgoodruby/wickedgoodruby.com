@@ -87,7 +87,20 @@
     background-color: lighten($red, 7%)
 
 .speaker-talk
+  clear: both
   text:
     align: center
     transform: uppercase
   color: lighten($black, 45%)
+
+.joint-speakers
+  @include center
+  @media (min-width: 800px)
+    width: 80%
+
+.joint-speaker
+  float: left
+  width: 48%
+  +box-sizing(border-box)
+  &:not(:last-child)
+    margin-right: 2%

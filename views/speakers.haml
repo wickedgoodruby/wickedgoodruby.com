@@ -158,12 +158,21 @@
           %p.detail-info You've been able to serialize Ruby objects with ActiveRecord in the past, but the database treats serialized objects as text. PostgreSQL has support for advanced data types, like arrays, hashes and ranges, natively, allowing the database to do the heavy work for you. You can query a table for records that contain an array with a specific element. You can build a reservation system in which the database makes sure that you don't double book a room. All of which happens in the database, preventing you from retrieving extra records and processing them in memory.
           %p.detail-info With Rails 4, ActiveRecord has been supercharged. The PostgreSQL adapter has been extended to support arrays and hashes, and was rewritten to make adding your own types easier than before. There are gems out there that allow you to leverage these datatypes in Rails 3 as well.
       %li.detail-section#mccoy
-        %img.speaker-pic.speaker-pic-index{:src => '/speakers/sheena.jpg', :alt => 'Sheena McCoy'}
-        .speaker-info
-          %h2.detail-title Sheena McCoy
-          .speaker-links
-            %a.speaker-link{:href => 'https://twitter.com/sheenapmccoy', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
-          %p.detail-info.speaker-talk Talk TBD
+        .joint-speakers
+          .joint-speaker
+            %img.speaker-pic.speaker-pic-index{:src => '/speakers/sheena.jpg', :alt => 'Sheena McCoy'}
+            .speaker-info
+              %h2.detail-title Sheena McCoy
+              .speaker-links
+                %a.speaker-link{:href => 'https://twitter.com/sheenapmccoy', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+          .joint-speaker
+            %img.speaker-pic.speaker-pic-index{:src => '/speakers/rachel.jpg', :alt => 'Rachel Myers'}
+            .speaker-info
+              %h2.detail-title Rachel Myers
+              .speaker-links
+                %a.speaker-link{:href => 'https://twitter.com/rachelmyers', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+                %a.speaker-link{:href => 'https://github.com/rachelmyers', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+        %p.detail-info.speaker-talk Joint Talk TBD
       %li.detail-section#meiklejohn
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/meiklejohn.jpg', :alt => 'Christopher Meiklejohn'}
         .speaker-info
@@ -195,14 +204,6 @@
             %a.speaker-link{:href => 'https://github.com/skmetz', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
             %a.speaker-link{:href => 'http://sandimetz.com/', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
           %p.detail-info.speaker-talk Keynote
-      %li.detail-section#myers
-        %img.speaker-pic.speaker-pic-index{:src => '/speakers/rachel.jpg', :alt => 'Rachel Myers'}
-        .speaker-info
-          %h2.detail-title Rachel Myers
-          .speaker-links
-            %a.speaker-link{:href => 'https://twitter.com/rachelmyers', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
-            %a.speaker-link{:href => 'https://github.com/rachelmyers', :target => '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
-          %p.detail-info.speaker-talk Talk TBD
       %li.detail-section#nicholaides
         %img.speaker-pic.speaker-pic-index{:src => '/speakers/nicholaides.jpg', :alt => 'Mike Nicholaides'}
         .speaker-info
