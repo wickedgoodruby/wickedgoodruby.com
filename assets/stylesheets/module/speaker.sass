@@ -1,6 +1,6 @@
 @import load
 
-.keynote-speakers
+.keynotes
   overflow: auto
   @media (min-width: 800px)
     @include center
@@ -12,7 +12,7 @@
   @media (min-width: 500px)
     @include center
 
-.keynote-speaker, .speaker, .organizer
+.keynote, .speaker, .organizer
   margin-bottom: 3em
   position: relative
   +transition-duration(.25s)
@@ -20,7 +20,7 @@
   &:hover
     opacity: .75
 
-.keynote-speaker
+.keynote
   @media (min-width: 425px)
     float: left
     width: 48%
@@ -38,19 +38,17 @@
     &:not(:nth-child(3n+3))
       margin-right: 2%
 
-.speaker-pic, .organizer-pic
+.speaker__pic, .organizer__pic, .keynote__pic
   display: block
   position: relative
   width: 100%
   +border-radius(5px)
 
-.speaker-name
+.speaker__name, .keynote__name
   margin-top: .5em
 
 .speaker-pic-index
-  margin:
-    right: auto
-    left: auto
+  @include center
   width: 100%
   max-width: 320px
 
@@ -60,7 +58,7 @@
     bottom: .5em
   text-align: center
 
-.speaker-link
+.speaker__link
   margin:
     left: 5px
     right: 5px
@@ -82,7 +80,7 @@
   &:hover
     background-color: lighten($red, 7%)
 
-.speaker-talk
+.speaker__talk
   clear: both
   text:
     align: center

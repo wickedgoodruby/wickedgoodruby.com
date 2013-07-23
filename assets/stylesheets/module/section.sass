@@ -1,10 +1,8 @@
 @import load
 
 section
-  margin:
-    right: auto
-    left: auto
-  padding-bottom: 4em
+  @include center
+  padding-bottom: 5em
 
 .section__title
   font:
@@ -23,9 +21,7 @@ section
 .section-info
   clear: both
   @media (min-width: 800px)
-    margin:
-      right: auto
-      left: auto
+    @include center
     max-width: 600px
     text-align: center
 

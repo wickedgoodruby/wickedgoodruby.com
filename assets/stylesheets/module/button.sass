@@ -12,7 +12,8 @@
 
 .intro__button, .section__button
   @include button
-  margin: 1em auto .5em
+  @include center
+  margin-top: 1em
   background-color: $red
   font-size: 1.25em
   &:hover
@@ -35,8 +36,8 @@
   font-weight: bold
   @media (min-width: 880px)
     float: left
-    &:not(:last-child)
-      margin-right: 10px
+    &:not(:first-child)
+      margin-left: 10px
   @media (max-width: 880px)
     margin-bottom: 10px
   &:hover

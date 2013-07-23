@@ -16,7 +16,10 @@
     style: italic
 
 .footer__buttons
-  margin: 1em auto 1.5em
+  @include center
+  margin:
+    top: 1em
+    bottom: 1.5em
   @media (min-width: 880px)
     width: 770px
     overflow: auto
