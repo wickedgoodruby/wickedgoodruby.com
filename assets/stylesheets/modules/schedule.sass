@@ -1,0 +1,49 @@
+@import load
+
+.schedule-date
+  text:
+    align: center
+    transform: uppercase
+
+.schedule-slots
+  margin-top: 1em
+  +border-radius(5px)
+  background-color: lighten($black, 6%)
+  &:not(:last-child)
+    margin-bottom: 3em
+  &:last-child
+    margin-bottom: 1em
+  & li:not(:last-child)
+    border-bottom: 2px solid lighten($black, 3%)
+
+.schedule-slot
+  overflow: auto
+  padding: 1em 2em
+  display: block
+  &:last-child
+    +border-bottom-radius(5px)
+  &:first-child
+    +border-top-radius(5px)
+
+.schedule-time
+  clear: both
+  @media (max-width: 950px)
+    text-align: center
+  @media (min-width: 950px)
+    float: left
+    width: 20%
+
+.schedule-talk
+  display: block
+  text-align: center
+  @media (min-width: 950px)
+    float: left
+    width: 60%
+
+.schedule-location
+  @media (max-width: 950px)
+    text-align: center
+  @media (min-width: 950px)
+    float: right
+    width: 20%
+    text-align: right

@@ -1,0 +1,46 @@
+@import load
+
+.animation
+  @include center
+  display: none\9
+  position: relative
+  height: 325px
+  width: 225px
+  &:hover
+    .animation__shine
+      left: 7.25em
+
+.animation__terrier
+  position: relative
+  top: 3.45em
+  height: 325px
+  background-image: url(/terrier.png)
+  z-index: 10
+
+.animation__shine
+  position: absolute
+  top: 13em
+  left: 3.75em
+  z-index: 5
+  +transition-duration(.35s)
+
+.animation__shine__line1, .animation__shine__line2
+  background-color: $white
+  +rotate(45deg)
+
+.animation__shine__line1
+  height: 4px
+
+.animation__shine__line2
+  position: relative
+  height: 6px
+  left: -8px
+  width: 55px
+
+.animation__red
+  @include center
+  position: relative
+  top: -6em
+  height: 50px
+  width: 50px
+  background-color: $red

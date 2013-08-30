@@ -1,0 +1,46 @@
+@import load
+
+.sponsor-group
+  margin-bottom: 3em
+  overflow: auto
+
+.sponsor
+  @include center
+  margin-bottom: 1em
+  position: relative
+  width: 100%
+  max-width: 660px
+  @include round-corners
+  background-color: $white
+  display: block
+
+.sponsor--yesware, .sponsor--cogo
+  @extend .sponsor
+
+.sponsor--yesware
+  background-color: #8DC23C
+
+.sponsor--cogo
+  background-color: #272526
+
+.sponsor__logo
+  @include center
+  padding:
+    top: 20px
+    bottom: 20px
+  height: 100px
+  width: 250px
+  background:
+    size: 100%
+    position: center center
+    repeat: no-repeat
+
+$sponsors: yesware cogo fiksu visible jumpstart meyouhealth github confreaks constant-contact
+=company-logos
+  @each $company in $sponsors
+    .sponsor__logo--#{$company}
+      background-image: url(/sponsors/#{$company}.png)
+      @extend .sponsor__logo
+
+.sponsor
+  +company-logos
