@@ -25,6 +25,6 @@ get '/speakers' do
   haml :speakers
 end
 
-get '/schedule' do
-  haml :schedule
+get '/workshop' do
+  haml :workshop
 end
