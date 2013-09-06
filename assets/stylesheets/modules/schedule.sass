@@ -1,10 +1,5 @@
 @import load
 
-.schedule-date
-  text:
-    align: center
-    transform: uppercase
-
 .schedule-slots
   margin-top: 1em
   +border-radius(5px)
@@ -25,9 +20,14 @@
   &:first-child
     +border-top-radius(5px)
 
+.schedule-slot--highlight
+  @extend .schedule-slot
+  background-color: lighten($black, 9%)
+
 .schedule-time
   clear: both
   @media (max-width: 950px)
+    margin-bottom: 1em
     text-align: center
   @media (min-width: 950px)
     float: left

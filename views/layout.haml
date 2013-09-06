@@ -2,12 +2,12 @@
 %html
   %head
     %title Wicked Good Ruby Conf | Boston, MA Oct 12 - 13, 2013
-    %link{:href => '/assets/application.css', :rel => 'stylesheet'}
-    %link{:href => "http://fonts.googleapis.com/css?family=Lato:400,400italic,900italic", :rel => "stylesheet", :type => "text/css"}
-    %script{:src => '/assets/application.js', :type => 'text/javascript'}
-    %meta{:name => 'description', :content => 'Wicked Good Ruby Conf is a two day, double track Ruby conference being held in Boston, Massachusetts'}
-    %meta{:name => 'keywords',    :content => 'ruby, conference, rails, jruby, ios, rubymotion, postgresql'}
-    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0", :name => "viewport"}
+    %link{href: '/assets/application.css', rel: 'stylesheet'}
+    %link{href: "http://fonts.googleapis.com/css?family=Lato:400,400italic,900italic", rel: "stylesheet", type: "text/css"}
+    %script{src: '/assets/application.js', type: 'text/javascript'}
+    %meta{name: 'description', content: 'Wicked Good Ruby Conf is a two day, double track Ruby conference being held in Boston, Massachusetts'}
+    %meta{name: 'keywords',    content: 'ruby, conference, rails, jruby, ios, rubymotion, postgresql'}
+    %meta{content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0", name: "viewport"}
     /[if lt IE 9]
       <script src='assets/html5shiv.js'></script>
     :javascript
@@ -22,11 +22,11 @@
 
   %body
     .intro
-      %a.logo{:href => '/'}
+      %a.logo{href: '/'}
       %h2.intro__copy
         Join us for a two day, double track Ruby conference at the Seaport World Trade Center in Boston, MA!
       %h3.intro__callout Oct 12-13, 2013
-      %a.intro__button{:href => 'http://wickedgoodruby2013.eventbrite.com/', :target => '_blank'} Register
+      %a.intro__button{href: 'http://wickedgoodruby2013.eventbrite.com/', target: '_blank'} Register
 
     .main
       = yield
@@ -42,14 +42,14 @@
         %h2.footer__callout
           Get excited for Boston's first Ruby conference!
         %nav.footer__buttons
-          %a.footer__button.footer__button--eventbrite{:href => 'http://wickedgoodruby2013.eventbrite.com/', :target => '_blank'}
+          %a.footer__button.footer__button--eventbrite{href: 'http://wickedgoodruby2013.eventbrite.com/', target: '_blank'}
             Buy tix on Eventbrite
-          %a.footer__button.footer__button--twitter{:href => 'https://twitter.com/WickedGoodRuby', :target => '_blank'}
+          %a.footer__button.footer__button--twitter{href: 'https://twitter.com/WickedGoodRuby', target: '_blank'}
             Follow us on Twitter
-          %a.footer__button.footer__button--lanyrd{:href => 'http://lanyrd.com/2013/wickedgoodruby/', :target => '_blank'}
+          %a.footer__button.footer__button--lanyrd{href: 'http://lanyrd.com/2013/wickedgoodruby/', target: '_blank'}
             Track us on Lanyrd
         %h3.footer__copy
           &copy; Copyright 2013 Wicked Good Ruby Conf
         %h3.footer__copy
           All Rights Reserved
-        %a.made-by-dockyard{:href => 'http://dockyard.com/', :target => '_blank'}
+        %a.made-by-dockyard{href: 'http://dockyard.com/', target: '_blank'}
