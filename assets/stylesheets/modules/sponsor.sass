@@ -14,7 +14,7 @@
   background-color: $white
   display: block
 
-.sponsor--yesware, .sponsor--cogo
+.sponsor--yesware, .sponsor--cogo, .sponsor--chargify
   @extend .sponsor
 
 .sponsor--yesware
@@ -22,6 +22,9 @@
 
 .sponsor--cogo
   background-color: #272526
+
+.sponsor--chargify
+  background-color: #231f20
 
 .sponsor__logo
   @include center
@@ -35,7 +38,7 @@
     position: center center
     repeat: no-repeat
 
-$sponsors: yesware cogo fiksu visible jumpstart meyouhealth github confreaks constant-contact brightcove
+$sponsors: yesware cogo fiksu visible jumpstart meyouhealth github confreaks constant-contact brightcove chargify
 =company-logos
   @each $company in $sponsors
     .sponsor__logo--#{$company}
