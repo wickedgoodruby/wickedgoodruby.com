@@ -3,21 +3,9 @@
 .intro
   padding-top: 3em
   @media (min-width: 1200px)
-    float: left
-    width: 25%
     background:
       color: $gray
       size: 300px 300px
-    @-moz-document url-prefix()
-      max-width: 400px
-
-.logo
-  @include center
-  display: block
-  height: 250px
-  width: 250px
-  background-image: url(/logo.svg)
-  background-image: url(/logo.png)\9
 
 .intro__copy, .intro__callout
   color: $black
@@ -32,8 +20,3 @@
 
 .intro__callout
   font-size: 1.5em
-
-.intro-is-fixed
-  @media (min-width: 1200px)
-    position: fixed
-    height: 100%

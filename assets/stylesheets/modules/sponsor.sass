@@ -19,31 +19,26 @@
 
 .sponsor--yesware
   background-color: #8DC23C
-
 .sponsor--cogo
   background-color: #272526
-
 .sponsor--chargify
   background-color: #231f20
-
-.sponsor__logo
-  @include center
-  padding:
-    top: 20px
-    bottom: 20px
-  height: 100px
-  width: 250px
-  background:
-    size: 100%
-    position: center center
-    repeat: no-repeat
 
 $sponsors: yesware cogo fiksu visible jumpstart meyouhealth github confreaks constant-contact brightcove chargify
 =company-logos
   @each $company in $sponsors
     .sponsor__logo--#{$company}
-      background-image: url(/sponsors/#{$company}.png)
-      @extend .sponsor__logo
+      @include center
+      padding:
+        top: 20px
+        bottom: 20px
+      height: 100px
+      width: 250px
+      background:
+        image: url(/sponsors/#{$company}.png)
+        size: 100%
+        position: center center
+        repeat: no-repeat
 
 .sponsor
   +company-logos

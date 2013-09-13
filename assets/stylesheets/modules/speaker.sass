@@ -13,6 +13,13 @@
   @media (min-width: 500px)
     @include center
 
+.joint-speakers
+  @include center
+  margin-bottom: 1em
+  overflow: auto
+  @media (min-width: 800px)
+    width: 80%
+
 .keynote, .speaker, .organizer
   margin-bottom: 3em
   position: relative
@@ -40,20 +47,26 @@
     &:not(:nth-child(3n+3))
       margin-right: 2%
 
+.joint-speaker
+  float: left
+  width: 48%
+  +box-sizing(border-box)
+  &:not(:last-child)
+    margin-right: 2%
+
 .speaker__pic, .organizer__pic, .keynote__pic
   display: block
   position: relative
   width: 100%
-  +border-radius(5px)
+  @include round-corners
+
+.speaker__pic--detail
+  @include center
+  margin-bottom: .75em
+  max-width: 320px
 
 .speaker__name, .keynote__name
   margin-top: .5em
-
-.speaker-pic-index
-  @include center
-  margin-bottom: .75em
-  width: 100%
-  max-width: 320px
 
 .speaker__links
   margin:
@@ -84,22 +97,7 @@
     background-color: lighten($red, 7%)
 
 .speaker__talk
-  clear: both
   text:
     align: center
     transform: uppercase
   color: lighten($black, 45%)
-
-.joint-speakers
-  @include center
-  margin-bottom: 1em
-  overflow: auto
-  @media (min-width: 800px)
-    width: 80%
-
-.joint-speaker
-  float: left
-  width: 48%
-  +box-sizing(border-box)
-  &:not(:last-child)
-    margin-right: 2%

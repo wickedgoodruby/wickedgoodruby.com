@@ -33,17 +33,18 @@ a, h1, h2, h3, p, span
   -webkit-font-smoothing: antialiased
   font-smoothing: antialiased
 
+h1
+  font:
+    family: blanch, sans-serif
+    size: 8em
+  color: $red
+  @media (min-width: 800px)
+    line-height: 1.2
+
 h2, p, a
   color: $white
 
-.blue-text
-  font-style: italic
-  color: lighten($black, 45%)
-
-.center
-  display: block
-
-h1, h2, h3, .center
+h1, h2, h3
   text-align: center
 
 a

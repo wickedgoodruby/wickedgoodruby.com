@@ -3,7 +3,6 @@
 .venue-name, .venue-address
   text-align: center
 
-
 .venue-name
   font-size: 1.5em
 
@@ -11,7 +10,7 @@
   margin:
     top: 1em
     bottom: 3em
-  +border-radius(5px)
+  @include round-corners
   background:
     image: url(/seaport.jpg)
     position: center

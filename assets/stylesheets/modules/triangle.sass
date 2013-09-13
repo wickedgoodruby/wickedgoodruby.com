@@ -1,6 +1,6 @@
 @import load
 
-.triangle
+.triangle--start, .triangle--start-detail, .triangle--end
   @media (max-width: 600px)
     height: 80px
     background-size: 100% 80px
@@ -13,9 +13,7 @@
   @media (min-width: 1200px)
     display: none
 
-.triangle--start
-  @extend .triangle
-  background-image: url(/triangles/triangle.png)
+.triangle--start, .triangle--start-detail
   @media (max-width: 600px)
     margin-top: -5.15em
   @media (min-width: 600px) and (max-width: 800px)
@@ -23,18 +21,14 @@
   @media (min-width: 800px)
     margin-top: -4em
 
-.triangle--end
-  @extend .triangle
-  margin-bottom: 8em
+.triangle--start
+  background-image: url(/triangles/triangle.png)
+
+.triangle--start-detail, .triangle--end
   background-image: url(/triangles/triangle-end.png)
 
 .triangle--start-detail
-  @extend .triangle
-  background-image: url(/triangles/triangle-end.png)
   +rotate(180deg)
-  @media (max-width: 600px)
-    margin-top: -5.15em
-  @media (min-width: 600px) and (max-width: 800px)
-    margin-top: -7.5em
-  @media (min-width: 800px)
-    margin-top: -5em
+
+.triangle--end
+  margin-bottom: 8em

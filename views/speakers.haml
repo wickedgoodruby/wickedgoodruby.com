@@ -1,75 +1,92 @@
 .triangle--start-detail
 
 %section.detail-page
-  %h1.section__title Speakers
-  .wrap
+  %h1 Speakers
+  .l-wrap
     %ul
       %li.detail-section#alcorn
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/alcorn.jpg', alt: 'Doug Alcorn'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/alcorn.jpg', alt: 'Doug Alcorn'}
         .speaker-info
           %h2.detail-title Doug Alcorn
           .speaker__links
             %a.speaker__link{href: 'http://twitter.com/dougalcorn', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
             %a.speaker__link{href: 'https://github.com/dougalcorn', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
             %a.speaker__link{href: 'http://gaslight.co', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
+              %span.hide Website
           %p.detail-info Doug is a partner with Gaslight in Cincinnati. He is a lover of ruby, spread sheets, and internet space ships.
           %p.detail-info.speaker__talk Market Analytics in EVE with Ruby
           %p.detail-info Ever wondered about market trading, analytics or algorithms but didn't want to lose your shirt experimenting? EVE Online is a Massively Multiplayer Online Role Playing Game (MMORPG) rich in data with a fully functional, player driven economy. Using some simple concepts and novel tools you can get access to this data and discover interesting I'll introduce you to market analytics and the cruel world of EVE Online.
       %li.detail-section#aimonetti
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/matt.jpg', alt: 'Matt Aimonetti'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/matt.jpg', alt: 'Matt Aimonetti'}
         .speaker-info
           %h2.detail-title Matt Aimonetti
           .speaker__links
             %a.speaker__link{href: 'https://twitter.com/mattetti', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
             %a.speaker__link{href: 'https://github.com/mattetti', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
           %p.detail-info Matt Aimonetti is an experienced technologist, entrepreneur, technical writer and active open-source contributor. Based in San Diego California, he currently works on his startup: Splice. Prior to Splice, Matt worked as a Tech manager/developer at LivingSocial, on video game development at Sony PlayStation and on many other things.
           %p.detail-info.speaker__talk Wicked Bad Ruby
           %p.detail-info Can you tell the difference between good and bad code? What do you base your judgment on?
           %p.detail-info Over the years, the Ruby community has built a fairly strong notion of “the right way” of writing code. During his thought provoking presentation, Matt will show that things are not simply good vs bad, and that what we call “pretty” code might, in fact, just be lipstick on a pig.
       %li.detail-section#baker
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/baker.jpg', alt: 'Steven Baker'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/baker.jpg', alt: 'Steven Baker'}
         .speaker-info
           %h2.detail-title Steven R. Baker
           .speaker__links
             %a.speaker__link{href: 'http://twitter.com/srbaker', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
             %a.speaker__link{href: 'https://github.com/srbaker', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
             %a.speaker__link{href: 'http://stevenrbaker.com', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
+              %span.hide Website
           %p.detail-info In the third grade, Steven missed an opportunity to corner the Hockey Trivia video game market when he made such a huge mess of his software he had to rewrite it. As with most rewrites, it was a huge failure, and Steven still hasn’t forgiven himself. Since then, he has been obsessed with learning how to produce high quality software, and has been helping teams do just that. Along the way he’s developed tools, delivered talks, and yelled over pints about how to improve software.
           %p.detail-info.speaker__talk MagLev: Ruby With an Image
           %p.detail-info MagLev is a fast, stable, 64-bit open source implementation of the Ruby programming language.
           %p.detail-info MagLev offers a complete Ruby implementation, on a fast and solid VM, and includes a scalable object datab you'll learn how to transparently store real objects, how to leverage fast and ibraries in your Ruby applications, and how to deploy applications written on one of the most mature virtual machines in use today.
       %li.detail-section#ballanco
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/ballanco.jpg', alt: 'Joshua Ballanco'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/ballanco.jpg', alt: 'Joshua Ballanco'}
         .speaker-info
           %h2.detail-title Joshua Ballanco
           .speaker__links
             %a.speaker__link{href: 'https://twitter.com/manhattanmetric', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
             %a.speaker__link{href: 'https://github.com/jballanc', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
             %a.speaker__link{href: 'http://manhattanmetric.com', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
+              %span.hide Website
           %p.detail-info Joshua has worked with Objective-C since 2002 and Ruby since 2004. He has built operating systems with Apple, local news websites with AOL, and somehow managed to finish a Ph.D. along the way. Currently, Joshua is Chief Scientist at Burnside Digital where he works with an amazing team of engineers and designers to solve problems for a wide range of clients. He works and lives in Ankara.
           %p.detail-info.speaker__talk RubyMotion: Under the Hood
           %p.detail-info By now you probably know that RubyMotion is a new toolchain that lets you use familiar Ruby techniques to develop applications for iOS&#133; but do you know what makes it tick? How is RubyMotion different from toolchains such as PhoneGap or Titanium? What does it mean to say that RubyMotion is implemented "on top of the Objective-C runtime"? And how the heck do I debug RubyMotion anyway?
           %p.detail-info I will attempt to answer these questions, and more, by looking deep into the underpinnings of RubyMotion. Along the way, I'll give a bit of an overview of the history of RubyMotion, and maybe even a glimpse at its future.
       %li.detail-section#campbell
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/campbell.jpg', alt: 'Justin Campbell'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/campbell.jpg', alt: 'Justin Campbell'}
         .speaker-info
           %h2.detail-title Justin Campbell
           .speaker__links
             %a.speaker__link{href: 'https://twitter.com/justincampbell', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
             %a.speaker__link{href: 'https://github.com/justincampbell', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
             %a.speaker__link{href: 'http://justincampbell.me/', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
+              %span.hide Website
           %p.detail-info Justin is a passionate Rubyist, hailing from the suburbs of Philadelphia. When he's not writing Ruby, he enjoys snowboarding and rock climbing with his wife, or playing StarCraft. Justin is also a budding programming-language geek.
           %p.detail-info.speaker__talk Hacking Your Home with Ruby
           %p.detail-info 15 years ago, Justin looked forward to the day when he could have a stack of expensive audio equipment with speakers in every room, lights that follow him around, and an intercom system so the family could page each other like Tim "The Tool Man" Taylor.
           %p.detail-info Ubiquitous networking, APIs for consumer electronics, and cheap computers like the Raspberry Pi have made it easier than ever to automate your home. We go over some popular technologies, see some code to glue it all together, and watch a live demo of some of Justin's favorite house hacks.
       %li.detail-section#cheng
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/joanne.jpg', alt: 'Joanne Cheng'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/joanne.jpg', alt: 'Joanne Cheng'}
         .speaker-info
           %h2.detail-title Joanne Cheng
           .speaker__links
             %a.speaker__link{href: 'https://twitter.com/joannecheng', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
             %a.speaker__link{href: 'https://github.com/jc-2', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
             %a.speaker__link{href: 'http://plastic-cities.com', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
+              %span.hide Website
           %p.detail-info
             Joanne is a developer for thoughtbot, inc. in Denver, CO, happily writing code all day. When she's not writing code for thoughtbot, inc., she works on open source projects that benefit the state of Colorado and its citizens through
             %a.section-info-link{href: 'http://codeforcommunities.org/', target: '_blank'} Code for Communities
@@ -77,85 +94,105 @@
           %p.detail-info.speaker__talk Creativity with Ruby-Processing
           %p.detail-info Ruby-Processing is a simple wrapper for the Processing framework that combines the visual-driven environment of Processing with the fun of writing R we'll go through the ways to "sketch" with Ruby-Processing with several live coding examples and create something together. Through creativity, we can increase the breadth of problems we can solve in our day to day jobs.
       %li.detail-section#desjardins
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/desjardins.jpg', alt: 'Mike Desjardins'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/desjardins.jpg', alt: 'Mike Desjardins'}
         .speaker-info
           %h2.detail-title Mike Desjardins
           .speaker__links
             %a.speaker__link{href: 'https://twitter.com/mdesjardins', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
             %a.speaker__link{href: 'https://github.com/mdesjardins', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
             %a.speaker__link{href: 'http://www.mikedesjardins.net', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
+              %span.hide Website
           %p.detail-info Mike began programming on his Tandy 1000 when he was 13 years old and has never looked back. His first job out of college was writing assembly language firmware for disk drives, where his primary debugging tool was an oscilloscope. Today he is the CTO at Burnside Digital, where he's still an active developer creating large-scale Ruby-based web applications for clients, occasionally sneaking in some Android hackery. When he's not at a keyboard, you can often find him geocaching with his family up in Portland, Maine.
           %p.detail-info.speaker__talk Rails Sojourn: One Man's Journey
           %p.detail-info With several spawling, monolithic Rails apps under my belt, I had the opportunity to go a different route. Bulging models, obtuse controllers, and views chock full of logic were my world. When I came up for air, all the cool kids were writing thick clients with svelte backends. Perhaps Sinatra and some hip Javascript framework were the way? Here's what I learned...
       %li.detail-section#garber
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/garber.jpg', alt: 'Jason Garber'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/garber.jpg', alt: 'Jason Garber'}
         .speaker-info
           %h2.detail-title Jason Garber
           .speaker__links
             %a.speaker__link{href: 'https://twitter.com/jasongarber', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
             %a.speaker__link{href: 'https://github.com/jgarber', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
             %a.speaker__link{href: 'http://jasongarber.com/ruby-developer', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
+              %span.hide Website
           %p.detail-info Jason picked up Ruby while re-designing the Rosetta Stone website in 2005 and immediately fell in love with the language, the community, and open-source software. Later, he started committing to Why the Lucky Stiff’s RedCloth repo and the next thing he knew, he was the owner, with a sketch from _why to prove it! Jason enjoys helping others level up their skills, through RailsGirls, Philly.rb, and corporate training. He is an engineer at PromptWorks, a Ruby shop in Philadelphia, where he enjoys pair programming with his co-founders, Greg and Mike.
           %p.detail-info.speaker__talk Writing DSLs with Parslet
           %p.detail-info A well-designed DSL improves programmer productivity and communication with domain experts. The Ruby community has produced a number of very popular external DSLs--Coffeescript, HAML, SASS, and Cucumber to name a few.
           %p.detail-info Parslet makes it easy to write these kinds of DSLs in pure R ou’ll learn the basics, feel out the limitations of several approaches and find some common solutions. In no time, you’ll have the power to make a great new DSL, slurp in obscure file formats, modify or fork other people’s grammars (like Gherkin, TOML, or JSON), or even write your own programming language!
       %li.detail-section#gauthier
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/gauthier.jpg', alt: 'Nick Gauthier'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/gauthier.jpg', alt: 'Nick Gauthier'}
         .speaker-info
           %h2.detail-title Nick Gauthier
           .speaker__links
             %a.speaker__link{href: 'http://twitter.com/ngauthier', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
             %a.speaker__link{href: 'https://github.com/ngauthier', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
             %a.speaker__link{href: 'http://ngauthier.com', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
+              %span.hide Website
           %p.detail-info
             Nick Gauthier is a web freelancer focusing on Ruby on Rails and JavaScript. His experience spans from SQL to Sass and he always tests, all the time. He wrote Recipes with Backbone with Chris Strom and recently released his most recent eBook Mobile Web Patterns with Backbone.js. Aside from freelancing Nick runs B’More Awesome, a Baltimore-based web training organization, and he also co-founded Exobrain, an online mind-mapping tool.
           %p.detail-info.speaker__talk Outside-In Testing
           %p.detail-info As a freelancer I'm often tasked with creating high quality web applications quickly while keeping the budget razor thin. In my experience, the absolute best bang-for-your-buck style of development has been BDD from the outside-in via acceptance tests. With acceptance tests you can quickly and accurately determine the minimum code necessary to fit the requirements of an application while achieving high code coverage and resilience to refactoring. By their very nature acceptance tests are the the simplest kinds of tests to write since they are expressed in the language of an end-u e'll implement a feature from the outside-in, explaining the reasoning behind every step.
       %li.detail-section#haddox
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/haddox.jpg', alt: 'Steven Haddox'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/haddox.jpg', alt: 'Steven Haddox'}
         .speaker-info
           %h2.detail-title Steven Haddox
           .speaker__links
             %a.speaker__link{href: 'http://twitter.com/stevenhaddox', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
             %a.speaker__link{href: 'https://github.com/stevenhaddox', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
             %a.speaker__link{href: 'http://stevenhaddox.com', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
+              %span.hide Website
           %p.detail-info
             Steven has over a decade of programming experience and has been a Ruby developer since 2008. His career consists of a wide-variety of development and production environments which have led him to create tools like
             %a.section-info-link{href: 'https://github.com/stevenhaddox/rvm_fw', target: '_blank'} RVM::FW
             to help ensure that development can be consistent in a multitude of circumstances.
-          %p.detail-info.speaker__talk PEACE: Programming Expertly Amid Corporations & Enterprises
+          %p.detail-info.speaker__talk PEACE: Programming Expertly Amid Corporations &amp; Enterprises
           %p.detail-info Everyone casts the "Enterprise" as the most horrid place in the world to be a Ruby developer, and they used to be right. How does a Rubyist trying to stay current work in a confined and archaic environment with strict security restrictions? You do everything other Rubyists do, but you do it without sudo and from source. Together we'll identify the best open source self-hosted options for agile managment, provisioning, git hosting, error tracking, CI, isolated RVM, metrics, central logging, and security. As a bonus, you'll learn how to automate the setup of all these tools as much as possible without sudo privileges.
       %li.detail-section#liles
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/bryan.jpg', alt: 'Bryan Liles'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/bryan.jpg', alt: 'Bryan Liles'}
         .speaker-info
           %h2.detail-title Bryan Liles
           .speaker__links
             %a.speaker__link{href: 'https://twitter.com/bryanl', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
             %a.speaker__link{href: 'https://github.com/bryanl', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
           %p.detail-info
             Based in Baltimore, Bryan Liles is the Senior Vice President of Thunderbolt Labs. Since 1993, Bryan has hacked into systems which he was then paid to protect; written more assembler than anyone should ever have to; worked with and against the government. Currently, Bryan is exploring the limits of Ruby and other trendy programming languages while building that next great product company. In his spare time, he trolls Twitter and grows miniature herb gardens.
           %p.detail-info.speaker__talk Machine Learning with Ruby
           %p.detail-info Not sure where to cluster or where to classify? Have you seen a linear regression lately? Every wanted to take a look into machine learning? Curious to what problems you can solve? Using Ruby to become familiar with machine learning and data-mining techniques is great way to get acclimated before diving in with both feet.
       %li.detail-section#mcanally
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/jeremy.jpg', alt: 'Jeremy McAnally'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/jeremy.jpg', alt: 'Jeremy McAnally'}
         .speaker-info
           %h2.detail-title Jeremy McAnally
           .speaker__links
             %a.speaker__link{href: 'https://twitter.com/jm', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
             %a.speaker__link{href: 'https://github.com/jm', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
             %a.speaker__link{href: 'http://jeremymcanally.com', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
+              %span.hide Website
           %p.detail-info I am awesome.  Actually, that's rather false, but I really like Boston a lot.  That counts for something, right?
           %p.detail-info.speaker__talk RubyMotion: America's iOS Framework
           %p.detail-info I was recently invited to take part in a hackathon at the White House, at which I built a ridiculously boss iPhone app using RubyMotion for the We The People petition site. It consumes the soon-to-be-published We The People API and provides an attractive way to browse the various petitions on the site. Very likely, it is the greatest iPhone application ever created.
           %p.detail-info Had I attempted to build the same app using Objective-C, I'm pretty sure that I wouldn't have gotten nearly as far in the one day timeframe I had before me. RubyMotion was more comfortable for me and gave me a good set of tools to build things quickly. Then again, even as an experienced Ruby developer, I hit some stumbling blocks with RubyMotion. This talk is a quick walkthrough of basic RubyMotion usage, followed by 4 stumbling blocks that developers may hit and how to overcome them.
       %li.detail-section#mcclain
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/dan.jpg', alt: 'Dan McClain'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/dan.jpg', alt: 'Dan McClain'}
         .speaker-info
           %h2.detail-title Dan McClain
           .speaker__links
             %a.speaker__link{href: 'https://twitter.com/_danmcclain', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
             %a.speaker__link{href: 'https://github.com/danmcclain', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
             %a.speaker__link{href: 'http://danmcclain.net', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
+              %span.hide Website
           %p.detail-info I am the author of the postgre_ext gem, which adds ActiveRecord and Arel support for PostgreSQL datatypes, and contributed commits to Rails 4.0 that added PostgreSQL array support.
           %p.detail-info.speaker__talk Supercharging ActiveRecord with PostgreSQL
           %p.detail-info You've been able to serialize Ruby objects with ActiveRecord in the past, but the database treats serialized objects as text. PostgreSQL has support for advanced data types, like arrays, hashes and ranges, natively, allowing the database to do the heavy work for you. You can query a table for records that contain an array with a specific element. You can build a reservation system in which the database makes sure that you don't double book a room. All of which happens in the database, preventing you from retrieving extra records and processing them in memory.
@@ -163,61 +200,75 @@
       %li.detail-section#mccoy
         .joint-speakers
           .joint-speaker
-            %img.speaker__pic.speaker-pic-index{src: '/speakers/sheena.jpg', alt: 'Sheena McCoy'}
+            %img.speaker__pic.speaker__pic--detail{src: '/speakers/sheena.jpg', alt: 'Sheena McCoy'}
             .speaker-info
               %h2.detail-title Sheena McCoy
               .speaker__links
                 %a.speaker__link{href: 'https://twitter.com/sheenapmccoy', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+                  %span.hide Twitter
               %p.detail-info Sheena is a Go developer and Ruby enthusiast for ModCloth in Pittsburgh.  She has never told a lie.
           .joint-speaker
-            %img.speaker__pic.speaker-pic-index{src: '/speakers/rachel.jpg', alt: 'Rachel Myers'}
+            %img.speaker__pic.speaker__pic--detail{src: '/speakers/rachel.jpg', alt: 'Rachel Myers'}
             .speaker-info
               %h2.detail-title Rachel Myers
               .speaker__links
                 %a.speaker__link{href: 'https://twitter.com/rachelmyers', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+                  %span.hide Twitter
                 %a.speaker__link{href: 'https://github.com/rachelmyers', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+                  %span.hide Github
               %p.detail-info Rachel is a developer at GitHub and a long-time RailsBridge volunteer. When not hacking, Rachel gardens and plays soccer.
         %p.detail-info.speaker__talk Understanding Ruby's Method Cache
         %p.detail-info How we call methods in a dynamic language like Ruby is complicated and fascinating. This talk dives into one slice of Ruby internals, the inline method cache. We'll walk through MRI's awesome but sometimes quirky method caching. And we'll go through some practical improvements we've made in our own work to avoid unintentionally invalidating the method cache.
       %li.detail-section#meiklejohn
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/meiklejohn.jpg', alt: 'Christopher Meiklejohn'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/meiklejohn.jpg', alt: 'Christopher Meiklejohn'}
         .speaker-info
           %h2.detail-title Christopher Meiklejohn
           .speaker__links
             %a.speaker__link{href: 'https://twitter.com/cmeik', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
             %a.speaker__link{href: 'https://github.com/cmeiklejohn', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
           %p.detail-info Christopher Meiklejohn is a Software Engineer with Basho Technologies, Inc. where he focuses on building rich web applications for Riak using Erlang and JavaScript. Before joining Basho, he worked at Swipely, a loyalty program startup based in Providence where he maintained critical infrastructure components written in Ruby. Christopher is also a graduate student in computer science at Brown University in Providence RI, where he studies formal verification and distributed systems.
           %p.detail-info.speaker__talk Bloom: A language for disorderly distributed programming
           %p.detail-info Traditional programming languages use a model of computation where individual instructions are executed in order. However, when building distributed systems this model fails to match the reality of how your application code is actually executed. Bloom is a language which allows programmers to build applications as a series of unordered statements while also providing facilities for imposing a particular ordering of events when necessary.
           %p.detail-info During this talk we will explore building applications in Bud, which is a prototype of Bloom implemented as a domain specific language in Ruby. We will discuss the concepts of logical monotonicity, disorderly collections, the CALM principle which is the root of the Bloom language, and how to use he Bloom language to identify critical sections of your code where a coordiation library should be used to ensure consistency.
       %li.detail-section#menard
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/menard.jpg', alt: 'Mark Menard'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/menard.jpg', alt: 'Mark Menard'}
         .speaker-info
           %h2.detail-title Mark Menard
           .speaker__links
             %a.speaker__link{href: 'http://twitter.com/mark_menard', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
             %a.speaker__link{href: 'https://github.com/MarkMenard', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
             %a.speaker__link{href: 'http://www.enablelabs.com/', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
+              %span.hide Website
           %p.detail-info Mark Menard is the founder of Enable Labs, a boutique consulting firm, in Troy, NY, specializing in product development, business productivity and problem solving. Mark used to be a Java developer and caught the dynamic language bug when he started coding in Groovy and then discovered Ruby and Rails. Mark spends most of his free time with his wife Sylva and their two sons Ezra and Avi.
           %p.detail-info.speaker__talk JRuby: Insights from Six Years in Production
           %p.detail-info JRuby is the primary alternative implementation of Ruby available. With support for native threads, excellent garbage collection, and the introduction of Invoke Dynamic it has grown into a formidable platform. So, what can JRuby do for you? Learn how JRuby differs from MRI, how JRuby supports parallelism, how to use Java libraries from JRuby, how to use Ruby from Java and more. Java no longer means just the language anymore, the JVM is an excellent place to host Ruby applications.
       %li.detail-section#metz
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/sandi.jpg', alt: 'Sandi Metz'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/sandi.jpg', alt: 'Sandi Metz'}
         .speaker-info
           %h2.detail-title Sandi Metz
           .speaker__links
             %a.speaker__link{href: 'https://twitter.com/sandimetz', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
             %a.speaker__link{href: 'https://github.com/skmetz', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
             %a.speaker__link{href: 'http://sandimetz.com/', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
+              %span.hide Website
           %p.detail-info.speaker__talk Keynote
       %li.detail-section#nicholaides
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/nicholaides.jpg', alt: 'Mike Nicholaides'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/nicholaides.jpg', alt: 'Mike Nicholaides'}
         .speaker-info
           %h2.detail-title Mike Nicholaides
           .speaker__links
             %a.speaker__link{href: 'https://twitter.com/nicholaides', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
             %a.speaker__link{href: 'https://github.com/nicholaides', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
             %a.speaker__link{href: 'http://ablegray.com/', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
+              %span.hide Website
           %p.detail-info By day, Mike Nicholaides is a co-founder and Ruby/JavaScript consultant at PromptWorks, the premier Ruby shop in Philadelphia. But when the sun goes down&#133; he does, too, because having kids is exhausting!
           %p.detail-info Between dawn and dusk Mike can be found feeding his addiction to learning. In addition to technology, his interests include all things language, business, ancient and prehistory, and religion.
           %p.detail-info When he's not coding, spending time with his family, or reading, you'll probably find him organizing local JavaScript and coworking meetups and throwing Philadelphia's annual Code Retreat.
@@ -225,22 +276,28 @@
           %p.detail-info How can you know if your Rails app is safe? With potential vulnerabilities lurking in your app's code, in gems you depend on, in services you use, and in the Rails source itself, attackers have myriad vectors to gain access to your data, interrupt your service, and damage your reputation.
           %p.detail-info I'll cover the basics of securing your Rails app, evaluating and mitigating the risk inherent in live web applications, and strategies for keeping your app secure as new threats emerge.
       %li.detail-section#savas
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/foy.jpg', alt: 'Foy Savas'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/foy.jpg', alt: 'Foy Savas'}
         .speaker-info
           %h2.detail-title Foy Savas
           .speaker__links
             %a.speaker__link{href: 'https://twitter.com/foysavas', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
             %a.speaker__link{href: 'https://github.com/foysavas', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
             %a.speaker__link{href: 'http://www.foysavas.com/', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
+              %span.hide Website
           %p.detail-info.speaker__talk Keynote
       %li.detail-section#schneeman
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/schneeman.jpg', alt: 'Richard Schneeman'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/schneeman.jpg', alt: 'Richard Schneeman'}
         .speaker-info
           %h2.detail-title Richard Schneeman
           .speaker__links
             %a.speaker__link{href: 'https://twitter.com/schneems', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
             %a.speaker__link{href: 'https://github.com/schneems', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
             %a.speaker__link{href: 'http://schneems.com/', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
+              %span.hide Website
           %p.detail-info
             Richard writes Ruby at Heroku at teaches Rails at the University of Texas. When he isn't obsessively compulsively playing Starcraft 2 he writes such gems as
             %a.section-info-link{href: 'https://github.com/schneems/wicked', target: '_blank'} Wicked
@@ -254,12 +311,14 @@
           %p.detail-info.speaker__talk Dissecting Ruby with Ruby
           %p.detail-info Underneath the beautiful veneer of our Ruby libraries lies a twisted tangle of writhing guts. Maybe you're curious how the pieces fit together or maybe you're tracking down a bug, either way it's easy to get lost in the blood and bile that ties our code toget ou'll learn how to use simple and sharp Ruby tools to slice into large libraries with surgical precision. Turn your impossible bugs into pull requests, and level up your programming skills by Dissecting Ruby with Ruby.
       %li.detail-section#scott
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/zachary.jpg', alt: 'Zachary Scott'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/zachary.jpg', alt: 'Zachary Scott'}
         .speaker-info
           %h2.detail-title Zachary Scott
           .speaker__links
             %a.speaker__link{href: 'https://twitter.com/_zzak', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
             %a.speaker__link{href: 'https://github.com/zzak', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
           %p.detail-info Ruby-core member Zachary Scott is a long time contributor and friend of Team Shoes.
           %p.detail-info.speaker__talk Escaping Reality With Shoes
           %p.detail-info Let's imagine for a moment, you have the day off and all of your friends are out of town&hellip; and it's raining!
@@ -268,35 +327,41 @@
           %p.detail-info It's important to step out of your comfort zone, and in this talk we will go one step further into the Magical Land of Shoes.
           %p.detail-info Let's catch up on the last few years of the project, the future, and all of the amazing things you can build with it. Yours truly will give you a whirlwind tour of what Shoes is capable of and together build an experience that we can share for a lifetime.
       %li.detail-section#segal
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/loren.jpg', alt: 'Loren Segal'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/loren.jpg', alt: 'Loren Segal'}
         .speaker-info
           %h2.detail-title Loren Segal
           .speaker__links
             %a.speaker__link{href: 'https://twitter.com/lsegal', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
             %a.speaker__link{href: 'https://github.com/lsegal', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
           %p.detail-info Loren Segal is an SDKs and Tools developer at Amazon Web Services working on the AWS SDKs for Ruby and Node.js. In his spare time, Loren also likes to hack on open source libraries and tools like YARD, a Ruby documentation tool, RubyCorrect, a static analysis and automatic test case generation tool, and Seahorse, a web service API modeling library.
           %p.detail-info.speaker__talk Towards Tooling; A Look at What is Missing From Our Toolbox
           %p.detail-info You can usually judge the maturity of a programming language ecosystem by the breadth of its tooling. For example, Java has a plethora of IDEs that each, in turn, have many well maintained refactoring and code quality plugins (like FindBugs and PMD). C/C++ is equally well established in this space. Even JavaScript is becoming well represented, with a number of static code analyzers and language supersets (like Dart and TypeScript) aimed at improving tooling in the language. But where is Ruby in all of this? This talk will shed some light on the existing tools available in the Ruby world as well as some new tools just starting to be built out in the areas of static analysis, formal verification, and code quality checking. We will look at what kind of tools the Ruby community is good at building, what kind of tools we are bad at, and most of all, some of the tooling we should be working on to really improve our ecosystem and drive more developers to this wonderful language.
 
       %li.detail-section#sharp
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/sharp.jpg', alt: 'Dan Sharp'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/sharp.jpg', alt: 'Dan Sharp'}
         .speaker-info
           %h2.detail-title Dan Sharp
           .speaker__links
             %a.speaker__link{href: 'http://www.linkedin.com/in/mrdrsharp', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
+              %span.hide Website
           %p.detail-info Dan is a life-long geek, having been fascinated with computers since early childhood. He cut his teeth, like many, on Java and PHP, but found Ruby via Ruby on Rails in 2005... building one of the first successful Rails-based SaaS ventures&#133; and never looking back. These days, Dan works as Senior Software Architect with the Nexia&#153; team at Ingersoll Rand, affording him the luxury of a startup environment backed by a multi-billion dollar company. He resides in Golden, CO with his wife and two children. When not hacking code, he's usually lost in the back country somewhere, enjoying the great outdoors.
           %p.detail-info.speaker__talk Killing Fibonacci
           %p.detail-info Testing is an important part of the development lifecycle of any software solution. It is particularly important in the Ruby community with lots of real and perceived pressure to test first, test often and test fully (or at least 90% coverage, right?). However, there has not been as much focus on the why of testing as a mechanism to encourage good code practices, good design decisions and coverage that is meaningful. This presentation aims to change all that. I will start with a brief overview of ruby testing: the why, what, how, when and where. For the rest of the presentation, I will take the Fibonnaci sequence and deconstruct it via a tongue-in-cheek approach to showcase why Good Testing™ is so much more important than Testing&#133; and why tests should force the developer to think deeper about their code&#133; not just as implementation but as behavior!
           %p.detail-info (The killing of Fibonacci will take place live. However no animals or Italian mathematicians will be harmed during the talk.)
 
       %li.detail-section#singh
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/singh.jpg', alt: 'Neeraj Singh'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/singh.jpg', alt: 'Neeraj Singh'}
         .speaker-info
           %h2.detail-title Neeraj Singh
           .speaker__links
             %a.speaker__link{href: 'http://twitter.com/neerajdotname', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
             %a.speaker__link{href: 'https://github.com/neerajdotname', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
             %a.speaker__link{href: 'http://bigbinary.com/neeraj', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
+              %span.hide Website
           %p.detail-info Neeraj loves ruby, JavaScript and open source culture. He has contributed to open source projects like RubyOnRails, jQuery-ujs, Spree and ActiveMerchant . He is based in Miami and runs BigBinary, a RubyOnRails consulting firm.
           %p.detail-info.speaker__talk ActiveRecord is still magical
           %p.detail-info ActiveRecord is complex code and because of complexity it has edge cases. In fact lots of edge cases. We will take a look at a number of ActiveRecord features to see how it works and how to deal with some of the edge cases.
@@ -307,23 +372,28 @@
           %p.detail-info In Rails 3 when where conditions are merged then the last where condition wins. In Rails 4 all the where conditions are 'And'ed. But not defautl_scope. We will see how and why.
           %p.detail-info Will also discuss implementation detail of features like inverse_of, autosave and callbacks.
       %li.detail-section#somerville
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/charlie.jpg', alt: 'Charlie Somerville'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/charlie.jpg', alt: 'Charlie Somerville'}
         .speaker-info
           %h2.detail-title Charlie Somerville
           .speaker__links
             %a.speaker__link{href: 'https://twitter.com/charliesome', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
             %a.speaker__link{href: 'https://github.com/charliesome', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
           %p.detail-info Charlie is a passionate Rubyist from Melbourne, Australia. When he's not slinging C and Ruby for GitHub, he's relaxing by sitting back on the couch hacking on MRI with a cup of coffee by his side.
           %p.detail-info.speaker__talk MRI Magic Tricks
           %p.detail-info Like any other software, MRI has bugs. In this talk, Charlie will dive deep into the internals of MRI and demonstrate how a few interesting bugs can be leveraged to do crazy things you never thought were possible in Ruby.
       %li.detail-section#vargo
-        %img.speaker__pic.speaker-pic-index{src: '/speakers/vargo.jpg', alt: 'Seth Vargo'}
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/vargo.jpg', alt: 'Seth Vargo'}
         .speaker-info
           %h2.detail-title Seth Vargo
           .speaker__links
             %a.speaker__link{href: 'https://twitter.com/sethvargo', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
             %a.speaker__link{href: 'https://github.com/sethvargo', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
             %a.speaker__link{href: 'http://sethvargo.com/', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
+              %span.hide Website
           %p.detail-info Seth is a long-time Ruby developer who landed in operations as a Solutions Engineer at Opscode. While his degree is in Information Systems from Carnegie Mellon, Seth specializes in Ruby development and system administration. But most importantly, Seth is incredibly lazy, which is why automation and DRY are two principles that are practiced in his daily life. An author or core contributor to projects such as fauxhai, chefspec, berkshelf, bootstrap_forms, powify, and more, Seth believes in the power of the open source and community.
           %p.detail-info.speaker__talk Using Ruby to Automate Your Life
           %p.detail-info You probably use Ruby everyday, so why not use Ruby to automate some common tasks? What if you could spin up an EC2 instance and have it automatically configure your web server, database, users, and more? What if you could effectively capture and replicate your production environments reliably and consistently? What if you could then give developers production-like environments as Virtual Machines, with no additional work? What if you could set up your new laptop with multiple Ruby versions, your favorite software, and even change the desktop background - from a single command? The good news is - you can!

@@ -1,6 +1,23 @@
 @import load
 
-.wrap
+.l-main
+  @media (min-width: 1200px)
+    float: right
+    width: 75%
+    +box-sizing(border-box)
+  @media (min-width: 1600px)
+    @-moz-document url-prefix()
+      width: calc(100% - 400px)
+
+.l-intro
+  @media (min-width: 1200px)
+    float: left
+    width: 25%
+    @-moz-document url-prefix()
+      max-width: 400px
+
+.l-wrap
   @include center
   width: 80%
   max-width: 1000px
+

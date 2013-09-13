@@ -21,14 +21,14 @@
       })();
 
   %body
-    .intro
+    .l-intro.intro
       %a.logo{href: '/'}
       %h2.intro__copy
         Join us for a two day, double track Ruby conference at the Seaport World Trade Center in Boston, MA!
       %h3.intro__callout Oct 12-13, 2013
       %a.intro__button{href: 'http://wickedgoodruby2013.eventbrite.com/', target: '_blank'} Register
 
-    .main
+    .l-main.main
       = yield
 
       .animation
@@ -36,17 +36,17 @@
         .animation__shine
           .animation__shine__line1
           .animation__shine__line2
-        .animation__red
+        .animation__background
 
-      %footer.footer
+      %footer
         %h2.footer__callout
           Get excited for Boston's first Ruby conference!
         %nav.footer__buttons
-          %a.footer__button.footer__button--eventbrite{href: 'http://wickedgoodruby2013.eventbrite.com/', target: '_blank'}
+          %a.footer__button--eventbrite{href: 'http://wickedgoodruby2013.eventbrite.com/', target: '_blank'}
             Buy tix on Eventbrite
-          %a.footer__button.footer__button--twitter{href: 'https://twitter.com/WickedGoodRuby', target: '_blank'}
+          %a.footer__button--twitter{href: 'https://twitter.com/WickedGoodRuby', target: '_blank'}
             Follow us on Twitter
-          %a.footer__button.footer__button--lanyrd{href: 'http://lanyrd.com/2013/wickedgoodruby/', target: '_blank'}
+          %a.footer__button--lanyrd{href: 'http://lanyrd.com/2013/wickedgoodruby/', target: '_blank'}
             Track us on Lanyrd
         %h3.footer__copy
           &copy; Copyright 2013 Wicked Good Ruby Conf
