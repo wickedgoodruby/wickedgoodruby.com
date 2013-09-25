@@ -14,7 +14,7 @@
   background-color: $white
   display: block
 
-.sponsor--yesware, .sponsor--cogo, .sponsor--chargify
+.sponsor--yesware, .sponsor--cogo, .sponsor--chargify, .sponsor--openbay
   @extend .sponsor
 
 .sponsor--yesware
@@ -23,8 +23,10 @@
   background-color: #272526
 .sponsor--chargify
   background-color: #231f20
+.sponsor--openbay
+  background-color: #202122
 
-$sponsors: yesware cogo fiksu visible jumpstart meyouhealth github confreaks constant-contact brightcove chargify thoughtbot
+$sponsors: yesware cogo fiksu visible jumpstart meyouhealth github confreaks constant-contact brightcove chargify thoughtbot openbay
 =company-logos
   @each $company in $sponsors
     .sponsor__logo--#{$company}
