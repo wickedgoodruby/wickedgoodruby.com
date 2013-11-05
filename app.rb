@@ -293,11 +293,11 @@ get '/speakers' do
 end
 
 get '/speakers/:name' do
-  haml :speaker, locals: { speaker: Speakers[params[:name]] }
-end
-
-get '/mccoy_myers' do
-  haml :mccoy_myers
+  if params[:name] == 'mccoy_myers'
+    haml :mccoy_myers
+  else
+    haml :speaker, locals: { speaker: Speakers[params[:name]] }
+  end
 end
 
 get '/workshop' do
