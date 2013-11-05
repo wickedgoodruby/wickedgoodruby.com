@@ -1,16 +1,21 @@
-.detail-section
-  %img.speaker__pic.speaker__pic--detail{src: "/speakers/#{speaker[:image]}.jpg", alt: "#{speaker[:name]}"}
-  .speaker-info
-    %h2.detail-title #{speaker[:name]}
-    .speaker__links
-      %a.speaker__link{href: "http://twitter.com/#{speaker[:twitter]}", target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
-        %span.hide Twitter
-      %a.speaker__link{href: "https://github.com/#{speaker[:github]}", target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
-        %span.hide Github
-      %a.speaker__link{href: "#{speaker[:website]}", target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
-        %span.hide Website
-    %p.detail-info #{speaker[:bio]}
-    %p.detail-info.speaker__talk #{speaker[:talk_title]}
-    %p.detail-info #{speaker[:talk_summary]}
-    .speaker__slides
-      %iframe{allowfullscreen: '', frameborder: '0', height: '368', src: "//www.youtube.com/embed/#{speaker[:video]}", width: '100%'}
+.triangle--start-detail
+
+%section.detail-page
+  .detail-section.l-wrap
+    %img.speaker__pic.speaker__pic--detail{src: "/speakers/#{speaker[:image]}.jpg", alt: "#{speaker[:name]}"}
+    .speaker-info
+      %h2.detail-title #{speaker[:name]}
+      .speaker__links
+        %a.speaker__link{href: "http://twitter.com/#{speaker[:twitter]}", target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+          %span.hide Twitter
+        %a.speaker__link{href: "https://github.com/#{speaker[:github]}", target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+          %span.hide Github
+        %a.speaker__link{href: "#{speaker[:website]}", target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'W'}
+          %span.hide Website
+      %p.detail-info #{speaker[:bio]}
+      %p.detail-info.speaker__talk #{speaker[:talk_title]}
+      %p.detail-info #{speaker[:talk_summary]}
+      .speaker__slides
+        %iframe{allowfullscreen: '', frameborder: '0', height: '368', src: "//www.youtube.com/embed/#{speaker[:video]}", width: '100%'}
+
+.triangle--end

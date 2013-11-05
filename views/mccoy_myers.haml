@@ -1,0 +1,29 @@
+.triangle--start-detail
+
+%section.detail-page
+  .detail-section.l-wrap
+    .joint-speakers
+      .joint-speaker
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/sheena.jpg', alt: 'Sheena McCoy'}
+        .speaker-info
+          %h2.detail-title Sheena McCoy
+          .speaker__links
+            %a.speaker__link{href: 'https://twitter.com/sheenapmccoy', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
+          %p.detail-info Sheena is a Go developer and Ruby enthusiast for ModCloth in Pittsburgh.  She has never told a lie.
+      .joint-speaker
+        %img.speaker__pic.speaker__pic--detail{src: '/speakers/rachel.jpg', alt: 'Rachel Myers'}
+        .speaker-info
+          %h2.detail-title Rachel Myers
+          .speaker__links
+            %a.speaker__link{href: 'https://twitter.com/rachelmyers', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'T'}
+              %span.hide Twitter
+            %a.speaker__link{href: 'https://github.com/rachelmyers', target: '_blank', 'aria-hidden' => 'true', 'data-icon' => 'G'}
+              %span.hide Github
+          %p.detail-info Rachel is a developer at GitHub and a long-time RailsBridge volunteer. When not hacking, Rachel gardens and plays soccer.
+    %p.detail-info.speaker__talk Understanding Ruby's Method Cache
+    %p.detail-info How we call methods in a dynamic language like Ruby is complicated and fascinating. This talk dives into one slice of Ruby internals, the inline method cache. We'll walk through MRI's awesome but sometimes quirky method caching. And we'll go through some practical improvements we've made in our own work to avoid unintentionally invalidating the method cache.
+    .speaker__slides
+      %iframe{allowfullscreen: '', frameborder: '0', height: '368', src: "//www.youtube.com/embed/JMR0TEh9W2U", width: '100%'}
+
+.triangle--end

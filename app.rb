@@ -162,62 +162,118 @@ Speakers = {
     talk_summary: '',
     video: 'fhpT6Pc4AqM'
   },
-  'justin_campbell' => {
-    name: '',
-    image: '',
+  'mike_nicholaides' => {
+    name: 'Mike Nicholaides',
+    image: 'nicholaides',
+    twitter: 'nicholaides',
+    github: 'nicholaides',
+    website: 'http://ablegray.com/',
+    bio: 'By day, Mike Nicholaides is a co-founder and Ruby/JavaScript consultant at PromptWorks, the premier Ruby shop in Philadelphia. But when the sun goes down&#133; he does, too, because having kids is exhausting!<br><br>Between dawn and dusk Mike can be found feeding his addiction to learning. In addition to technology, his interests include all things language, business, ancient and prehistory, and religion.<br><br>When he&rsquo;s not coding, spending time with his family, or reading, you&rsquo;ll probably find him organizing local JavaScript and coworking meetups and throwing Philadelphia&rsquo;s annual Code Retreat.',
+    talk_title: 'Securing Your Rails App',
+    talk_summary: 'How can you know if your Rails app is safe? With potential vulnerabilities lurking in your app&rsquo;s code, in gems you depend on, in services you use, and in the Rails source itself, attackers have myriad vectors to gain access to your data, interrupt your service, and damage your reputation.<br><br>I&rsquo;ll cover the basics of securing your Rails app, evaluating and mitigating the risk inherent in live web applications, and strategies for keeping your app secure as new threats emerge.',
+    video: 'Jv5Y2bLYeik'
+  },
+  'foy_savas' => {
+    name: 'Foy Savas',
+    image: 'foy',
+    twitter: 'foysavas',
+    github: 'foysavas',
+    website: 'http://www.foysavas.com/',
+    bio: 'Foy is a long time Rubyist now working as a venture capitalist at <a href="http://alphaprime.vc/" class="section-info-link" target="_blank">AlphaPrime Ventures</a>. Having previously worked as a tech consultant, Foy now gets his kicks by helping portfolio companies roadmap projects and strategize implementation. Come to think of it, the only difference from his consulting days is that the startups stopped paying him and started taking his money.',
+    talk_title: 'Closing Keynote',
+    talk_summary: '',
+    video: '65_Qy3anbMw'
+  },
+  'richard_schneeman' => {
+    name: 'Richard Schneeman',
+    image: 'schneeman',
+    twitter: 'schneems',
+    github: 'schneems',
+    website: 'http://schneems.com/',
+    bio: 'Richard writes Ruby at Heroku at teaches Rails at the University of Texas. When he isn&rsquo;t obsessively compulsively playing Starcraft 2 he writes such gems as <a href="https://github.com/schneems/wicked" class="section-info-link" target="_blank">Wicked</a>, <a href="https://github.com/schneems/sextant" class="section-info-link" target="_blank">Sextant</a>, <a href="https://github.com/opro/opro" class="section-info-link" target="_blank">oPro</a>. He&rsquo;s on the Rails issue team, and wants you to sign up for <a href="http://www.codetriage.com/" class="section-info-link" target="_blank">Code Triage</a>. Before working as a programmer &ndash; Richard graduated from Space camp where he prototyped a perpetual motion machine that didn&rsquo;t work, and from Scout camp where he built trebuchets that did.',
+    talk_title: 'Dissecting Ruby with Ruby',
+    talk_summary: 'Underneath the beautiful veneer of our Ruby libraries lies a twisted tangle of writhing guts. Maybe you&rsquo;re curious how the pieces fit together or maybe you&rsquo;re tracking down a bug, either way it&rsquo;s easy to get lost in the blood and bile that ties our code together. In this talk you&rsquo;ll learn how to use simple and sharp Ruby tools to slice into large libraries with surgical precision. Turn your impossible bugs into pull requests, and level up your programming skills by Dissecting Ruby with Ruby.',
+    video: 'UYVUSoNrM-c'
+  },
+  'loren_segal' => {
+    name: 'Loren Segal',
+    image: 'loren',
+    twitter: 'lsegal',
+    github: 'lsegal',
+    website: '',
+    bio: 'Loren Segal is an SDKs and Tools developer at Amazon Web Services working on the AWS SDKs for Ruby and Node.js. In his spare time, Loren also likes to hack on open source libraries and tools like YARD, a Ruby documentation tool, RubyCorrect, a static analysis and automatic test case generation tool, and Seahorse, a web service API modeling library.',
+    talk_title: 'Towards Tooling; A Look at What is Missing From Our Toolbox',
+    talk_summary: 'You can usually judge the maturity of a programming language ecosystem by the breadth of its tooling. For example, Java has a plethora of IDEs that each, in turn, have many well maintained refactoring and code quality plugins (like FindBugs and PMD). C/C++ is equally well established in this space. Even JavaScript is becoming well represented, with a number of static code analyzers and language supersets (like Dart and TypeScript) aimed at improving tooling in the language. But where is Ruby in all of this? This talk will shed some light on the existing tools available in the Ruby world as well as some new tools just starting to be built out in the areas of static analysis, formal verification, and code quality checking. We will look at what kind of tools the Ruby community is good at building, what kind of tools we are bad at, and most of all, some of the tooling we should be working on to really improve our ecosystem and drive more developers to this wonderful language.',
+    video: 'wPu2kVI09Yc'
+  },
+  'dan_sharp' => {
+    name: 'Dan Sharp',
+    image: 'sharp',
     twitter: '',
     github: '',
+    website: 'http://www.linkedin.com/in/mrdrsharp',
+    bio: 'Dan is a life-long geek, having been fascinated with computers since early childhood. He cut his teeth, like many, on Java and PHP, but found Ruby via Ruby on Rails in 2005... building one of the first successful Rails-based SaaS ventures&#133; and never looking back. These days, Dan works as Senior Software Architect with the Nexia&#153; team at Ingersoll Rand, affording him the luxury of a startup environment backed by a multi-billion dollar company. He resides in Golden, CO with his wife and two children. When not hacking code, he&rsquo;s usually lost in the back country somewhere, enjoying the great outdoors.',
+    talk_title: 'Killing Fibonacci',
+    talk_summary: 'Testing is an important part of the development lifecycle of any software solution. It is particularly important in the Ruby community with lots of real and perceived pressure to test first, test often and test fully (or at least 90% coverage, right?). However, there has not been as much focus on the why of testing as a mechanism to encourage good code practices, good design decisions and coverage that is meaningful. This presentation aims to change all that. I will start with a brief overview of ruby testing: the why, what, how, when and where. For the rest of the presentation, I will take the Fibonnaci sequence and deconstruct it via a tongue-in-cheek approach to showcase why Good Testing™ is so much more important than Testing&#133; and why tests should force the developer to think deeper about their code&#133; not just as implementation but as behavior!<br><br>(The killing of Fibonacci will take place live. However no animals or Italian mathematicians will be harmed during the talk.)',
+    video: 'gzfObLKICdg'
+  },
+  'neeraj_singh' => {
+    name: 'Neeraj Singh',
+    image: 'singh',
+    twitter: 'neerajdotname',
+    github: 'neerajdotname',
+    website: 'http://bigbinary.com/neeraj',
+    bio: 'Neeraj loves ruby, JavaScript and open source culture. He has contributed to open source projects like RubyOnRails, jQuery-ujs, Spree and ActiveMerchant . He is based in Miami and runs BigBinary, a RubyOnRails consulting firm.',
+    talk_title: 'ActiveRecord is still magical',
+    talk_summary: 'ActiveRecord is complex code and because of complexity it has edge cases. In fact lots of edge cases. We will take a look at a number of ActiveRecord features to see how it works and how to deal with some of the edge cases.<br><br>We will see how default_scope works. And why method "unscoped" removes default_scope from models but not from associations.<br><br>Do you know the difference between CollectionProxy and Relation ? Do you know why in a has_many through case "@physician.patients.create!" would work but "@physician.patients.where(active: true).create! would silently fail without creating the association record?<br><br>We will discuss why while patching Active Record you should run your tests against all three databases.<br><br>Guess which of these two obey :destroy option: @customer.orders.delete(@order) or @customer.orders.destroy(@order).<br><br>In Rails 3 when where conditions are merged then the last where condition wins. In Rails 4 all the where conditions are &lsquo;And&rsquo;ed. But not defautl_scope. We will see how and why.<br><br>Will also discuss implementation detail of features like inverse_of, autosave and callbacks.',
+    video: 'RUOvI_iMyDY'
+  },
+  'mark_sobkowicz' => {
+    name: 'Mark Sobkowicz',
+    image: 'sobkowicz',
+    twitter: 'MarkSobkowicz',
+    github: 'sobko',
+    website: 'http://www.27classrooms.com/',
+    bio: 'Mark Sobkowicz has been teaching physics and programming at Lincoln Sudbury Regional High School since 1995, and started using Ruby (and Rails) in 2007. He has taught students programming using Logo, Java, RealBasic, Objective C, and Ruby. He lives in Maynard, MA and spends as much time as he can in the White Mountains of New Hampshire, where he worked for the Appalachian Mountain Club when he was a younger man.',
+    talk_title: 'Ruby: The Next Generation',
+    talk_summary: 'Introducing programming to young people is a balancing act. What language to use? Bore the quickest students, or leave some behind?  Teach them style, or let them discover their own? At Lincoln Sudbury Regional High School, Ruby has helped us bring our Intro to Programming course to a new sweet spot, where students leave the one semester course with a bit of knowledge and a lot of enthusiasm, filling our upper level programming courses and learning more on their own.<br><br>As Rubyists we often pride ourselves on our elegant, terse, clever code. When we teach our students, we keep it simple. Simple conditionals, simple loops and iterators. This allows us to get more quickly to a place where students can express their creativity. And thats what gets them hooked.',
+    video: 'tX07sT7Cr6Y'
+  },
+  'charlie_somerville' => {
+    name: 'Charlie Somerville',
+    image: 'charlie',
+    twitter: 'charliesome',
+    github: 'charliesome',
     website: '',
-    bio: '',
-    talk_title: '',
-    talk_summary: '',
-    video: ''
-  #},
-  #'justin_campbell' => {
-    #name: '',
-    #image: '',
-    #twitter: '',
-    #github: '',
-    #website: '',
-    #bio: '',
-    #talk_title: '',
-    #talk_summary: '',
-    #video: ''
-  #},
-  #'justin_campbell' => {
-    #name: '',
-    #image: '',
-    #twitter: '',
-    #github: '',
-    #website: '',
-    #bio: '',
-    #talk_title: '',
-    #talk_summary: '',
-    #video: ''
-  #},
-  #'justin_campbell' => {
-    #name: '',
-    #image: '',
-    #twitter: '',
-    #github: '',
-    #website: '',
-    #bio: '',
-    #talk_title: '',
-    #talk_summary: '',
-    #video: ''
-  #},
-  #'justin_campbell' => {
-    #name: '',
-    #image: '',
-    #twitter: '',
-    #github: '',
-    #website: '',
-    #bio: '',
-    #talk_title: '',
-    #talk_summary: '',
-    #video: ''
+    bio: 'Charlie is a passionate Rubyist from Melbourne, Australia. When he&rsquo;s not slinging C and Ruby for GitHub, he&rsquo;s relaxing by sitting back on the couch hacking on MRI with a cup of coffee by his side.',
+    talk_title: 'MRI Magic Tricks',
+    talk_summary: 'Like any other software, MRI has bugs. In this talk, Charlie will dive deep into the internals of MRI and demonstrate how a few interesting bugs can be leveraged to do crazy things you never thought were possible in Ruby.',
+    video: 'SBdqCYKWISU'
+  },
+  'seth_vargo' => {
+    name: 'Seth Vargo',
+    image: 'vargo',
+    twitter: 'sethvargo',
+    github: 'sethvargo',
+    website: 'http://sethvargo.com/',
+    bio: 'Seth is a long-time Ruby developer who landed in operations as a Solutions Engineer at Opscode. While his degree is in Information Systems from Carnegie Mellon, Seth specializes in Ruby development and system administration. But most importantly, Seth is incredibly lazy, which is why automation and DRY are two principles that are practiced in his daily life. An author or core contributor to projects such as fauxhai, chefspec, berkshelf, bootstrap_forms, powify, and more, Seth believes in the power of the open source and community.',
+    talk_title: 'Using Ruby to Automate Your Life',
+    talk_summary: 'You probably use Ruby everyday, so why not use Ruby to automate some common tasks? What if you could spin up an EC2 instance and have it automatically configure your web server, database, users, and more? What if you could effectively capture and replicate your production environments reliably and consistently? What if you could then give developers production-like environments as Virtual Machines, with no additional work? What if you could set up your new laptop with multiple Ruby versions, your favorite software, and even change the desktop background - from a single command? The good news is - you can!<br><br>Chef is a configuration management and automation tool that solves these problems and many m you&rsquo;ll learn common just how easy it is to capture your infrastructure in Chef. Save time and money by using Chef&rsquo;s Ruby DSL to "define" your laptop.<br><br>How many times have you bought a new laptop and realize just how much stuff you installed over the years? If you&rsquo;re using Chef, run a single command and all your favorite Applications, Preferences, and even passwords are back in place. And the best part - because Chef is written in Ruby, you get to continue using the language you love!',
+    video: 'oTOBWbA-M6s'
+  },
+  'jon_yurek' => {
+    name: 'Jon Yurek',
+    image: 'yurek',
+    twitter: 'jyurek',
+    github: 'jyurek',
+    website: 'http://thoughtbot.com/',
+    bio: 'Jon Yurek is a founder of thoughtbot. He spends his days trying to reach vim enlightenment and writing code solely to make his tests pass. Ever since he played with BASIC on his Apple IIe, he knew programming was for him. The rest of his time is spent camping and playing European-style board games.',
+    talk_title: 'Naming is Hard!',
+    talk_summary: 'Coming up with a good name is one of the hardest things to do in programming. It&rsquo;s one of the least technical things we do, but it has one of the largest impacts on how understandable our code is. Ruby is a very expressive language, which makes it very suitable to naming things well and thereby making maintenance easier. This talk will go over more than just how to name variables and classes: it will show how to extract and name concepts, processes, and procedures from existing code in order to understand it better.',
+    video: 'UDixUZWLo_U'
   }
 }
+
 configure do
   Compass.configuration do |config|
     config.project_path = File.dirname(__FILE__)
@@ -238,6 +294,10 @@ end
 
 get '/speakers/:name' do
   haml :speaker, locals: { speaker: Speakers[params[:name]] }
+end
+
+get '/mccoy_myers' do
+  haml :mccoy_myers
 end
 
 get '/workshop' do
