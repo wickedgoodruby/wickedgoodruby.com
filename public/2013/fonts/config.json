@@ -1,97 +1,46 @@
 {
   "name": "fontello",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
   "glyphs": [
     {
-      "search": [
-        "lanyrd"
-      ],
-      "code": 76,
-      "uid": "846fae80e47217662041242ee1f15a83",
-      "css": "lanyrd",
-      "orig_css": "lanyrd",
-      "orig_code": 76,
-      "src": "zocial",
-      "from": 45
-    },
-    {
-      "search": [
-        "plus"
-      ],
-      "code": 43,
-      "from": 10133,
-      "uid": "4ba33d2607902cf690dd45df09774cb0",
-      "css": "plus-circle",
-      "orig_css": "plus-circle",
-      "orig_code": 43,
-      "src": "fontawesome"
-    },
-    {
-      "search": [
-        "twitter"
-      ],
-      "code": 84,
-      "meta": {
-        "homepage": "https://twitter.com/about/resources/logos",
-        "author": "Twitter"
-      },
-      "uid": "4c01f5d3ba5fbf029bca8630cce41e6a",
-      "file": "twitter-bird",
-      "transform": {
-        "rescale": 0.9,
-        "offset": 0.05
-      },
-      "css": "twitter-bird",
-      "orig_css": "twitter-bird",
-      "orig_code": 84,
-      "src": "brandico",
-      "from": 62211
-    },
-    {
-      "search": [
-        "github"
-      ],
-      "code": 71,
-      "meta": {
-        "twitter": "https://twitter.com/puzrin",
-        "github": "https://github.com/puzrin",
-        "author": "Vitaly Puzrin"
-      },
-      "uid": "4a0bb1ac004980bb3837560d4c9e8cee",
-      "file": "github",
-      "transform": {
-        "rescale": 0.9,
-        "offset": 0.05
-      },
-      "css": "github-2",
-      "orig_css": "github",
-      "orig_code": 71,
-      "src": "brandico",
-      "from": 62216
-    },
-    {
-      "search": [
-        "ticket"
-      ],
-      "code": 66,
-      "uid": "333bae7aaf7395d1004875be5a075661",
-      "css": "ticket",
-      "orig_css": "ticket",
-      "orig_code": 66,
-      "src": "entypo",
-      "from": 127915
-    },
-    {
-      "search": [
-        "link",
-        "url"
-      ],
-      "code": 87,
       "uid": "815503841e980c848f55e0271deacead",
       "css": "link",
-      "orig_css": "link",
-      "orig_code": 87,
-      "src": "entypo",
-      "from": 128279
+      "code": 87,
+      "src": "entypo"
+    },
+    {
+      "uid": "333bae7aaf7395d1004875be5a075661",
+      "css": "ticket",
+      "code": 66,
+      "src": "entypo"
+    },
+    {
+      "uid": "846fae80e47217662041242ee1f15a83",
+      "css": "lanyrd",
+      "code": 76,
+      "src": "zocial"
+    },
+    {
+      "uid": "231eeeedfdda9dd5d03dc8d03060007d",
+      "css": "flickr-1",
+      "code": 79,
+      "src": "zocial"
+    },
+    {
+      "uid": "4c01f5d3ba5fbf029bca8630cce41e6a",
+      "css": "twitter-bird",
+      "code": 84,
+      "src": "brandico"
+    },
+    {
+      "uid": "4a0bb1ac004980bb3837560d4c9e8cee",
+      "css": "github-2",
+      "code": 71,
+      "src": "brandico"
     }
   ]
 }
