@@ -1,0 +1,63 @@
+@import splash/load
+
+body
+  padding:
+    top: 6em
+    bottom: 6em
+  height: 100%
+  min-height: 600px
+  border: .75em solid $white
+  background:
+    color: $red
+    image: url(/splash/boston--red.jpg)
+    position: center
+  +box-sizing(border-box)
+
+.main
+  margin:
+    right: auto
+    left: auto
+  width: 80%
+  max-width: 680px
+  text-align: center
+  color: $white
+
+p
+  margin:
+    right: auto
+    left: auto
+  max-width: 430px
+
+
+.logo
+  margin:
+    right: auto
+    bottom: 3em
+    left: auto
+  display: block
+  width: 100%
+
+.text-link
+  color: $white
+
+.is-hidden
+  display: inline-block
+  text-indent: -9999px
+
+.flickr, .twitter
+  margin-top: 1em
+  padding:
+    left: .25em
+    right: .25em
+  display: inline-block
+  text-decoration: none
+  font-family: fontello
+  color: $white
+
+.flickr
+  &:before
+    content: 'O'
+
+.twitter
+  &:before
+    content: 'T'
