@@ -73,7 +73,7 @@ Year2013::Speakers = {
     website: 'http://jasongarber.com/ruby-developer',
     bio: 'Jason picked up Ruby while re-designing the Rosetta Stone website in 2005 and immediately fell in love with the language, the community, and open-source software. Later, he started committing to Why the Lucky Stiff&rsquo;s RedCloth repo and the next thing he knew, he was the owner, with a sketch from _why to prove it! Jason enjoys helping others level up their skills, through RailsGirls, Philly.rb, and corporate training. He is an engineer at PromptWorks, a Ruby shop in Philadelphia, where he enjoys pair programming with his co-founders, Greg and Mike.',
     talk_title: 'Writing DSLs with Parslet',
-    talk_summary: 'Parslet makes it easy to write these kinds of DSLs in pure Ruby. In this talk you’ll learn the basics, feel out the limitations of several approaches and find some common solutions. In no time, you’ll have the power to make a great new DSL, slurp in obscure file formats, modify or fork other people’s grammars (like Gherkin, TOML, or JSON), or even write your own programming language!',
+    talk_summary: 'Parslet makes it easy to write these kinds of DSLs in pure Ruby. In this talk you&rsquo;ll learn the basics, feel out the limitations of several approaches and find some common solutions. In no time, you&rsquo;ll have the power to make a great new DSL, slurp in obscure file formats, modify or fork other people&rsquo;s grammars (like Gherkin, TOML, or JSON), or even write your own programming language!',
     video: 'ET_POMJNWNs'
   },
   'nick_gauthier' => {
@@ -82,7 +82,7 @@ Year2013::Speakers = {
     twitter: 'ngauthier',
     github: 'ngauthier',
     website: 'http://ngauthier.com',
-    bio: 'Nick Gauthier is a web freelancer focusing on Ruby on Rails and JavaScript. His experience spans from SQL to Sass and he always tests, all the time. He wrote Recipes with Backbone with Chris Strom and recently released his most recent eBook Mobile Web Patterns with Backbone.js. Aside from freelancing Nick runs B’More Awesome, a Baltimore-based web training organization, and he also co-founded Exobrain, an online mind-mapping tool.',
+    bio: 'Nick Gauthier is a web freelancer focusing on Ruby on Rails and JavaScript. His experience spans from SQL to Sass and he always tests, all the time. He wrote Recipes with Backbone with Chris Strom and recently released his most recent eBook Mobile Web Patterns with Backbone.js. Aside from freelancing Nick runs &rsquo;More Awesome, a Baltimore-based web training organization, and he also co-founded Exobrain, an online mind-mapping tool.',
     talk_title: 'Outside-In Testing',
     talk_summary: 'As a freelancer I&rsquo;m often tasked with creating high quality web applications quickly while keeping the budget razor thin. In my experience, the absolute best bang-for-your-buck style of development has been BDD from the outside-in via acceptance tests. With acceptance tests you can quickly and accurately determine the minimum code necessary to fit the requirements of an application while achieving high code coverage and resilience to refactoring. By their very nature acceptance tests are the the simplest kinds of tests to write since they are expressed in the language of an end-user. In this talk we&rsquo;ll implement a feature from the outside-in, explaining the reasoning behind every step.',
     video: 'JDgOuKvRaf4'
