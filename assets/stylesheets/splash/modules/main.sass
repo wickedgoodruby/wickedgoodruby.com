@@ -28,7 +28,6 @@ body
     right: auto
     left: auto
   width: 80%
-  max-width: 860px
   text-align: center
   color: $white
 
@@ -49,6 +48,10 @@ p
     margin-bottom: 2em
   @media (min-width: 860px)
     margin-bottom: 4em
+  @media (max-height: 860px)
+    max-width: 480px
+  @media (min-height: 860px)
+    max-width: 860px
 
 
 .text-link
