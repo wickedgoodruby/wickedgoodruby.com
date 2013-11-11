@@ -1,9 +1,6 @@
 @import splash/load
 
 body
-  padding:
-    top: 6em
-    bottom: 6em
   height: 100%
   min-height: 600px
   border: .75em solid $white
@@ -11,14 +8,27 @@ body
     color: $red
     image: url(/splash/boston--red.jpg)
     position: center
+    size: cover
   +box-sizing(border-box)
+  @media (max-height: 800px)
+    padding:
+      top: 6em
+      bottom: 6em
+  @media (min-height: 800px) and (max-height: 1100px)
+    padding:
+      top: 9em
+      bottom: 9em
+  @media (min-height: 1100px)
+    padding:
+      top: 12em
+      bottom: 12em
 
 .main
   margin:
     right: auto
     left: auto
   width: 80%
-  max-width: 680px
+  max-width: 860px
   text-align: center
   color: $white
 
@@ -32,10 +42,14 @@ p
 .logo
   margin:
     right: auto
-    bottom: 3em
     left: auto
   display: block
   width: 100%
+  @media (max-width: 860px)
+    margin-bottom: 2em
+  @media (min-width: 860px)
+    margin-bottom: 4em
+
 
 .text-link
   color: $white
