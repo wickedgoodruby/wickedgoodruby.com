@@ -7,7 +7,7 @@ Year2013::Speakers = {
     website: '',
     bio: 'Matt Aimonetti is an experienced technologist, entrepreneur, technical writer and active open-source contributor. Based in San Diego California, he currently works on his startup: Splice. Prior to Splice, Matt worked as a Tech manager/developer at LivingSocial, on video game development at Sony PlayStation and on many other things.',
     talk_title: 'Wicked Bad Ruby',
-    talk_summary: 'Can you tell the difference between good and bad code? What do you base your judgment on?<br><br>Over the years, the Ruby community has built a fairly strong notion of “the right way” of writing code. During his thought provoking presentation, Matt will show that things are not simply good vs bad, and that what we call “pretty” code might, in fact, just be lipstick on a pig.',
+    talk_summary: 'Can you tell the difference between good and bad code? What do you base your judgment on?<br><br>Over the years, the Ruby community has built a fairly strong notion of &ldquo;the right way&rdquo; of writing code. During his thought provoking presentation, Matt will show that things are not simply good vs bad, and that what we call &ldquo;pretty&rdquo; code might, in fact, just be lipstick on a pig.',
     video: 'VO-NvnZfMA4'
   },
   'doug_alcorn' => {
