@@ -6,7 +6,7 @@ body
   border: .75em solid $white
   background:
     color: $red
-    image: url(/splash/boston--red.jpg)
+    image: url(/splash/boston.jpg)
     position: center
     size: cover
   +box-sizing(border-box)
@@ -78,3 +78,9 @@ p
 .twitter
   &:before
     content: 'T'
+
+.section-info-link
+  font-style: italic
+  color: lighten($black, 45%)
+  &:hover
+    text-decoration: underline

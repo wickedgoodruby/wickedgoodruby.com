@@ -19,7 +19,11 @@
       %p.detail-info.speaker__talk #{speaker[:talk_title]}
       - unless speaker[:talk_summary].empty?
         %p.detail-info #{speaker[:talk_summary]}
-      .speaker__slides
-        %iframe{allowfullscreen: '', frameborder: '0', height: '368', src: "//www.youtube.com/embed/#{speaker[:video]}", width: '100%'}
+      .speaker__media
+        .speaker__video
+          %iframe{allowfullscreen: '', frameborder: '0', height: '368', src: "//www.youtube.com/embed/#{speaker[:video]}", width: '100%'}
+        .speaker__slides
+          - unless speaker[:slides].empty?
+            = speaker[:slides]
 
 .triangle--end
