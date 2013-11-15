@@ -225,7 +225,7 @@ Year2013::Speakers = {
     talk_title: 'Killing Fibonacci',
     talk_summary: 'Testing is an important part of the development lifecycle of any software solution. It is particularly important in the Ruby community with lots of real and perceived pressure to test first, test often and test fully (or at least 90% coverage, right?). However, there has not been as much focus on the why of testing as a mechanism to encourage good code practices, good design decisions and coverage that is meaningful. This presentation aims to change all that. I will start with a brief overview of ruby testing: the why, what, how, when and where. For the rest of the presentation, I will take the Fibonnaci sequence and deconstruct it via a tongue-in-cheek approach to showcase why Good Testing&#153; is so much more important than Testing&#133; and why tests should force the developer to think deeper about their code&#133; not just as implementation but as behavior!<br><br>(The killing of Fibonacci will take place live. However no animals or Italian mathematicians will be harmed during the talk.)',
     video: 'gzfObLKICdg',
-    slides: ''
+    slides: '<script async class="speakerdeck-embed" data-id="a2dc88102f910131bc1942be4fa3f735" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>'
   },
   'neeraj_singh' => {
     name: 'Neeraj Singh',
